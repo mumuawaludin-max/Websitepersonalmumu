@@ -1,14 +1,15 @@
 import { useState } from 'react';
-import { buildWaUrl, WA_GENERAL_MESSAGE } from '../lib/whatsapp';
 
-export function FloatingContactButton() {
+interface FloatingContactButtonProps {
+  onClick: () => void;
+}
+
+export function FloatingContactButton({ onClick }: FloatingContactButtonProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <a
-      href={buildWaUrl(WA_GENERAL_MESSAGE)}
-      target="_blank"
-      rel="noopener noreferrer"
+    <button
+      onClick={onClick}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       className="fixed bottom-6 right-6 z-50 group"
@@ -44,6 +45,6 @@ export function FloatingContactButton() {
           </div>
         </div>
       </div>
-    </a>
+    </button>
   );
 }

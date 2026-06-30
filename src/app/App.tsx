@@ -69,6 +69,7 @@ import { ImageWithFallback } from './components/figma/ImageWithFallback';
 import { RuangKolaborasi } from './components/RuangKolaborasi';
 import { AdminPanel } from './components/AdminPanel';
 import { FloatingContactButton } from './components/FloatingContactButton';
+import { CollabDialog } from './components/CollabDialog';
 
 // Main App Component - Responsive Website for Kak Mumu
 export default function App() {
@@ -87,6 +88,7 @@ export default function App() {
   const [creamBg, setCreamBg] = useState({ left: 0, width: 430 }); // Will be calculated on mount
   const [selectedEvent, setSelectedEvent] = useState<number | null>(null);
   const [showEventDialog, setShowEventDialog] = useState(false);
+  const [showCollabDialog, setShowCollabDialog] = useState(false);
 
   // Refs for navbar buttons (except home which uses fixed width)
   const tentangRef = useRef<HTMLButtonElement>(null);
@@ -1141,30 +1143,28 @@ Terima kasih.`;
                 Kak Mumu
               </button>
               
-              <div className="flex items-center gap-2">
-                <button 
+              <div className="flex items-center gap-1.5">
+                <button
                   onClick={() => scrollToSection('tentang-saya')}
-                  className={`px-2 py-1 text-[11px] font-['Plus_Jakarta_Sans',sans-serif] font-medium ${
+                  className={`px-1.5 py-1 text-[11px] font-['Plus_Jakarta_Sans',sans-serif] font-medium ${
                     activeSection === 'tentang-saya' ? 'text-[#dac5a7]' : 'text-white/70'
                   }`}
                 >
                   Tentang
                 </button>
-                <button 
-                  onClick={() => scrollToSection('ruang-kolaborasi')}
-                  className={`px-2 py-1 text-[11px] font-['Plus_Jakarta_Sans',sans-serif] font-medium ${
-                    activeSection === 'ruang-kolaborasi' ? 'text-[#dac5a7]' : 'text-white/70'
-                  }`}
-                >
-                  Kolaborasi
-                </button>
                 <button
                   onClick={() => scrollToSection('karya')}
-                  className={`px-2 py-1 text-[11px] font-['Plus_Jakarta_Sans',sans-serif] font-medium ${
+                  className={`px-1.5 py-1 text-[11px] font-['Plus_Jakarta_Sans',sans-serif] font-medium ${
                     activeSection === 'karya' ? 'text-[#dac5a7]' : 'text-white/70'
                   }`}
                 >
                   Apresiasi
+                </button>
+                <button
+                  onClick={() => setShowCollabDialog(true)}
+                  className="bg-[#dac5a7] text-[#0a282e] px-3 py-1.5 rounded-full text-[11px] font-['Plus_Jakarta_Sans',sans-serif] font-semibold whitespace-nowrap"
+                >
+                  Kolaborasi
                 </button>
               </div>
             </div>
@@ -1206,15 +1206,21 @@ Terima kasih.`;
               </div>
 
               {/* Right section */}
-              <div className="flex items-center gap-6 lg:gap-8 xl:gap-12 z-20">
-                <button 
+              <div className="flex items-center gap-5 lg:gap-7 xl:gap-9 z-20">
+                <button
                   ref={karyaRef}
                   onClick={() => scrollToSection('karya')}
-                  className={`px-4 py-2 text-[15px] lg:text-[16px] font-['Plus_Jakarta_Sans',sans-serif] font-medium transition-colors hover:text-white whitespace-nowrap cursor-pointer ${
+                  className={`px-2 py-2 text-[15px] lg:text-[16px] font-['Plus_Jakarta_Sans',sans-serif] font-medium transition-colors hover:text-white whitespace-nowrap cursor-pointer ${
                     activeSection === 'karya' ? 'text-[#0a282e]' : 'text-[#d9c4a7]'
                   }`}
                 >
                   Apresiasi & Media
+                </button>
+                <button
+                  onClick={() => setShowCollabDialog(true)}
+                  className="inline-flex items-center gap-2 bg-[#dac5a7] hover:bg-[#edd9bc] text-[#0a282e] px-5 py-2.5 rounded-full font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[14px] lg:text-[15px] whitespace-nowrap transition-all hover:shadow-[0_6px_18px_rgba(218,197,167,0.35)] cursor-pointer"
+                >
+                  Mari Berkolaborasi
                 </button>
               </div>
             </div>
@@ -1364,19 +1370,6 @@ Terima kasih.`;
                 </div>
               </div>
               
-              {/* Mari Berkolaborasi - Right side - RESPONSIVE */}
-              <button 
-                onClick={() => scrollToSection('ruang-kolaborasi')}
-                className="absolute top-[350px] inline-flex items-center gap-3 text-[#dac5a7] hover:text-white font-['Plus_Jakarta_Sans',sans-serif] font-medium text-[clamp(22px,2vw,28px)] leading-[25px] transition-colors group cursor-pointer"
-                style={{
-                  right: 'max(31px, 2%)'
-                }}
-              >
-                Mari Berkolaborasi
-                <svg className="w-[34px] h-[15px] group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 35 15">
-                  <path d={svgPaths.p28059e00} fill="currentColor" />
-                </svg>
-              </button>
             </div>
             
             {/* Left Content - PARALLAX - RESPONSIVE */}
@@ -1397,11 +1390,9 @@ Terima kasih.`;
                 Assalamu'alaikum<span className="text-[#dac5a7]">.</span>
               </p>
 
-              <p className="font-medium leading-[normal] ml-[51px] text-[#dac5a7] text-[clamp(13px,1.2vw,17px)] mb-4">
+              <p className="font-medium leading-[normal] ml-[51px] text-[#dac5a7] text-[clamp(13px,1.2vw,17px)] mb-5">
                 Saya Muhamad Nur Awaludin
               </p>
-
-              <div className="w-8 h-[3px] rounded-full bg-[#dac5a7] mb-5" />
 
               <div className="font-medium leading-[1.55] text-[clamp(13px,1.15vw,17px)] text-white/90 mb-1">
                 <p>Narasumber & Trainer · Mentor</p>
@@ -1428,21 +1419,21 @@ Terima kasih.`;
             </div>
             
             {/* Right Content - RESPONSIVE */}
-            <p 
-              className="absolute font-['Plus_Jakarta_Sans',sans-serif] font-medium leading-[25px] text-[#dac5a7] text-[clamp(14px,1.1vw,16px)] text-justify top-[130px] w-[min(431px,30%)] whitespace-pre-wrap"
+            <div
+              className="absolute font-['Plus_Jakarta_Sans',sans-serif] font-medium leading-[1.6] text-[#dac5a7] text-[clamp(13px,1.05vw,15px)] top-[120px] w-[min(420px,31%)] space-y-3.5"
               style={{
                 right: 'max(31px, 2%)'
               }}
             >
-              <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">Digital Parenting Mentor & IT Consultant. </span>
-              <span>Praktisi di persimpangan </span>
-              <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">edukasi, psikologi & teknologi</span>
-              <span>. Pengalaman </span>
-              <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">10+ tahun </span>
-              <span>membangun program, aplikasi, sistem, dan solusi digital untuk </span>
-              <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">pemerintah, institusi, sekolah, dan keluarga</span>
-              <span> di 50+ kota Indonesia.</span>
-            </p>
+              <p>
+                Kak Mumu membantu keluarga, sekolah, dan institusi menggunakan teknologi dengan lebih tepat:
+                {' '}<span className="font-bold text-white">parenting digital, literasi digital, pendampingan anak dan remaja</span>,
+                sampai perancangan <span className="font-bold text-white">aplikasi, website, dashboard, dan sistem</span> yang benar-benar digunakan di lapangan.
+              </p>
+              <p className="text-[#dac5a7]/80">
+                Dalam <span className="font-bold text-[#dac5a7]">10+ tahun</span> terakhir, Kak Mumu terlibat dalam berbagai program edukasi dan pengembangan sistem digital untuk pemerintah, institusi pendidikan, perusahaan, sekolah, dan keluarga di <span className="font-bold text-[#dac5a7]">50+ kota Indonesia</span>.
+              </p>
+            </div>
           </div>
 
           {/* MOBILE HERO - Simple Version */}
@@ -1474,7 +1465,7 @@ Terima kasih.`;
               </div>
 
               <p className="text-[#dac5a7]/70 text-[13px] leading-relaxed max-w-sm mx-auto mb-7">
-                Praktisi di persimpangan edukasi, psikologi & teknologi. 10+ tahun membangun program, aplikasi, sistem, dan solusi digital untuk pemerintah, institusi, sekolah, dan keluarga.
+                Membantu keluarga, sekolah, dan institusi menggunakan teknologi dengan lebih tepat: dari parenting digital, literasi digital, pendampingan anak dan remaja, sampai perancangan aplikasi, website, dashboard, dan sistem yang benar-benar dipakai di lapangan.
               </p>
 
               {/* CTA Buttons */}
@@ -1723,165 +1714,106 @@ Terima kasih.`;
             ))}
           </div>
 
-          {/* Awards Section - Compact Layout */}
+          {/* ===== AWARDS ===== */}
           {(activeFilter === 'semua' || activeFilter === 'awards') && (
-            <div className="mb-16 md:mb-24">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10">
-                
-                {/* Semasa Kuliah */}
-                <div>
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="relative w-14 h-14 rounded-xl overflow-hidden shadow-xl flex-shrink-0">
-                      <img 
-                        src="https://images.unsplash.com/photo-1706340674031-acaaf6e2144b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1bml2ZXJzaXR5JTIwZ3JhZHVhdGlvbiUyMHRyb3BoeSUyMGF3YXJkfGVufDF8fHx8MTc3MTM3NDU2Nnww&ixlib=rb-4.1.0&q=80&w=400"
-                        alt="Semasa Kuliah"
-                        className="w-full h-full object-cover"
-                      />
+            <div className="mb-14 md:mb-20">
+              <div className="flex items-center justify-center gap-3 mb-8 md:mb-10">
+                <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
+                <span className="eyebrow text-[#dac5a7]/60">Penghargaan</span>
+                <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-start">
+                {/* Era: Semasa Kuliah */}
+                <div className="bg-white/[0.04] border border-white/10 rounded-3xl p-5 md:p-7">
+                  <div className="flex items-center gap-3.5 mb-5">
+                    <div className="w-12 h-12 rounded-2xl bg-[#dac5a7]/15 flex items-center justify-center flex-shrink-0">
+                      <GraduationCap className="w-6 h-6 text-[#dac5a7]" />
                     </div>
                     <div>
-                      <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] md:text-[22px] text-white mb-0.5">
-                        Semasa Kuliah
-                      </h2>
-                      <p className="text-white/60 text-[12px] md:text-[14px] font-['Plus_Jakarta_Sans',sans-serif]">
-                        Teknik Informatika UNIKOM
-                      </p>
+                      <h3 className="t-h3 text-white">Semasa Kuliah</h3>
+                      <p className="t-meta font-normal text-white/50">Teknik Informatika UNIKOM</p>
                     </div>
                   </div>
 
-                  {/* Photo Frame - Semasa Kuliah */}
-                  <div className="mb-5">
-                    <div className="relative w-full rounded-xl overflow-hidden border-2 border-white/20 shadow-xl">
-                      <img 
-                        src={imgKuliahPhoto}
-                        alt="Semasa Kuliah - Kompetisi dan Aktivitas"
-                        className="w-full h-[180px] md:h-[220px] object-cover"
-                      />
-                    </div>
+                  <div className="rounded-2xl overflow-hidden mb-5 border border-white/10">
+                    <img
+                      src={imgKuliahPhoto}
+                      alt="Semasa Kuliah - Kompetisi dan Aktivitas"
+                      className="w-full h-[190px] md:h-[210px] object-cover"
+                    />
                   </div>
 
-                  <div className="grid grid-cols-1 gap-3">
+                  <div>
                     {awards.filter(award => award.category === 'kuliah').map((award, idx) => (
-                      <div
-                        key={idx}
-                        className="group relative bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 hover:border-[#dac5a7]/60 transition-all duration-300 hover:bg-white/15"
-                      >
-                        <div className="flex items-start gap-3">
-                          <div className="w-9 h-9 bg-[#dac5a7]/20 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-[#dac5a7]/30 transition-colors">
-                            <Trophy className="w-4 h-4 text-[#dac5a7]" />
-                          </div>
-                          <div className="flex-1 min-w-0">
-                            <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[13px] md:text-[14px] text-white leading-snug group-hover:text-[#dac5a7] transition-colors">
-                              {award.title}
-                            </h3>
-                          </div>
-                        </div>
+                      <div key={idx} className="flex items-start gap-3 py-2.5 border-t border-white/[0.06] first:border-t-0">
+                        <Trophy className="w-4 h-4 text-[#dac5a7] mt-0.5 flex-shrink-0" />
+                        <span className="t-meta font-normal text-white/80 leading-snug">{award.title}</span>
                       </div>
                     ))}
                   </div>
                 </div>
 
-                {/* Semasa Menjadi Entrepreneur */}
-                <div>
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="relative w-14 h-14 rounded-xl overflow-hidden shadow-xl flex-shrink-0">
-                      <img 
-                        src="https://images.unsplash.com/photo-1677640724372-adb865d29aa8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdGFydHVwJTIwZW50cmVwcmVuZXVyJTIwYnVzaW5lc3MlMjBhd2FyZHN8ZW58MXx8fHwxNzcxMzc0NTcwfDA&ixlib=rb-4.1.0&q=80&w=400"
-                        alt="Entrepreneur"
-                        className="w-full h-full object-cover"
-                      />
+                {/* Era: Semasa Menjadi Entrepreneur */}
+                <div className="bg-white/[0.04] border border-white/10 rounded-3xl p-5 md:p-7">
+                  <div className="flex items-center gap-3.5 mb-5">
+                    <div className="w-12 h-12 rounded-2xl bg-[#dac5a7]/15 flex items-center justify-center flex-shrink-0">
+                      <Rocket className="w-6 h-6 text-[#dac5a7]" />
                     </div>
                     <div>
-                      <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] md:text-[22px] text-white mb-0.5">
-                        Semasa Menjadi Entrepreneur
-                      </h2>
-                      <p className="text-white/60 text-[12px] md:text-[14px] font-['Plus_Jakarta_Sans',sans-serif]">
-                        2014 - Sekarang
-                      </p>
+                      <h3 className="t-h3 text-white">Semasa Menjadi Entrepreneur</h3>
+                      <p className="t-meta font-normal text-white/50">2014 - Sekarang</p>
                     </div>
                   </div>
 
-                  {/* Photo Frame - Semasa Menjadi Entrepreneur */}
-                  <div className="mb-5">
-                    <div className="relative w-full rounded-xl overflow-hidden border-2 border-white/30 shadow-xl">
-                      <img 
-                        src={imgEntrepreneurPhoto}
-                        alt="Semasa Menjadi Entrepreneur - Startup Activities"
-                        className="w-full h-[180px] md:h-[220px] object-cover"
-                      />
-                    </div>
+                  <div className="rounded-2xl overflow-hidden mb-6 border border-white/10">
+                    <img
+                      src={imgEntrepreneurPhoto}
+                      alt="Semasa Menjadi Entrepreneur - Startup Activities"
+                      className="w-full h-[190px] md:h-[210px] object-cover"
+                    />
                   </div>
 
-                  {/* Kakatu Awards - Compact */}
-                  <div className="mb-5">
-                    <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[18px] text-[#dac5a7] mb-3">
-                      Awards with Kakatu (Parenting Startup)
-                    </h3>
-                    <div className="grid grid-cols-1 gap-3">
-                      {awards.filter(award => award.category === 'kakatu').map((award, idx) => (
-                        <div
-                          key={idx}
-                          className="group relative bg-[#1a4a54]/80 backdrop-blur-sm rounded-xl p-3.5 border border-[#2d6670]/60 hover:border-[#dac5a7]/60 transition-all duration-300 hover:bg-[#1a4a54]/90"
-                        >
-                          <div className="flex items-center gap-3">
-                            <div className="flex-shrink-0 w-8 h-8 bg-[#dac5a7]/15 rounded-lg flex items-center justify-center group-hover:bg-[#dac5a7]/25 transition-all duration-300">
-                              <Trophy className="w-4 h-4 text-[#dac5a7]" />
-                            </div>
-                            <div className="flex-1">
-                              <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[13px] md:text-[14px] text-white leading-snug group-hover:text-[#dac5a7] transition-colors duration-300">
-                                {award.title}
-                              </h4>
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
+                  <p className="eyebrow text-[#dac5a7]/60 mb-1">Kakatu · Parenting Startup</p>
+                  <div className="mb-6">
+                    {awards.filter(award => award.category === 'kakatu').map((award, idx) => (
+                      <div key={idx} className="flex items-start gap-3 py-2.5 border-t border-white/[0.06] first:border-t-0">
+                        <Trophy className="w-4 h-4 text-[#dac5a7] mt-0.5 flex-shrink-0" />
+                        <span className="t-meta font-normal text-white/80 leading-snug">{award.title}</span>
+                      </div>
+                    ))}
                   </div>
 
-                  {/* Fammi Awards - Compact */}
+                  <p className="eyebrow text-[#dac5a7]/60 mb-1">Fammi · Education Consultant</p>
                   <div>
-                    <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[18px] text-[#dac5a7] mb-3">
-                      Awards with Fammi (Education Consultant)
-                    </h3>
-                    <div className="grid grid-cols-1 gap-3">
-                      {awards.filter(award => award.category === 'fammi').map((award, idx) => (
-                        <div
-                          key={idx}
-                          className="group relative bg-[#1a4a54]/80 backdrop-blur-sm rounded-xl p-3.5 border border-[#2d6670]/60 hover:border-[#dac5a7]/60 transition-all duration-300 hover:bg-[#1a4a54]/90"
-                        >
-                          <div className="flex items-center gap-3">
-                            <div className="flex-shrink-0 w-8 h-8 bg-[#dac5a7]/15 rounded-lg flex items-center justify-center group-hover:bg-[#dac5a7]/25 transition-all duration-300">
-                              <Trophy className="w-4 h-4 text-[#dac5a7]" />
-                            </div>
-                            <div className="flex-1">
-                              <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[13px] md:text-[14px] text-white leading-snug group-hover:text-[#dac5a7] transition-colors duration-300">
-                                {award.title}
-                              </h4>
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
+                    {awards.filter(award => award.category === 'fammi').map((award, idx) => (
+                      <div key={idx} className="flex items-start gap-3 py-2.5 border-t border-white/[0.06] first:border-t-0">
+                        <Trophy className="w-4 h-4 text-[#dac5a7] mt-0.5 flex-shrink-0" />
+                        <span className="t-meta font-normal text-white/80 leading-snug">{award.title}</span>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
             </div>
           )}
 
-          {/* Media Section */}
+          {/* ===== MEDIA ===== */}
           {(activeFilter === 'semua' || activeFilter === 'media') && (
             <div>
-              {/* Video Liputan */}
-              <div className="mb-12 md:mb-16">
-                <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[24px] md:text-[32px] text-white mb-8 md:mb-10 text-center">
-                  Liputan Video
-                </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+              {/* Liputan Video */}
+              <div className="mb-14 md:mb-20">
+                <div className="flex items-center justify-center gap-3 mb-8 md:mb-10">
+                  <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
+                  <span className="eyebrow text-[#dac5a7]/60">Liputan Video</span>
+                  <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
                   {mediaVideos.map((video) => (
                     <div
                       key={video.id}
-                      className="group bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/20 hover:border-[#dac5a7]/60 transition-all duration-300 hover:scale-102"
+                      className="group bg-white/[0.04] rounded-2xl overflow-hidden border border-white/10 hover:border-[#dac5a7]/40 transition-all duration-300"
                     >
-                      {/* YouTube Embed - Simple without captcha */}
                       <div className="relative aspect-video bg-black">
                         <iframe
                           src={`https://www.youtube.com/embed/${video.youtubeId}`}
@@ -1892,53 +1824,50 @@ Terima kasih.`;
                           className="w-full h-full"
                         />
                       </div>
-                      {/* Video Info */}
-                      <div className="p-5 md:p-6">
-                        <div className="flex items-center gap-2 mb-4">
-                          <div className="bg-white rounded-lg px-5 py-3 shadow-md">
-                            <img 
-                              src={video.logo}
-                              alt={video.channel}
-                              className={`object-contain ${video.channel === 'MNC TV' ? 'h-9 md:h-11' : 'h-7 md:h-8'}`}
-                            />
-                          </div>
+                      <div className="p-5">
+                        <div className="inline-flex bg-white rounded-lg px-4 py-2.5 shadow-sm mb-3.5">
+                          <img
+                            src={video.logo}
+                            alt={video.channel}
+                            className={`object-contain ${video.channel === 'MNC TV' ? 'h-8 md:h-9' : 'h-6 md:h-7'}`}
+                          />
                         </div>
-                        <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[14px] md:text-[15px] text-white leading-snug group-hover:text-[#dac5a7] transition-colors">
+                        <h4 className="t-h3 text-white leading-snug group-hover:text-[#dac5a7] transition-colors">
                           {video.title}
-                        </h3>
+                        </h4>
                       </div>
                     </div>
                   ))}
                 </div>
               </div>
 
-              {/* Artikel Liputan */}
+              {/* Liputan Artikel */}
               <div>
-                <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[24px] md:text-[32px] text-white mb-8 md:mb-10 text-center">
-                  Liputan Artikel
-                </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <div className="flex items-center justify-center gap-3 mb-8 md:mb-10">
+                  <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
+                  <span className="eyebrow text-[#dac5a7]/60">Liputan Artikel</span>
+                  <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
                   {mediaArticles.map((article) => (
                     <a
                       key={article.id}
                       href={article.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-7 border border-white/20 hover:border-[#dac5a7]/60 transition-all duration-300 hover:bg-white/15 hover:scale-102 cursor-pointer"
+                      className="group flex flex-col bg-white/[0.04] rounded-2xl p-6 border border-white/10 hover:border-[#dac5a7]/40 hover:bg-white/[0.07] transition-all duration-300"
                     >
-                      <div className="flex items-center gap-3 mb-5">
-                        <div className="bg-white rounded-lg px-5 py-3 shadow-md group-hover:shadow-lg transition-shadow">
-                          <img 
-                            src={article.logo}
-                            alt={article.publisher}
-                            className={`object-contain ${article.publisher === 'Kumparan' ? 'h-9 md:h-11' : 'h-7 md:h-8'}`}
-                          />
-                        </div>
+                      <div className="inline-flex self-start bg-white rounded-lg px-4 py-2.5 shadow-sm mb-4">
+                        <img
+                          src={article.logo}
+                          alt={article.publisher}
+                          className={`object-contain ${article.publisher === 'Kumparan' ? 'h-8 md:h-9' : 'h-6 md:h-7'}`}
+                        />
                       </div>
-                      <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[15px] md:text-[16px] text-white leading-snug mb-3 group-hover:text-[#dac5a7] transition-colors">
+                      <h4 className="t-h3 text-white leading-snug mb-4 flex-1 group-hover:text-[#dac5a7] transition-colors">
                         {article.title}
-                      </h3>
-                      <div className="flex items-center text-white/60 text-[13px] md:text-[14px] font-['Plus_Jakarta_Sans',sans-serif] group-hover:text-white transition-colors">
+                      </h4>
+                      <div className="flex items-center t-meta text-white/55 group-hover:text-[#dac5a7] transition-colors">
                         <span>Baca selengkapnya</span>
                         <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -1954,7 +1883,10 @@ Terima kasih.`;
       </section>
 
       {/* Floating WhatsApp Button */}
-      <FloatingContactButton />
+      <FloatingContactButton onClick={() => setShowCollabDialog(true)} />
+
+      {/* Collaboration category picker -> WhatsApp */}
+      <CollabDialog open={showCollabDialog} onClose={() => setShowCollabDialog(false)} />
     </div>
   );
 }
