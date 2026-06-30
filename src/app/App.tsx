@@ -1153,18 +1153,18 @@ Terima kasih.`;
                   Tentang
                 </button>
                 <button
-                  onClick={() => scrollToSection('karya')}
+                  onClick={() => scrollToSection('ruang-kolaborasi')}
                   className={`px-1.5 py-1 text-[11px] font-['Plus_Jakarta_Sans',sans-serif] font-medium ${
-                    activeSection === 'karya' ? 'text-[#dac5a7]' : 'text-white/70'
+                    activeSection === 'ruang-kolaborasi' ? 'text-[#dac5a7]' : 'text-white/70'
                   }`}
                 >
-                  Apresiasi
+                  Kolaborasi
                 </button>
                 <button
                   onClick={() => setShowCollabDialog(true)}
                   className="bg-[#dac5a7] text-[#0a282e] px-3 py-1.5 rounded-full text-[11px] font-['Plus_Jakarta_Sans',sans-serif] font-semibold whitespace-nowrap"
                 >
-                  Kolaborasi
+                  Hubungi
                 </button>
               </div>
             </div>
@@ -1471,8 +1471,11 @@ Terima kasih.`;
                 </p>
               </div>
 
-              <p className="text-[#dac5a7]/70 text-[13px] leading-relaxed max-w-sm mx-auto mb-7">
-                Membantu keluarga, sekolah, dan institusi menggunakan teknologi dengan lebih tepat: dari parenting digital, literasi digital, pendampingan anak dan remaja, sampai perancangan aplikasi, website, dashboard, dan sistem yang benar-benar dipakai di lapangan.
+              <p className="text-[#dac5a7]/70 text-[13px] leading-relaxed max-w-sm mx-auto mb-2">
+                Kak Mumu membantu keluarga, sekolah, dan institusi menggunakan teknologi dengan lebih tepat: <span className="text-[#dac5a7] font-semibold">parenting digital, literasi digital, pendampingan anak dan remaja</span>, sampai perancangan <span className="text-[#dac5a7] font-semibold">aplikasi, website, dashboard, dan sistem</span> yang benar-benar digunakan di lapangan.
+              </p>
+              <p className="text-[#dac5a7]/50 text-[12px] leading-relaxed max-w-sm mx-auto mb-7">
+                Dalam <span className="font-semibold text-[#dac5a7]/70">10+ tahun</span> terakhir, terlibat dalam berbagai program edukasi dan pengembangan sistem digital untuk pemerintah, institusi pendidikan, perusahaan, sekolah, dan keluarga di <span className="font-semibold text-[#dac5a7]/70">50+ kota Indonesia</span>.
               </p>
 
               {/* CTA Buttons */}
@@ -1492,12 +1495,13 @@ Terima kasih.`;
                   Download CV
                 </a>
 
-                {/* Let's Talk Button */}
+                {/* Lihat Rekam Jejak Button */}
                 <button
-                  onClick={() => scrollToSection('ruang-kolaborasi')}
-                  className="border border-[#dac5a7]/40 text-[#dac5a7] px-8 py-3 rounded-full font-semibold text-[14px] hover:border-[#dac5a7] hover:text-white transition-colors"
+                  onClick={() => setSelectedCollab(0)}
+                  className="inline-flex items-center justify-center gap-2 border border-[#dac5a7]/40 text-[#dac5a7] px-8 py-3 rounded-full font-semibold text-[14px] hover:border-[#dac5a7] hover:bg-[#dac5a7]/10 transition-colors"
                 >
-                  Let's Talk!
+                  <Star className="w-4 h-4 flex-shrink-0" />
+                  Lihat Rekam Jejak
                 </button>
               </div>
             </div>
