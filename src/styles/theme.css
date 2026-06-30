@@ -3,6 +3,15 @@
 :root {
   --font-size: 16px;
   --background: #ffffff;
+  /* Brand palette - Warm Digital Educator */
+  --brand-teal: #0a282e;
+  --brand-teal-mid: #0f3a42;
+  --brand-teal-light: #1a5a66;
+  --brand-cream: #dac5a7;
+  --brand-cream-light: #ede4d5;
+  --brand-cream-warm: #f5ede1;
+  --brand-sand: #f8f2ea;
+  --brand-white: #fffcf8;
   --foreground: oklch(0.145 0 0);
   --card: #ffffff;
   --card-foreground: oklch(0.145 0 0);
@@ -143,7 +152,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Plus Jakarta Sans', 'Montserrat', sans-serif;
   }
 
   /* Hide scrollbar but keep scroll functionality */
