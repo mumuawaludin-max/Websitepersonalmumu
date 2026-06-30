@@ -1459,32 +1459,43 @@ Terima kasih.`;
           {/* MOBILE HERO - Simple Version */}
           <div className="md:hidden relative w-full min-h-screen flex flex-col items-center justify-start px-6 pt-24 pb-0 text-center bg-[#0a282e]">
             <div className="mb-8 flex-1 flex flex-col justify-center">
-              <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[32px] text-white mb-3">
+              {/* Credential badge */}
+              <div className="mb-5 inline-flex items-center justify-center gap-2 bg-[#dac5a7]/12 border border-[#dac5a7]/20 rounded-full px-4 py-1.5 mx-auto">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#dac5a7]" />
+                <span className="text-[#dac5a7]/80 text-[10px] font-semibold tracking-widest uppercase">10+ Tahun · 50+ Kota</span>
+              </div>
+
+              <p className="text-[#dac5a7]/60 text-[11px] font-semibold tracking-widest uppercase mb-2">Assalamu'alaikum</p>
+              <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[30px] text-white mb-1 leading-tight">
                 Muhamad Nur Awaludin
               </h1>
-              
+              <div className="w-10 h-[3px] rounded-full bg-[#dac5a7] mx-auto my-4" />
+
               {/* Subtitle - Professional Roles */}
-              <div className="mb-6">
-                <p className="text-white font-['Montserrat:Medium',sans-serif] font-medium text-[14px] leading-[22px]">
-                  Narasumber Parenting Digital & Kecanduan Gadget
+              <div className="mb-5">
+                <p className="text-white/90 font-medium text-[13px] leading-[22px]">
+                  Narasumber & Trainer · Mentor
                 </p>
-                <p className="text-white font-['Montserrat:Medium',sans-serif] font-medium text-[14px] leading-[22px]">
-                  Trainer Komunikasi Keluarga & Kesehatan Mental
+                <p className="text-[#dac5a7]/80 font-medium text-[13px] leading-[22px]">
+                  Digital Parenting & Youth Learning
+                </p>
+                <p className="text-[#dac5a7]/80 font-medium text-[13px] leading-[22px]">
+                  IT Consultant · Product Designer
                 </p>
               </div>
-              
-              <p className="text-[#dac5a7] text-[14px] font-['Montserrat:Medium',sans-serif] leading-relaxed max-w-md mx-auto mb-6">
-                Praktisi dengan <span className="font-['Montserrat:Bold',sans-serif] font-bold">10+ tahun pengalaman</span> membantu orangtua dan guru mengatasi <span className="font-['Montserrat:Bold',sans-serif] font-bold">kecanduan game, HP berlebihan, dan tantangan digital parenting</span>. Menghadirkan solusi berbasis psikologi untuk membangun keluarga yang sehat di era digital.
+
+              <p className="text-[#dac5a7]/70 text-[13px] leading-relaxed max-w-sm mx-auto mb-7">
+                Praktisi di persimpangan edukasi, psikologi & teknologi. 10+ tahun membangun program, aplikasi, sistem, dan solusi digital untuk pemerintah, institusi, sekolah, dan keluarga.
               </p>
-              
+
               {/* CTA Buttons */}
               <div className="flex flex-col gap-3 w-full max-w-xs mx-auto">
-                {/* Download CV Button - Outline Style */}
-                <a 
+                {/* Download CV Button */}
+                <a
                   href="https://s.id/profilkakmumu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 border-2 border-[#dac5a7] text-[#dac5a7] px-8 py-3 rounded-full font-['Montserrat:SemiBold',sans-serif] font-semibold text-[14px] hover:bg-[#dac5a7] hover:text-[#0a282e] transition-colors"
+                  className="flex items-center justify-center gap-2 bg-[#dac5a7] text-[#0e0e0e] px-8 py-3 rounded-full font-semibold text-[14px] hover:bg-[#edd9bc] transition-all hover:shadow-[0_8px_24px_rgba(218,197,167,0.3)]"
                 >
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15.75 11.25V14.0625C15.75 14.5106 15.5722 14.9403 15.2557 15.2557C14.9403 15.5722 14.5106 15.75 14.0625 15.75H3.9375C3.48995 15.75 3.06072 15.5722 2.74426 15.2557C2.42779 14.9403 2.25 14.5106 2.25 14.0625V11.25" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -1493,11 +1504,11 @@ Terima kasih.`;
                   </svg>
                   Download CV
                 </a>
-                
-                {/* Let's Talk Button - Filled Style */}
-                <button 
+
+                {/* Let's Talk Button */}
+                <button
                   onClick={() => scrollToSection('ruang-kolaborasi')}
-                  className="bg-[#dac5a7] text-[#0a282e] px-8 py-3 rounded-full font-['Montserrat:SemiBold',sans-serif] font-semibold text-[14px] hover:bg-[#c9b396] transition-colors"
+                  className="border border-[#dac5a7]/40 text-[#dac5a7] px-8 py-3 rounded-full font-semibold text-[14px] hover:border-[#dac5a7] hover:text-white transition-colors"
                 >
                   Let's Talk!
                 </button>
@@ -2241,11 +2252,15 @@ Terima kasih.`;
             {/* LEFT: Upcoming Events */}
             <div>
               <div className="mb-12 text-center lg:text-left">
-                <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[36px] md:text-[48px] text-white mb-4">
+                <div className="flex items-center gap-3 mb-3 justify-center lg:justify-start">
+                  <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
+                  <span className="text-[#dac5a7]/60 text-[11px] font-semibold tracking-widest uppercase">Agenda</span>
+                  <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
+                </div>
+                <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[32px] md:text-[44px] text-white mb-4 leading-tight">
                   Upcoming Events
                 </h1>
-                <div className="w-[64px] h-[4px] bg-[#dac5a7] rounded-full mx-auto lg:mx-0 mb-8" />
-                <p className="text-white/80 text-[16px] md:text-[18px] leading-relaxed">
+                <p className="text-white/60 text-[15px] md:text-[16px] leading-relaxed">
                   Bergabunglah dengan kegiatan mendatang untuk belajar dan berkembang bersama.
                 </p>
               </div>
@@ -2359,16 +2374,20 @@ Terima kasih.`;
             {/* RIGHT: Mari Berdiskusi (Kontak Form) */}
             <div id="kontak">
               <div className="mb-12 text-center lg:text-left">
-                <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[36px] md:text-[48px] text-white mb-4">
+                <div className="flex items-center gap-3 mb-3 justify-center lg:justify-start">
+                  <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
+                  <span className="text-[#dac5a7]/60 text-[11px] font-semibold tracking-widest uppercase">Kontak</span>
+                  <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
+                </div>
+                <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[32px] md:text-[44px] text-white mb-4 leading-tight">
                   Mari Berdiskusi
                 </h1>
-                <div className="w-[64px] h-[4px] bg-[#dac5a7] rounded-full mx-auto lg:mx-0 mb-8" />
-                <p className="text-white/80 text-[16px] md:text-[18px] leading-relaxed">
-                  Jika Anda tertarik mengundang sebagai narasumber, mendiskusikan program, atau menjajaki kolaborasi, silakan hubungi melalui formulir berikut.
+                <p className="text-white/60 text-[15px] md:text-[16px] leading-relaxed">
+                  Tertarik mengundang sebagai narasumber, mendiskusikan program, atau menjajaki kolaborasi? Hubungi melalui formulir berikut.
                 </p>
               </div>
 
-              <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-[#dac5a7]/10">
+              <div className="bg-white/8 backdrop-blur-sm rounded-3xl p-8 md:p-10 border border-[#dac5a7]/15" style={{ background: 'rgba(255,255,255,0.06)' }}>
                 <form onSubmit={handleSubmit} className="space-y-6">
                     <div>
                       <label 
