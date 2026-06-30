@@ -1440,6 +1440,12 @@ Terima kasih.`;
               <p className="text-[#dac5a7]/80">
                 Dalam <span className="font-bold text-[#dac5a7]">10+ tahun</span> terakhir, Kak Mumu terlibat dalam berbagai program edukasi dan pengembangan sistem digital untuk pemerintah, institusi pendidikan, perusahaan, sekolah, dan keluarga di <span className="font-bold text-[#dac5a7]">50+ kota Indonesia</span>.
               </p>
+              {/* Personal story callout */}
+              <div className="border-l-2 border-[#dac5a7]/40 pl-4 py-1">
+                <p className="text-[#dac5a7]/70 italic leading-[1.6]">
+                  Pernah kecanduan games selama <span className="font-bold text-[#dac5a7] not-italic">13 tahun lebih</span>, main hingga <span className="font-bold text-[#dac5a7] not-italic">30 jam non-stop</span> dan kini rutin mengedukasi anak dan keluarga untuk terhindar dari hal tersebut.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -1474,9 +1480,15 @@ Terima kasih.`;
               <p className="text-[#dac5a7]/70 text-[13px] leading-relaxed max-w-sm mx-auto mb-2">
                 Kak Mumu membantu keluarga, sekolah, dan institusi menggunakan teknologi dengan lebih tepat: <span className="text-[#dac5a7] font-semibold">parenting digital, literasi digital, pendampingan anak dan remaja</span>, sampai perancangan <span className="text-[#dac5a7] font-semibold">aplikasi, website, dashboard, dan sistem</span> yang benar-benar digunakan di lapangan.
               </p>
-              <p className="text-[#dac5a7]/50 text-[12px] leading-relaxed max-w-sm mx-auto mb-7">
+              <p className="text-[#dac5a7]/50 text-[12px] leading-relaxed max-w-sm mx-auto mb-4">
                 Dalam <span className="font-semibold text-[#dac5a7]/70">10+ tahun</span> terakhir, terlibat dalam berbagai program edukasi dan pengembangan sistem digital untuk pemerintah, institusi pendidikan, perusahaan, sekolah, dan keluarga di <span className="font-semibold text-[#dac5a7]/70">50+ kota Indonesia</span>.
               </p>
+              {/* Personal story callout */}
+              <div className="border-l-2 border-[#dac5a7]/40 pl-4 py-1 text-left max-w-sm mx-auto mb-7">
+                <p className="text-[#dac5a7]/65 italic text-[12px] leading-relaxed">
+                  Pernah kecanduan games selama <span className="font-bold text-[#dac5a7] not-italic">13 tahun lebih</span>, main hingga <span className="font-bold text-[#dac5a7] not-italic">30 jam non-stop</span> dan kini rutin mengedukasi anak dan keluarga untuk terhindar dari hal tersebut.
+                </p>
+              </div>
 
               {/* CTA Buttons */}
               <div className="flex flex-col gap-3 w-full max-w-xs mx-auto">
