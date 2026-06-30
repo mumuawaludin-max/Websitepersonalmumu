@@ -40,6 +40,14 @@ export const WA_TEMPLATES: Record<string, string> = {
     'Mohon informasi mengenai alur dan jadwalnya. Terima kasih.',
 };
 
+// Collaboration categories shown in the picker dialog before redirecting.
+export const WA_CATEGORIES: Array<{ title: string; desc: string }> = [
+  { title: 'Narasumber & Trainer', desc: 'Undang sebagai pembicara atau trainer' },
+  { title: 'Program & Campaign Manager', desc: 'Kelola program & kampanye digital' },
+  { title: 'IT Consultant', desc: 'Bangun aplikasi, website, dashboard, sistem' },
+  { title: 'Mentoring', desc: 'Pendampingan anak & remaja' },
+];
+
 // Build a wa.me URL from a message.
 export function buildWaUrl(message: string): string {
   return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
