@@ -22,7 +22,7 @@ export default function TentangSaya() {
                 Saya adalah praktisi yang bekerja di persimpangan antara edukasi, psikologi, dan teknologi. Selama lebih dari 10 tahun, saya mendampingi sekolah, keluarga, dan berbagai organisasi dalam merancang program yang tidak hanya berbasis teori, tetapi juga mempertimbangkan konteks lapangan dan kebutuhan nyata dari masing-masing pihak.
               </p>
               <p>
-                Fokus saya adalah pada literasi digital, pengasuhan berbasis data, dan pendekatan psikologi yang memahami kompleksitas manusia—khususnya anak dan remaja. Saya percaya bahwa pendidikan yang baik bukan hanya tentang transfer pengetahuan, tetapi juga tentang membangun lingkungan yang mendukung tumbuh kembang setiap individu secara utuh.
+                Fokus saya adalah pada literasi digital, pengasuhan berbasis data, dan pendekatan psikologi yang memahami kompleksitas manusia, khususnya anak dan remaja. Saya percaya bahwa pendidikan yang baik bukan hanya tentang transfer pengetahuan, tetapi juga tentang membangun lingkungan yang mendukung tumbuh kembang setiap individu secara utuh.
               </p>
               <p>
                 Latar belakang saya di bidang teknologi memberi saya perspektif praktis tentang bagaimana alat dan sistem bisa dirancang untuk mendukung proses edukasi. Namun, saya tidak pernah lupa bahwa di balik setiap sistem, ada manusia dengan kebutuhan, harapan, dan tantangan mereka sendiri.
@@ -76,7 +76,7 @@ export default function TentangSaya() {
             </h2>
             <div className="space-y-4 text-white/90 text-[16px] md:text-[18px] leading-relaxed">
               <p>
-                Saya pernah mengalami kecanduan game di masa remaja. Pengalaman ini memberi saya pemahaman langsung tentang bagaimana teknologi bisa menjadi pisau bermata dua—bisa sangat bermanfaat, tapi juga bisa membawa dampak negatif jika tidak dikelola dengan baik.
+                Saya pernah mengalami kecanduan game di masa remaja. Pengalaman ini memberi saya pemahaman langsung tentang bagaimana teknologi bisa menjadi pisau bermata dua: bisa sangat bermanfaat, tapi juga bisa membawa dampak negatif jika tidak dikelola dengan baik.
               </p>
               <p>
                 Dari pengalaman pribadi itu, saya belajar bahwa pendekatan yang menghakimi atau hanya berfokus pada larangan tidak efektif. Yang dibutuhkan adalah pendampingan yang empatik, pemahaman tentang kebutuhan psikologis di balik perilaku tersebut, dan solusi yang membantu individu menemukan keseimbangan mereka sendiri.
