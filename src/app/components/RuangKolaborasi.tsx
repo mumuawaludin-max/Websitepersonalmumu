@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import { ArrowRight, ChevronDown, ChevronUp, Video, MessageCircle, ExternalLink, FileText } from 'lucide-react';
+import { ArrowRight, ChevronDown, ChevronUp, Video, MessageCircle, ExternalLink, FileText, Star, Check, Target, Users, Sparkles, Calendar, MapPin } from 'lucide-react';
 import { eventsByYear, yearGradients } from './EventListData';
 import { waUrlForCategory } from '../lib/whatsapp';
 
@@ -168,7 +168,7 @@ export function RuangKolaborasi({
               return (
                 <>
                   {/* Header Modal */}
-                  <div className="sticky top-0 z-10 bg-white border-b border-gray-100 px-6 md:px-10 py-6">
+                  <div className="sticky top-0 z-10 bg-white border-b border-[#0a282e]/8 px-6 md:px-10 py-6">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-4">
                         <div
@@ -190,7 +190,7 @@ export function RuangKolaborasi({
                           setShowVideoPortfolio(false);
                           setShowTestimonials(false);
                         }}
-                        className="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors"
+                        className="w-10 h-10 rounded-full bg-[#0a282e]/8 hover:bg-[#0a282e]/15 flex items-center justify-center transition-colors"
                       >
                         <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -211,12 +211,12 @@ export function RuangKolaborasi({
                       <>
                         {/* "Why Different" Section - Lead with differentiation */}
                         {collab.whyDifferent && (
-                          <div className="mb-8 bg-gradient-to-br from-purple-50 via-pink-50 to-fuchsia-50 rounded-3xl p-6 md:p-8 border-2 border-purple-200 relative overflow-hidden">
-                            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-200/30 to-transparent rounded-full blur-3xl"></div>
+                          <div className="mb-8 bg-gradient-to-br from-[#f5ede1] via-[#f0e7d8] to-[#fffcf8] rounded-3xl p-6 md:p-8 border-2 border-[#dac5a7] relative overflow-hidden">
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#dac5a7]/30 to-transparent rounded-full blur-3xl"></div>
                             <div className="relative z-10">
                               <div className="flex items-center gap-3 mb-6">
-                                <div className="w-12 h-12 rounded-xl flex items-center justify-center text-[24px]" style={{ backgroundColor: collab.iconBg }}>
-                                  ✨
+                                <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: collab.iconBg }}>
+                                  <Sparkles className="w-6 h-6" style={{ color: collab.borderColor }} />
                                 </div>
                                 <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[20px] md:text-[24px]" style={{ color: collab.borderColor }}>
                                   {collab.whyDifferent.title}
@@ -224,7 +224,7 @@ export function RuangKolaborasi({
                               </div>
                               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
                                 {collab.whyDifferent.points.map((point, idx) => (
-                                  <div key={idx} className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 md:p-5 border border-purple-100">
+                                  <div key={idx} className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 md:p-5 border border-[#0a282e]/8">
                                     <div className="flex items-start gap-3">
                                       <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: collab.borderColor }}></div>
                                       <div>
@@ -253,10 +253,10 @@ export function RuangKolaborasi({
                           </p>
                           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
                             {collab.mentoringIssues.map((issue, idx) => (
-                              <div key={idx} className="bg-white rounded-2xl p-5 md:p-6 border-2 border-gray-100 hover:border-purple-200 transition-all">
+                              <div key={idx} className="bg-white rounded-2xl p-5 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all">
                                 <div className="flex items-center gap-2 mb-4">
                                   <div className="w-8 h-8 rounded-lg flex items-center justify-center text-[18px]" style={{ backgroundColor: collab.iconBg }}>
-                                    {idx === 0 ? '🎯' : idx === 1 ? '🔄' : '💬'}
+                                    <Target className="w-4 h-4" style={{ color: collab.borderColor }} />
                                   </div>
                                   <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[15px] text-[#0a282e]">
                                     {issue.category}
@@ -277,7 +277,7 @@ export function RuangKolaborasi({
 
                         {/* Process Section - Visual Timeline */}
                         {collab.mentoringProcess && (
-                          <div className="mb-8 bg-gradient-to-br from-purple-50 to-indigo-50 rounded-3xl p-6 md:p-8 border-2 border-purple-100">
+                          <div className="mb-8 bg-gradient-to-br from-[#f5ede1] to-[#fffcf8] rounded-3xl p-6 md:p-8 border-2 border-[#0a282e]/8">
                             <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] md:text-[22px] mb-3 text-[#0a282e]">
                               {collab.mentoringProcess.title}
                             </h3>
@@ -286,14 +286,14 @@ export function RuangKolaborasi({
                             </p>
                             <div className="space-y-5 md:space-y-6">
                               {collab.mentoringProcess.steps.map((step, idx) => (
-                                <div key={idx} className="bg-white/80 backdrop-blur-sm rounded-2xl p-5 md:p-6 border border-purple-100">
+                                <div key={idx} className="bg-white/80 backdrop-blur-sm rounded-2xl p-5 md:p-6 border border-[#0a282e]/8">
                                   <div className="flex gap-4">
                                     <div className="flex flex-col items-center flex-shrink-0">
                                       <div className="w-10 h-10 rounded-full flex items-center justify-center font-['Plus_Jakarta_Sans',sans-serif] font-bold text-white text-[16px]" style={{ backgroundColor: collab.borderColor }}>
                                         {idx + 1}
                                       </div>
                                       {idx < collab.mentoringProcess.steps.length - 1 && (
-                                        <div className="w-0.5 h-full min-h-[60px] bg-gradient-to-b from-purple-300 to-transparent mt-2"></div>
+                                        <div className="w-0.5 h-full min-h-[60px] bg-gradient-to-b from-[#dac5a7] to-transparent mt-2"></div>
                                       )}
                                     </div>
                                     <div className="flex-1">
@@ -301,7 +301,7 @@ export function RuangKolaborasi({
                                         {step.title}
                                       </h4>
                                       <div className="flex items-center gap-2 mb-3">
-                                        <span className="text-[12px] md:text-[13px] font-['Plus_Jakarta_Sans',sans-serif] font-semibold px-3 py-1 rounded-full bg-purple-100" style={{ color: collab.borderColor }}>
+                                        <span className="text-[12px] md:text-[13px] font-['Plus_Jakarta_Sans',sans-serif] font-semibold px-3 py-1 rounded-full bg-[#0a282e]/8" style={{ color: collab.borderColor }}>
                                           {step.detail}
                                         </span>
                                       </div>
@@ -311,7 +311,7 @@ export function RuangKolaborasi({
                                       <ul className="space-y-2">
                                         {step.features.map((feature, fIdx) => (
                                           <li key={fIdx} className="flex items-start gap-2 text-[#0a282e]/70 text-[12px] md:text-[13px] font-['Plus_Jakarta_Sans',sans-serif] leading-snug">
-                                            <span className="text-green-500 mt-0.5">✓</span>
+                                            <Check className="w-3.5 h-3.5 text-[#0a282e] mt-0.5 flex-shrink-0" />
                                             <span>{feature}</span>
                                           </li>
                                         ))}
@@ -326,10 +326,10 @@ export function RuangKolaborasi({
 
                         {/* Outcomes Section - Results focused */}
                         {collab.mentoringOutcomes && (
-                          <div className="mb-8 bg-gradient-to-br from-purple-50 to-fuchsia-50 rounded-3xl p-6 md:p-8 border-2 border-purple-100">
+                          <div className="mb-8 bg-gradient-to-br from-[#f5ede1] to-[#fffcf8] rounded-3xl p-6 md:p-8 border-2 border-[#0a282e]/8">
                             <div className="flex items-center gap-3 mb-6">
-                              <div className="w-12 h-12 rounded-xl flex items-center justify-center text-[24px]" style={{ backgroundColor: collab.iconBg }}>
-                                🎯
+                              <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: collab.iconBg }}>
+                                <Target className="w-6 h-6" style={{ color: collab.borderColor }} />
                               </div>
                               <div>
                                 <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] md:text-[22px] text-[#0a282e]">
@@ -342,9 +342,9 @@ export function RuangKolaborasi({
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                               {collab.mentoringOutcomes.map((outcome, idx) => (
-                                <div key={idx} className="flex items-start gap-3 bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-purple-100">
-                                  <div className="w-6 h-6 rounded-lg flex items-center justify-center text-[14px] flex-shrink-0" style={{ backgroundColor: collab.iconBg }}>
-                                    ✓
+                                <div key={idx} className="flex items-start gap-3 bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-[#0a282e]/8">
+                                  <div className="w-6 h-6 rounded-lg flex items-center justify-center flex-shrink-0" style={{ backgroundColor: collab.iconBg }}>
+                                    <Check className="w-3.5 h-3.5" style={{ color: collab.borderColor }} />
                                   </div>
                                   <span className="text-[#0a282e]/80 text-[13px] md:text-[14px] font-['Plus_Jakarta_Sans',sans-serif] leading-snug">
                                     {outcome}
@@ -363,7 +363,7 @@ export function RuangKolaborasi({
                             </h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
                               {collab.mentoringTestimonials.map((testimonial, idx) => (
-                                <div key={idx} className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-5 md:p-6 border-2 border-purple-100 relative">
+                                <div key={idx} className="bg-gradient-to-br from-[#f5ede1] to-[#fffcf8] rounded-2xl p-5 md:p-6 border-2 border-[#0a282e]/8 relative">
                                   <div className="flex items-start justify-between mb-4">
                                     <div className="flex items-center gap-2">
                                       <div className="w-10 h-10 rounded-full flex items-center justify-center font-['Plus_Jakarta_Sans',sans-serif] font-bold text-white text-[14px]" style={{ backgroundColor: collab.borderColor }}>
@@ -385,7 +385,7 @@ export function RuangKolaborasi({
                                   <p className="text-[#0a282e]/70 text-[13px] md:text-[14px] font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed mb-4 italic">
                                     "{testimonial.quote}"
                                   </p>
-                                  <div className="flex items-center justify-between pt-4 border-t border-purple-200">
+                                  <div className="flex items-center justify-between pt-4 border-t border-[#dac5a7]">
                                     <div className="flex items-center gap-1">
                                       {[...Array(5)].map((_, starIdx) => (
                                         <svg key={starIdx} className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" style={{ color: collab.borderColor }}>
@@ -408,12 +408,12 @@ export function RuangKolaborasi({
 
                     {/* HIGHLIGHT BOX - HANYA UNTUK NARASUMBER */}
                     {selectedCollab === 0 && (
-                      <div className="mb-8 bg-gradient-to-br from-teal-50 via-white to-teal-50 rounded-2xl border-2 border-teal-100 overflow-hidden">
+                      <div className="mb-8 bg-gradient-to-br from-[#f5ede1] via-white to-[#fffcf8] rounded-2xl border-2 border-[#0a282e]/8 overflow-hidden">
                         {/* Header dengan stats */}
-                        <div className="bg-gradient-to-r from-[#0a7c7c] to-[#0a5c5c] p-4 md:p-6 text-white">
+                        <div className="bg-gradient-to-r from-[#0a282e] to-[#1a5a66] p-4 md:p-6 text-white">
                           <div className="flex items-start gap-2 md:gap-3 mb-3 md:mb-4">
                             <div className="w-8 h-8 md:w-10 md:h-10 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                              <span className="text-lg md:text-2xl">⭐</span>
+                              <Star className="w-5 h-5 md:w-6 md:h-6 fill-white text-white" />
                             </div>
                             <div className="flex-1 min-w-0">
                               <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[20px] mb-1 leading-tight">
@@ -442,7 +442,7 @@ export function RuangKolaborasi({
                               <div className="relative">
                                 <div className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[22px] md:text-[28px] mb-0.5 leading-none">200+</div>
                                 <div className="text-[10px] md:text-[13px] text-white/90 leading-tight mb-1">Seminar & Pelatihan</div>
-                                <div className="text-[9px] md:text-[10px] text-white/70 font-['Plus_Jakarta_Sans',sans-serif] font-semibold leading-tight">👆 Klik untuk detail</div>
+                                <div className="text-[9px] md:text-[10px] text-white/70 font-['Plus_Jakarta_Sans',sans-serif] font-semibold leading-tight">Klik untuk detail</div>
                               </div>
                             </button>
                             <button
@@ -461,7 +461,7 @@ export function RuangKolaborasi({
                               <div className="relative">
                                 <div className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[22px] md:text-[28px] mb-0.5 leading-none">95%</div>
                                 <div className="text-[10px] md:text-[13px] text-white/90 leading-tight mb-1">Kepuasan Peserta</div>
-                                <div className="text-[9px] md:text-[10px] text-white/70 font-['Plus_Jakarta_Sans',sans-serif] font-semibold leading-tight">👆 Klik lihat testimoni</div>
+                                <div className="text-[9px] md:text-[10px] text-white/70 font-['Plus_Jakarta_Sans',sans-serif] font-semibold leading-tight">Klik lihat testimoni</div>
                               </div>
                             </button>
                           </div>
@@ -473,26 +473,15 @@ export function RuangKolaborasi({
                             Metode Penyelenggaraan
                           </h4>
                           <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
-                            {[
-                              { icon: '✨', label: 'Interaktif', color: 'from-teal-500 to-cyan-500' },
-                              { icon: '🎉', label: 'Fun', color: 'from-cyan-500 to-blue-500' },
-                              { icon: '🤝', label: 'Collaborative Learning', color: 'from-blue-500 to-indigo-500' },
-                              { icon: '🌐', label: 'Offline / Online', color: 'from-indigo-500 to-purple-500' },
-                              { icon: '📐', label: 'Understanding By Design', color: 'from-purple-500 to-pink-500' },
-                              { icon: '💭', label: 'Reflektif', color: 'from-pink-500 to-rose-500' },
-                            ].map((method, idx) => (
+                            {['Interaktif', 'Fun', 'Collaborative Learning', 'Offline / Online', 'Understanding By Design', 'Reflektif'].map((label, idx) => (
                               <div
                                 key={idx}
-                                className="group relative bg-white rounded-xl p-2 md:p-3 border border-teal-100 hover:border-teal-300 transition-all hover:shadow-md"
+                                className="group flex items-center gap-2.5 bg-white rounded-xl p-2.5 md:p-3 border border-[#0a282e]/8 hover:border-[#dac5a7] transition-all"
                               >
-                                <div className="flex items-center gap-1.5 md:gap-2">
-                                  <div className={`w-7 h-7 md:w-8 md:h-8 rounded-lg bg-gradient-to-br ${method.color} flex items-center justify-center text-white text-xs md:text-sm flex-shrink-0`}>
-                                    {method.icon}
-                                  </div>
-                                  <span className="text-[11px] md:text-[13px] font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[#0a282e] leading-tight">
-                                    {method.label}
-                                  </span>
-                                </div>
+                                <div className="w-2 h-2 rounded-full bg-[#dac5a7] flex-shrink-0" />
+                                <span className="text-[11px] md:text-[13px] font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[#0a282e] leading-tight">
+                                  {label}
+                                </span>
                               </div>
                             ))}
                           </div>
@@ -504,7 +493,7 @@ export function RuangKolaborasi({
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
                       {/* For Narasumber - Show Topics by Category */}
                       {collab.topics && Object.entries(collab.topics).map(([category, items], idx) => (
-                        <div key={idx} className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-5 border border-gray-100">
+                        <div key={idx} className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl p-5 border border-[#0a282e]/8">
                           <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] mb-4" style={{ color: collab.borderColor }}>
                             {category}
                           </h4>
@@ -523,7 +512,7 @@ export function RuangKolaborasi({
                       {collab.clients && (
                         <>
                           {Object.entries(collab.clients).map(([category, items], idx) => (
-                            <div key={idx} className="bg-gradient-to-br from-white to-gray-50/50 rounded-3xl p-6 border border-white/80 shadow-sm backdrop-blur-sm">
+                            <div key={idx} className="bg-gradient-to-br from-white to-[#fffcf8] rounded-3xl p-6 border border-white/80 shadow-sm backdrop-blur-sm">
                               <div className="flex items-center gap-2.5 mb-5">
                                 <div className="w-1 h-7 rounded-full" style={{ backgroundColor: collab.borderColor }}></div>
                                 <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[16px] md:text-[17px]" style={{ color: collab.borderColor }}>
@@ -544,9 +533,9 @@ export function RuangKolaborasi({
                                         {item.links.map((link, linkIdx) => (
                                           <div key={linkIdx}>
                                             {link.type === 'video' ? (
-                                              <div className="bg-gradient-to-br from-gray-50 to-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-all">
+                                              <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-xl overflow-hidden border border-[#0a282e]/8 shadow-sm hover:shadow-lg transition-all">
                                                 <a href={link.url} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="block">
-                                                  <div className="relative aspect-video bg-gray-100 group/video cursor-pointer">
+                                                  <div className="relative aspect-video bg-[#0a282e]/8 group/video cursor-pointer">
                                                     <img
                                                       src={`https://img.youtube.com/vi/${link.url.match(/(?:youtu\.be\/|youtube\.com(?:\/embed\/|\/v\/|\/watch\?v=|\/watch\?.+&v=))([^\/&?]+)/)?.[1]}/maxresdefault.jpg`}
                                                       alt="Video Thumbnail"
@@ -572,7 +561,7 @@ export function RuangKolaborasi({
                                               </div>
                                             ) : (
                                               <a href={link.url} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="block">
-                                                <div className="bg-gradient-to-r from-blue-50/90 to-indigo-50/90 rounded-xl p-4 border border-blue-100/50 hover:border-blue-200 hover:shadow-md transition-all group/article">
+                                                <div className="bg-gradient-to-r from-[#f5ede1] to-[#fffcf8] rounded-xl p-4 border border-[#0a282e]/8 hover:border-[#dac5a7] hover:shadow-md transition-all group/article">
                                                   <div className="flex items-center gap-3">
                                                     <div className="w-11 h-11 rounded-lg bg-white flex items-center justify-center flex-shrink-0 shadow-sm">
                                                       <FileText className="w-5 h-5" style={{ color: collab.borderColor }} />
@@ -597,7 +586,7 @@ export function RuangKolaborasi({
                           ))}
                           
                           {collab.services && (
-                            <div className="bg-gradient-to-br from-white to-gray-50/50 rounded-3xl p-6 border border-white/80 shadow-sm backdrop-blur-sm">
+                            <div className="bg-gradient-to-br from-white to-[#fffcf8] rounded-3xl p-6 border border-white/80 shadow-sm backdrop-blur-sm">
                               <div className="flex items-center gap-2.5 mb-5">
                                 <div className="w-1 h-7 rounded-full" style={{ backgroundColor: collab.borderColor }}></div>
                                 <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[16px] md:text-[17px]" style={{ color: collab.borderColor }}>
@@ -619,7 +608,7 @@ export function RuangKolaborasi({
 
                       {/* For Software Development & Creative Consultation - Show Services */}
                       {!collab.topics && !collab.clients && collab.services && (
-                        <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-5 border border-gray-100 md:col-span-2 lg:col-span-3">
+                        <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl p-5 border border-[#0a282e]/8 md:col-span-2 lg:col-span-3">
                           <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] mb-4" style={{ color: collab.borderColor }}>
                             Apa saja yang bisa saya bantu.
                           </h4>
@@ -644,7 +633,7 @@ export function RuangKolaborasi({
                             e.stopPropagation();
                             setShowVideoPortfolio(!showVideoPortfolio);
                           }}
-                          className="w-full bg-gradient-to-r from-[#0a7c7c] to-[#0a5c5c] hover:from-[#0a5c5c] hover:to-[#0a7c7c] text-white rounded-2xl p-6 transition-all duration-300 hover:shadow-lg"
+                          className="w-full bg-gradient-to-r from-[#0a282e] to-[#1a5a66] hover:from-[#1a5a66] hover:to-[#0a282e] text-white rounded-2xl p-6 transition-all duration-300 hover:shadow-lg"
                         >
                           <div className="flex items-center justify-between">
                             <div className="flex items-center gap-4">
@@ -674,9 +663,9 @@ export function RuangKolaborasi({
                         {showVideoPortfolio && (
                           <div className="mt-6 space-y-6 animate-in fade-in slide-in-from-top-4 duration-500">
                             {/* Video 1 */}
-                            <div className="bg-gradient-to-br from-teal-50 to-white rounded-2xl overflow-hidden border-2 border-teal-100 hover:border-teal-200 transition-all">
+                            <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl overflow-hidden border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all">
                               <div className="grid md:grid-cols-2 gap-4">
-                                <div className="aspect-[9/16] max-h-[400px] bg-gray-100">
+                                <div className="aspect-[9/16] max-h-[400px] bg-[#0a282e]/8">
                                   <iframe
                                     src="https://www.instagram.com/reel/DPfW7TQkx9X/embed"
                                     className="w-full h-full"
@@ -687,8 +676,8 @@ export function RuangKolaborasi({
                                   />
                                 </div>
                                 <div className="p-6 flex flex-col justify-center">
-                                  <div className="inline-flex items-center gap-2 text-teal-700 bg-teal-100 px-3 py-1 rounded-full text-xs font-semibold mb-3 w-fit">
-                                    <span className="w-2 h-2 bg-teal-500 rounded-full animate-pulse" />
+                                  <div className="inline-flex items-center gap-2 text-[#0a282e] bg-[#0a282e]/8 px-3 py-1 rounded-full text-xs font-semibold mb-3 w-fit">
+                                    <span className="w-2 h-2 bg-[#0a282e] rounded-full animate-pulse" />
                                     Instagram Reel
                                   </div>
                                   <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] text-[#0a282e] mb-2">
@@ -702,9 +691,9 @@ export function RuangKolaborasi({
                             </div>
 
                             {/* Video 2 */}
-                            <div className="bg-gradient-to-br from-cyan-50 to-white rounded-2xl overflow-hidden border-2 border-cyan-100 hover:border-cyan-200 transition-all">
+                            <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl overflow-hidden border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all">
                               <div className="grid md:grid-cols-2 gap-4">
-                                <div className="aspect-[9/16] max-h-[400px] bg-gray-100">
+                                <div className="aspect-[9/16] max-h-[400px] bg-[#0a282e]/8">
                                   <iframe
                                     src="https://www.instagram.com/reel/DCbxsxCPSLK/embed"
                                     className="w-full h-full"
@@ -715,8 +704,8 @@ export function RuangKolaborasi({
                                   />
                                 </div>
                                 <div className="p-6 flex flex-col justify-center">
-                                  <div className="inline-flex items-center gap-2 text-cyan-700 bg-cyan-100 px-3 py-1 rounded-full text-xs font-semibold mb-3 w-fit">
-                                    <span className="w-2 h-2 bg-cyan-500 rounded-full animate-pulse" />
+                                  <div className="inline-flex items-center gap-2 text-[#0a282e] bg-[#0a282e]/8 px-3 py-1 rounded-full text-xs font-semibold mb-3 w-fit">
+                                    <span className="w-2 h-2 bg-[#0a282e] rounded-full animate-pulse" />
                                     Instagram Reel
                                   </div>
                                   <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] text-[#0a282e] mb-2">
@@ -730,10 +719,10 @@ export function RuangKolaborasi({
                             </div>
 
                             {/* Video 3 - YouTube */}
-                            <div className="bg-gradient-to-br from-rose-50 to-white rounded-2xl overflow-hidden border-2 border-rose-100 hover:border-rose-200 transition-all">
+                            <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl overflow-hidden border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all">
                               <div className="p-4">
-                                <div className="inline-flex items-center gap-2 text-rose-700 bg-rose-100 px-3 py-1.5 rounded-full text-xs font-semibold mb-3">
-                                  <span className="w-2 h-2 bg-rose-500 rounded-full animate-pulse" />
+                                <div className="inline-flex items-center gap-2 text-[#0a282e] bg-[#0a282e]/8 px-3 py-1.5 rounded-full text-xs font-semibold mb-3">
+                                  <span className="w-2 h-2 bg-[#0a282e] rounded-full animate-pulse" />
                                   YouTube
                                 </div>
                                 <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] text-[#0a282e] mb-2">
@@ -743,7 +732,7 @@ export function RuangKolaborasi({
                                   Deep dive session tentang self-awareness dan emotional intelligence. Pelajari cara mengenali pola emosi, memahami trigger, dan teknik praktis mengelola emosi untuk well-being yang lebih baik.
                                 </p>
                               </div>
-                              <div className="aspect-video bg-gray-100">
+                              <div className="aspect-video bg-[#0a282e]/8">
                                 <iframe
                                   src="https://www.youtube.com/embed/fQqpG5YQDPY?start=2783"
                                   className="w-full h-full"
@@ -755,9 +744,9 @@ export function RuangKolaborasi({
                             </div>
 
                             {/* Video 4 */}
-                            <div className="bg-gradient-to-br from-purple-50 to-white rounded-2xl overflow-hidden border-2 border-purple-100 hover:border-purple-200 transition-all">
+                            <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl overflow-hidden border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all">
                               <div className="grid md:grid-cols-2 gap-4">
-                                <div className="aspect-[9/16] max-h-[400px] bg-gray-100">
+                                <div className="aspect-[9/16] max-h-[400px] bg-[#0a282e]/8">
                                   <iframe
                                     src="https://www.instagram.com/reel/DA-vr-lxOlU/embed"
                                     className="w-full h-full"
@@ -768,8 +757,8 @@ export function RuangKolaborasi({
                                   />
                                 </div>
                                 <div className="p-6 flex flex-col justify-center">
-                                  <div className="inline-flex items-center gap-2 text-purple-700 bg-purple-100 px-3 py-1 rounded-full text-xs font-semibold mb-3 w-fit">
-                                    <span className="w-2 h-2 bg-purple-500 rounded-full animate-pulse" />
+                                  <div className="inline-flex items-center gap-2 text-[#0a282e] bg-[#0a282e]/8 px-3 py-1 rounded-full text-xs font-semibold mb-3 w-fit">
+                                    <span className="w-2 h-2 bg-[#0a282e] rounded-full animate-pulse" />
                                     Instagram Reel
                                   </div>
                                   <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] text-[#0a282e] mb-2">
@@ -785,7 +774,7 @@ export function RuangKolaborasi({
                             {/* Video 5 */}
                             <div className="bg-gradient-to-br from-amber-50 to-white rounded-2xl overflow-hidden border-2 border-amber-100 hover:border-amber-200 transition-all">
                               <div className="grid md:grid-cols-2 gap-4">
-                                <div className="aspect-[9/16] max-h-[400px] bg-gray-100">
+                                <div className="aspect-[9/16] max-h-[400px] bg-[#0a282e]/8">
                                   <iframe
                                     src="https://www.instagram.com/p/C2a_jAwSQEm/embed"
                                     className="w-full h-full"
@@ -813,7 +802,7 @@ export function RuangKolaborasi({
                             {/* Video 6 */}
                             <div className="bg-gradient-to-br from-emerald-50 to-white rounded-2xl overflow-hidden border-2 border-emerald-100 hover:border-emerald-200 transition-all">
                               <div className="grid md:grid-cols-2 gap-4">
-                                <div className="aspect-[9/16] max-h-[400px] mx-auto bg-gray-100" style={{ maxWidth: '400px' }}>
+                                <div className="aspect-[9/16] max-h-[400px] mx-auto bg-[#0a282e]/8" style={{ maxWidth: '400px' }}>
                                   <iframe
                                     src="https://www.instagram.com/reel/DLUx7wiTOO9/embed"
                                     className="w-full h-full"
@@ -851,7 +840,7 @@ export function RuangKolaborasi({
                             e.stopPropagation();
                             setShowTestimonials(!showTestimonials);
                           }}
-                          className="w-full bg-gradient-to-r from-[#0a7c7c] to-[#0a5c5c] hover:from-[#0a5c5c] hover:to-[#0a7c7c] text-white rounded-2xl p-6 transition-all duration-300 hover:shadow-lg"
+                          className="w-full bg-gradient-to-r from-[#0a282e] to-[#1a5a66] hover:from-[#1a5a66] hover:to-[#0a282e] text-white rounded-2xl p-6 transition-all duration-300 hover:shadow-lg"
                         >
                           <div className="flex items-center justify-between">
                             <div className="flex items-center gap-4">
@@ -882,86 +871,86 @@ export function RuangKolaborasi({
                           <div className="mt-6 space-y-4 animate-in fade-in slide-in-from-top-4 duration-500">
                             {/* PARENTS TESTIMONIALS */}
                             <div className="mb-6">
-                              <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] md:text-[20px] text-[#0a7c7c] mb-4 flex items-center gap-2">
-                                <span className="text-2xl">👨‍👩‍👧‍👦</span> Parents Testimonials
+                              <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] md:text-[20px] text-[#0a282e] mb-4 flex items-center gap-2">
+                                Parents Testimonials
                               </h4>
                               
                               <div className="grid md:grid-cols-2 gap-4">
                                 {/* Testimonial Parents 1 */}
-                                <div className="bg-gradient-to-br from-teal-50 to-white rounded-2xl p-5 md:p-6 border-2 border-teal-100 hover:border-teal-200 transition-all hover:shadow-lg group">
+                                <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl p-5 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all hover:shadow-lg group">
                                   <div className="flex gap-3 mb-4">
-                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-teal-400 to-cyan-500 flex items-center justify-center text-white text-xl flex-shrink-0 group-hover:scale-110 transition-transform">"</div>
+                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#0a282e] to-[#1a5a66] flex items-center justify-center text-white text-xl flex-shrink-0 group-hover:scale-110 transition-transform">"</div>
                                     <div>
-                                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-100 text-teal-700 text-xs font-semibold mb-2">
+                                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0a282e]/8 text-[#0a282e] text-xs font-semibold mb-2">
                                         Testimoni Parents
                                       </div>
                                       <div className="flex gap-0.5 mb-2">
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
                                       </div>
                                       <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed italic">
-                                        <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">Sangat interaktif, seru gaya pembawaannya, sesuai realita.</span> Tema dan materinya sesuai dengan realita sehari-hari, dan <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">pembahasan materinya sangat solutif.</span>
+                                        <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a282e] not-italic">Sangat interaktif, seru gaya pembawaannya, sesuai realita.</span> Tema dan materinya sesuai dengan realita sehari-hari, dan <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a282e] not-italic">pembahasan materinya sangat solutif.</span>
                                       </p>
                                     </div>
                                   </div>
-                                  <div className="ml-13 pt-3 border-t border-teal-100">
+                                  <div className="ml-13 pt-3 border-t border-[#0a282e]/8">
                                     <p className="text-xs md:text-[13px] text-[#0a282e]/60 font-['Plus_Jakarta_Sans',sans-serif] font-semibold">
-                                      Orangtua Kelas 5C – SD An Nahl Islamic School
+                                      Orangtua Kelas 5C - SD An Nahl Islamic School
                                     </p>
                                   </div>
                                 </div>
 
                                 {/* Testimonial Parents 2 */}
-                                <div className="bg-gradient-to-br from-cyan-50 to-white rounded-2xl p-5 md:p-6 border-2 border-cyan-100 hover:border-cyan-200 transition-all hover:shadow-lg group">
+                                <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl p-5 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all hover:shadow-lg group">
                                   <div className="flex gap-3 mb-4">
-                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center text-white text-xl flex-shrink-0 group-hover:scale-110 transition-transform">"</div>
+                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#0a282e] to-[#1a5a66] flex items-center justify-center text-white text-xl flex-shrink-0 group-hover:scale-110 transition-transform">"</div>
                                     <div>
-                                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-100 text-cyan-700 text-xs font-semibold mb-2">
+                                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0a282e]/8 text-[#0a282e] text-xs font-semibold mb-2">
                                         Testimoni Parents
                                       </div>
                                       <div className="flex gap-0.5 mb-2">
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
                                       </div>
                                       <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed italic">
-                                        <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">Satu-satunya workshop yang pernah diikuti, nggak ngebosenin.</span>
+                                        <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a282e] not-italic">Satu-satunya workshop yang pernah diikuti, nggak ngebosenin.</span>
                                       </p>
                                     </div>
                                   </div>
-                                  <div className="ml-13 pt-3 border-t border-cyan-100">
+                                  <div className="ml-13 pt-3 border-t border-[#0a282e]/8">
                                     <p className="text-xs md:text-[13px] text-[#0a282e]/60 font-['Plus_Jakarta_Sans',sans-serif] font-semibold">
-                                      Orangtua Kelas 3B – SD An Nahl Islamic School
+                                      Orangtua Kelas 3B - SD An Nahl Islamic School
                                     </p>
                                   </div>
                                 </div>
 
                                 {/* Testimonial Parents 3 */}
-                                <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-5 md:p-6 border-2 border-blue-100 hover:border-blue-200 transition-all hover:shadow-lg group">
+                                <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl p-5 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all hover:shadow-lg group">
                                   <div className="flex gap-3 mb-4">
-                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-indigo-500 flex items-center justify-center text-white text-xl flex-shrink-0 group-hover:scale-110 transition-transform">"</div>
+                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#0a282e] to-[#1a5a66] flex items-center justify-center text-white text-xl flex-shrink-0 group-hover:scale-110 transition-transform">"</div>
                                     <div>
-                                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-semibold mb-2">
+                                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0a282e]/8 text-[#0a282e] text-xs font-semibold mb-2">
                                         Testimoni Parents
                                       </div>
                                       <div className="flex gap-0.5 mb-2">
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
                                       </div>
                                       <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed italic">
-                                        Dengan mengikuti parenting Kak Mumu, <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">perasaan jadi lebih lega dan merasa beban berkurang</span>, karena materinya <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">benar-benar yang kami alami sehari-hari.</span>
+                                        Dengan mengikuti parenting Kak Mumu, <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a282e] not-italic">perasaan jadi lebih lega dan merasa beban berkurang</span>, karena materinya <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a282e] not-italic">benar-benar yang kami alami sehari-hari.</span>
                                       </p>
                                     </div>
                                   </div>
-                                  <div className="ml-13 pt-3 border-t border-blue-100">
+                                  <div className="ml-13 pt-3 border-t border-[#0a282e]/8">
                                     <p className="text-xs md:text-[13px] text-[#0a282e]/60 font-['Plus_Jakarta_Sans',sans-serif] font-semibold">
                                       Orangtua SMP Al Muslim Tambun
                                     </p>
@@ -969,55 +958,55 @@ export function RuangKolaborasi({
                                 </div>
 
                                 {/* Testimonial Parents 4 */}
-                                <div className="bg-gradient-to-br from-indigo-50 to-white rounded-2xl p-5 md:p-6 border-2 border-indigo-100 hover:border-indigo-200 transition-all hover:shadow-lg group">
+                                <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl p-5 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all hover:shadow-lg group">
                                   <div className="flex gap-3 mb-4">
-                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center text-white text-xl flex-shrink-0 group-hover:scale-110 transition-transform">"</div>
+                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#0a282e] to-[#1a5a66] flex items-center justify-center text-white text-xl flex-shrink-0 group-hover:scale-110 transition-transform">"</div>
                                     <div>
-                                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-semibold mb-2">
+                                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0a282e]/8 text-[#0a282e] text-xs font-semibold mb-2">
                                         Testimoni Parents
                                       </div>
                                       <div className="flex gap-0.5 mb-2">
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
                                       </div>
                                       <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed italic">
-                                        Kak Mumu itu <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">komunikatif, interaktif, dan solutif</span>. <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">Membuka pemahaman baru tentang bagaimana cara memahami sifat anak.</span>
+                                        Kak Mumu itu <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a282e] not-italic">komunikatif, interaktif, dan solutif</span>. <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a282e] not-italic">Membuka pemahaman baru tentang bagaimana cara memahami sifat anak.</span>
                                       </p>
                                     </div>
                                   </div>
-                                  <div className="ml-13 pt-3 border-t border-indigo-100">
+                                  <div className="ml-13 pt-3 border-t border-[#0a282e]/8">
                                     <p className="text-xs md:text-[13px] text-[#0a282e]/60 font-['Plus_Jakarta_Sans',sans-serif] font-semibold">
-                                      Orangtua Kelas 7 – MTs Yanuri
+                                      Orangtua Kelas 7 - MTs Yanuri
                                     </p>
                                   </div>
                                 </div>
 
                                 {/* Testimonial Parents 5 */}
-                                <div className="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-5 md:p-6 border-2 border-purple-100 hover:border-purple-200 transition-all hover:shadow-lg group md:col-span-2">
+                                <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl p-5 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all hover:shadow-lg group md:col-span-2">
                                   <div className="flex gap-3 mb-4">
-                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center text-white text-xl flex-shrink-0 group-hover:scale-110 transition-transform">"</div>
+                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#0a282e] to-[#1a5a66] flex items-center justify-center text-white text-xl flex-shrink-0 group-hover:scale-110 transition-transform">"</div>
                                     <div>
-                                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-xs font-semibold mb-2">
+                                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0a282e]/8 text-[#0a282e] text-xs font-semibold mb-2">
                                         Testimoni Parents
                                       </div>
                                       <div className="flex gap-0.5 mb-2">
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
                                       </div>
                                       <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed italic">
-                                        <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">Penjelasan dan penyampaiannya sangat logis</span> dan <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">menjadi masukan yang bagus untuk kami para orang tua.</span>
+                                        <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a282e] not-italic">Penjelasan dan penyampaiannya sangat logis</span> dan <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a282e] not-italic">menjadi masukan yang bagus untuk kami para orang tua.</span>
                                       </p>
                                     </div>
                                   </div>
-                                  <div className="ml-13 pt-3 border-t border-purple-100">
+                                  <div className="ml-13 pt-3 border-t border-[#0a282e]/8">
                                     <p className="text-xs md:text-[13px] text-[#0a282e]/60 font-['Plus_Jakarta_Sans',sans-serif] font-semibold">
-                                      Orangtua Kelas 6 – SD Manaaratul Islami
+                                      Orangtua Kelas 6 - SD Manaaratul Islami
                                     </p>
                                   </div>
                                 </div>
@@ -1026,32 +1015,32 @@ export function RuangKolaborasi({
 
                             {/* TEACHERS TESTIMONIALS */}
                             <div>
-                              <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] md:text-[20px] text-[#0a7c7c] mb-4 flex items-center gap-2">
-                                <span className="text-2xl">👨‍🏫</span> Teachers Testimonials
+                              <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] md:text-[20px] text-[#0a282e] mb-4 flex items-center gap-2">
+                                Teachers Testimonials
                               </h4>
                               
                               <div className="grid md:grid-cols-2 gap-4">
                                 {/* Testimonial Teachers 1 */}
-                                <div className="bg-gradient-to-br from-rose-50 to-white rounded-2xl p-5 md:p-6 border-2 border-rose-100 hover:border-rose-200 transition-all hover:shadow-lg group md:col-span-2">
+                                <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl p-5 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all hover:shadow-lg group md:col-span-2">
                                   <div className="flex gap-3 mb-4">
-                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-rose-400 to-red-500 flex items-center justify-center text-white text-xl flex-shrink-0 group-hover:scale-110 transition-transform">"</div>
+                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#0a282e] to-red-500 flex items-center justify-center text-white text-xl flex-shrink-0 group-hover:scale-110 transition-transform">"</div>
                                     <div>
-                                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-100 text-rose-700 text-xs font-semibold mb-2">
+                                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0a282e]/8 text-[#0a282e] text-xs font-semibold mb-2">
                                         Testimoni Teachers
                                       </div>
                                       <div className="flex gap-0.5 mb-2">
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
                                       </div>
                                       <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed italic">
-                                        <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">Lebih menghargai diri sendiri.</span> Dalam penyampaian, <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">Kak Mumu tidak menghakimi sama sekali.</span> Apalagi pada sesi ketika saya tidak bisa menjawab pertanyaan tentang komunikasi asertif, karena: pertanyaan yang diajukan sangat relate dengan diri saya, dan kebanyakan tidak diberi kesempatan untuk menyampaikan pendapat pribadi mengenai sesuatu yang sudah diberikan oleh atasan. <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">Pikiran jadi lebih positif, lebih 'up', tahu cara mengontrol stres, dan tahu cara mengatasi emosi.</span>
+                                        <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a282e] not-italic">Lebih menghargai diri sendiri.</span> Dalam penyampaian, <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a282e] not-italic">Kak Mumu tidak menghakimi sama sekali.</span> Apalagi pada sesi ketika saya tidak bisa menjawab pertanyaan tentang komunikasi asertif, karena: pertanyaan yang diajukan sangat relate dengan diri saya, dan kebanyakan tidak diberi kesempatan untuk menyampaikan pendapat pribadi mengenai sesuatu yang sudah diberikan oleh atasan. <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a282e] not-italic">Pikiran jadi lebih positif, lebih 'up', tahu cara mengontrol stres, dan tahu cara mengatasi emosi.</span>
                                       </p>
                                     </div>
                                   </div>
-                                  <div className="ml-13 pt-3 border-t border-rose-100">
+                                  <div className="ml-13 pt-3 border-t border-[#0a282e]/8">
                                     <p className="text-xs md:text-[13px] text-[#0a282e]/60 font-['Plus_Jakarta_Sans',sans-serif] font-semibold">
                                       Guru di TK Assalaam Bandung
                                     </p>
@@ -1067,14 +1056,14 @@ export function RuangKolaborasi({
                                         Testimoni Teachers
                                       </div>
                                       <div className="flex gap-0.5 mb-2">
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
                                       </div>
                                       <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed italic">
-                                        Kak Mumu <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">memberikan penjelasan serta contoh nyata yang sangat related dengan kondisi saat ini</span>, bahkan kondisi masa lalu yang dialami pendengar. Beliau juga <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">menyampaikan solusi konkret</span> sehingga dapat tergambar oleh pendengar apa yang harus dilakukan.
+                                        Kak Mumu <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a282e] not-italic">memberikan penjelasan serta contoh nyata yang sangat related dengan kondisi saat ini</span>, bahkan kondisi masa lalu yang dialami pendengar. Beliau juga <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a282e] not-italic">menyampaikan solusi konkret</span> sehingga dapat tergambar oleh pendengar apa yang harus dilakukan.
                                       </p>
                                     </div>
                                   </div>
@@ -1088,20 +1077,20 @@ export function RuangKolaborasi({
                                 {/* Testimonial Teachers 3 */}
                                 <div className="bg-gradient-to-br from-amber-50 to-white rounded-2xl p-5 md:p-6 border-2 border-amber-100 hover:border-amber-200 transition-all hover:shadow-lg group">
                                   <div className="flex gap-3 mb-4">
-                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-400 to-yellow-500 flex items-center justify-center text-white text-xl flex-shrink-0 group-hover:scale-110 transition-transform">"</div>
+                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-400 to-[#1a5a66] flex items-center justify-center text-white text-xl flex-shrink-0 group-hover:scale-110 transition-transform">"</div>
                                     <div>
                                       <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-xs font-semibold mb-2">
                                         Testimoni Teachers
                                       </div>
                                       <div className="flex gap-0.5 mb-2">
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
                                       </div>
                                       <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed italic">
-                                        Alhamdulillah, <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">Kak Mumu menjelaskannya dengan sangat detail</span> dan juga <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">memberikan beberapa gambaran sebagai contoh</span>. Menurut saya pribadi, <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">penjelasan dari Kak Mumu mudah diterima dan dipahami.</span>
+                                        Alhamdulillah, <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a282e] not-italic">Kak Mumu menjelaskannya dengan sangat detail</span> dan juga <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a282e] not-italic">memberikan beberapa gambaran sebagai contoh</span>. Menurut saya pribadi, <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a282e] not-italic">penjelasan dari Kak Mumu mudah diterima dan dipahami.</span>
                                       </p>
                                     </div>
                                   </div>
@@ -1115,20 +1104,20 @@ export function RuangKolaborasi({
                                 {/* Testimonial Teachers 4 */}
                                 <div className="bg-gradient-to-br from-emerald-50 to-white rounded-2xl p-5 md:p-6 border-2 border-emerald-100 hover:border-emerald-200 transition-all hover:shadow-lg group md:col-span-2">
                                   <div className="flex gap-3 mb-4">
-                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-400 to-green-500 flex items-center justify-center text-white text-xl flex-shrink-0 group-hover:scale-110 transition-transform">"</div>
+                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-400 to-[#1a5a66] flex items-center justify-center text-white text-xl flex-shrink-0 group-hover:scale-110 transition-transform">"</div>
                                     <div>
                                       <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-xs font-semibold mb-2">
                                         Testimoni Teachers
                                       </div>
                                       <div className="flex gap-0.5 mb-2">
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
-                                        <span className="text-yellow-400 text-sm">⭐</span>
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
+                                        <Star className="w-3.5 h-3.5 fill-[#dac5a7] text-[#dac5a7]" />
                                       </div>
                                       <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed italic">
-                                        Saya merasa paparan yang disampaikan oleh Kak Mumu <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">amat sangat bermanfaat dan relate dengan keadaan saat ini</span>. Hal ini <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">membuat saya merasa terbantu mengenai bagaimana cara menangani dan memvalidasi perasaan peserta didik dengan tepat dan baik</span>, sehingga mereka tidak merasa dihakimi oleh gurunya, karena kita juga tidak tahu bagaimana kondisi ananda di rumah.
+                                        Saya merasa paparan yang disampaikan oleh Kak Mumu <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a282e] not-italic">amat sangat bermanfaat dan relate dengan keadaan saat ini</span>. Hal ini <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a282e] not-italic">membuat saya merasa terbantu mengenai bagaimana cara menangani dan memvalidasi perasaan peserta didik dengan tepat dan baik</span>, sehingga mereka tidak merasa dihakimi oleh gurunya, karena kita juga tidak tahu bagaimana kondisi ananda di rumah.
                                       </p>
                                     </div>
                                   </div>
@@ -1179,11 +1168,11 @@ export function RuangKolaborasi({
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header Modal */}
-            <div className="sticky top-0 z-10 bg-gradient-to-r from-[#0a7c7c] to-[#0a5c5c] px-4 md:px-10 py-5 md:py-6 rounded-t-3xl">
+            <div className="sticky top-0 z-10 bg-gradient-to-r from-[#0a282e] to-[#1a5a66] px-4 md:px-10 py-5 md:py-6 rounded-t-3xl">
               <div className="flex items-center justify-between gap-3">
                 <div className="flex items-center gap-3 md:gap-4 min-w-0 flex-1">
                   <div className="w-12 h-12 md:w-14 md:h-14 rounded-lg md:rounded-xl bg-white/20 flex items-center justify-center backdrop-blur-sm flex-shrink-0">
-                    <span className="text-2xl md:text-3xl">📅</span>
+                    <Calendar className="w-6 h-6 md:w-7 md:h-7 text-white" />
                   </div>
                   <div className="min-w-0 flex-1">
                     <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[16px] md:text-[28px] text-white leading-tight">
@@ -1211,7 +1200,7 @@ export function RuangKolaborasi({
               {eventsByYear[2026] && (
                 <div className="mb-10">
                   <div className={`inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r ${yearGradients[2026].gradient} text-white rounded-full font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[16px] md:text-[18px] mb-6`}>
-                    <span>📆</span> 2026
+                    <Calendar className="w-4 h-4" /> 2026
                   </div>
                   
                   <div className="space-y-3 md:space-y-4">
@@ -1220,11 +1209,10 @@ export function RuangKolaborasi({
                         key={idx}
                         className={`bg-gradient-to-br ${event.gradient} rounded-xl md:rounded-2xl p-4 md:p-6 border-2 ${event.border} transition-all`}
                       >
-                        <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 leading-snug">
+                        <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a282e] mb-2 md:mb-3 leading-snug">
                           {event.title}
                         </h4>
-                        <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
-                          📍 {event.location}
+                        <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed flex items-start gap-1.5"><MapPin className="w-3.5 h-3.5 mt-0.5 flex-shrink-0 text-[#dac5a7]" /> {event.location}
                         </p>
                       </div>
                     ))}
@@ -1234,78 +1222,71 @@ export function RuangKolaborasi({
 
               {/* 2025 Events */}
               <div className="mb-10">
-                <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-teal-500 to-cyan-500 text-white rounded-full font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[16px] md:text-[18px] mb-6">
-                  <span>📆</span> 2025
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#0a282e] to-[#1a5a66] text-white rounded-full font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[16px] md:text-[18px] mb-6">
+                  <Calendar className="w-4 h-4" /> 2025
                 </div>
                 
                 <div className="space-y-3 md:space-y-4">
                   {/* Event 1 */}
-                  <div className="bg-gradient-to-br from-teal-50 to-white rounded-xl md:rounded-2xl p-4 md:p-6 border-2 border-teal-100 hover:border-teal-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 group-hover:text-[#0a5c5c] transition-colors leading-snug">
+                  <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-xl md:rounded-2xl p-4 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all group">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a282e] mb-2 md:mb-3 group-hover:text-[#1a5a66] transition-colors leading-snug">
                       Seminar parenting: membangun karakter changemaker di sekolah dan di rumah
                     </h4>
-                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
-                      📍 SD An Nahl, SD Manaaratul Iman, Hayat School, MTs Yanuri
+                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed flex items-start gap-1.5"><MapPin className="w-3.5 h-3.5 mt-0.5 flex-shrink-0 text-[#dac5a7]" /> SD An Nahl, SD Manaaratul Iman, Hayat School, MTs Yanuri
                     </p>
                   </div>
 
                   {/* Event 2 */}
-                  <div className="bg-gradient-to-br from-cyan-50 to-white rounded-xl md:rounded-2xl p-4 md:p-6 border-2 border-cyan-100 hover:border-cyan-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 group-hover:text-[#0a5c5c] transition-colors leading-snug">
+                  <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-xl md:rounded-2xl p-4 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all group">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a282e] mb-2 md:mb-3 group-hover:text-[#1a5a66] transition-colors leading-snug">
                       Seminar parenting: membangun koneksi emosional dengan remaja
                     </h4>
-                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
-                      📍 SMPIT Al Muslim Tambun
+                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed flex items-start gap-1.5"><MapPin className="w-3.5 h-3.5 mt-0.5 flex-shrink-0 text-[#dac5a7]" /> SMPIT Al Muslim Tambun
                     </p>
                   </div>
 
                   {/* Event 3 */}
-                  <div className="bg-gradient-to-br from-blue-50 to-white rounded-xl md:rounded-2xl p-4 md:p-6 border-2 border-blue-100 hover:border-blue-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 group-hover:text-[#0a5c5c] transition-colors leading-snug">
+                  <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-xl md:rounded-2xl p-4 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all group">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a282e] mb-2 md:mb-3 group-hover:text-[#1a5a66] transition-colors leading-snug">
                       Startup workshop: value proposition dan customer journey map
                     </h4>
-                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
-                      📍 Bandung Techno Park Telkom University
+                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed flex items-start gap-1.5"><MapPin className="w-3.5 h-3.5 mt-0.5 flex-shrink-0 text-[#dac5a7]" /> Bandung Techno Park Telkom University
                     </p>
                   </div>
 
                   {/* Event 4 */}
-                  <div className="bg-gradient-to-br from-indigo-50 to-white rounded-xl md:rounded-2xl p-4 md:p-6 border-2 border-indigo-100 hover:border-indigo-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 group-hover:text-[#0a5c5c] transition-colors leading-snug">
+                  <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-xl md:rounded-2xl p-4 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all group">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a282e] mb-2 md:mb-3 group-hover:text-[#1a5a66] transition-colors leading-snug">
                       Seminar parenting mempersiapkan masa depan anak kita: kolaborasi sekolah, orangtua, dan komunitas dalam memahami realita perubahan dan pengasuhan di abad 21
                     </h4>
-                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
-                      📍 Ashoka Indonesia
+                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed flex items-start gap-1.5"><MapPin className="w-3.5 h-3.5 mt-0.5 flex-shrink-0 text-[#dac5a7]" /> Ashoka Indonesia
                     </p>
                   </div>
 
                   {/* Event 5 */}
-                  <div className="bg-gradient-to-br from-purple-50 to-white rounded-xl md:rounded-2xl p-4 md:p-6 border-2 border-purple-100 hover:border-purple-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 group-hover:text-[#0a5c5c] transition-colors leading-snug">
+                  <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-xl md:rounded-2xl p-4 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all group">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a282e] mb-2 md:mb-3 group-hover:text-[#1a5a66] transition-colors leading-snug">
                       Seminar parenting: anak hebat, orangtua terlibat membangun 7 kebiasaan baik
                     </h4>
-                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
-                      📍 TK Kartika Bandung
+                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed flex items-start gap-1.5"><MapPin className="w-3.5 h-3.5 mt-0.5 flex-shrink-0 text-[#dac5a7]" /> TK Kartika Bandung
                     </p>
                   </div>
 
                   {/* Event 6 */}
-                  <div className="bg-gradient-to-br from-pink-50 to-white rounded-xl md:rounded-2xl p-4 md:p-6 border-2 border-pink-100 hover:border-pink-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 group-hover:text-[#0a5c5c] transition-colors leading-snug">
+                  <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-xl md:rounded-2xl p-4 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all group">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a282e] mb-2 md:mb-3 group-hover:text-[#1a5a66] transition-colors leading-snug">
                       Seminar parenting: tantangan mendidik Gen Alpha untuk membangun lingkungan ramah masa depan anak
                     </h4>
-                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
-                      📍 SDIT Insan Rabbani Majalengka
+                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed flex items-start gap-1.5"><MapPin className="w-3.5 h-3.5 mt-0.5 flex-shrink-0 text-[#dac5a7]" /> SDIT Insan Rabbani Majalengka
                     </p>
                   </div>
 
                   {/* Event 7 */}
-                  <div className="bg-gradient-to-br from-rose-50 to-white rounded-xl md:rounded-2xl p-4 md:p-6 border-2 border-rose-100 hover:border-rose-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 group-hover:text-[#0a5c5c] transition-colors leading-snug">
+                  <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-xl md:rounded-2xl p-4 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all group">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a282e] mb-2 md:mb-3 group-hover:text-[#1a5a66] transition-colors leading-snug">
                       Mengelola stress orangtua dengan memahami 7 jenis kelelahan
                     </h4>
-                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
-                      📍 SD An Nahl, TK Growing Star, KB TK Istiqamah
+                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed flex items-start gap-1.5"><MapPin className="w-3.5 h-3.5 mt-0.5 flex-shrink-0 text-[#dac5a7]" /> SD An Nahl, TK Growing Star, KB TK Istiqamah
                     </p>
                   </div>
                 </div>
@@ -1313,128 +1294,128 @@ export function RuangKolaborasi({
 
               {/* 2024 Events */}
               <div className="mb-10">
-                <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-full font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[16px] md:text-[18px] mb-6">
-                  <span>📆</span> 2024
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#0a282e] to-[#1a5a66] text-white rounded-full font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[16px] md:text-[18px] mb-6">
+                  <Calendar className="w-4 h-4" /> 2024
                 </div>
                 
                 <div className="space-y-4">
                   {/* Event 1 */}
-                  <div className="bg-gradient-to-br from-teal-50 to-white rounded-2xl p-5 md:p-6 border-2 border-teal-100 hover:border-teal-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                  <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl p-5 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all group">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a282e] mb-2 group-hover:text-[#1a5a66] transition-colors">
                       Seminar parenting anti bullying: aman di sekolah, nyaman di rumah
                     </h4>
                     <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
-                      📍 SD Islam Al-Ikhlas Cipete Jakarta
+                      <MapPin className="inline-block w-3.5 h-3.5 mr-1 -mt-0.5 text-[#dac5a7]" />SD Islam Al-Ikhlas Cipete Jakarta
                     </p>
                   </div>
 
                   {/* Event 2 */}
-                  <div className="bg-gradient-to-br from-cyan-50 to-white rounded-2xl p-5 md:p-6 border-2 border-cyan-100 hover:border-cyan-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                  <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl p-5 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all group">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a282e] mb-2 group-hover:text-[#1a5a66] transition-colors">
                       Menyambut ramadhan dengan memahami diri dan mengelola emosi
                     </h4>
                     <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
-                      📍 Daarut Tauhiid Bandung
+                      <MapPin className="inline-block w-3.5 h-3.5 mr-1 -mt-0.5 text-[#dac5a7]" />Daarut Tauhiid Bandung
                     </p>
                   </div>
 
                   {/* Event 3 */}
-                  <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-5 md:p-6 border-2 border-blue-100 hover:border-blue-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                  <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl p-5 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all group">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a282e] mb-2 group-hover:text-[#1a5a66] transition-colors">
                       Parenting Akbar diikuti kepala sekolah dan komite orangtua dari ratusan PAUD di Kota Bandung: Strategi mengelola konflik pada anak usia dini
                     </h4>
                     <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
-                      📍 Dinas Pendidikan Kota Bandung
+                      <MapPin className="inline-block w-3.5 h-3.5 mr-1 -mt-0.5 text-[#dac5a7]" />Dinas Pendidikan Kota Bandung
                     </p>
                   </div>
 
                   {/* Event 4 */}
-                  <div className="bg-gradient-to-br from-indigo-50 to-white rounded-2xl p-5 md:p-6 border-2 border-indigo-100 hover:border-indigo-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                  <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl p-5 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all group">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a282e] mb-2 group-hover:text-[#1a5a66] transition-colors">
                       Seminar parenting: strategi mengelola konflik pada anak usia dini
                     </h4>
                     <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
-                      📍 TK Lab UPI Bandung, SPS Eco Pesantren Daarut Tauhiid & TK Mulya Insani Cilegon
+                      <MapPin className="inline-block w-3.5 h-3.5 mr-1 -mt-0.5 text-[#dac5a7]" />TK Lab UPI Bandung, SPS Eco Pesantren Daarut Tauhiid & TK Mulya Insani Cilegon
                     </p>
                   </div>
 
                   {/* Event 5 */}
-                  <div className="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-5 md:p-6 border-2 border-purple-100 hover:border-purple-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                  <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl p-5 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all group">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a282e] mb-2 group-hover:text-[#1a5a66] transition-colors">
                       Seminar parenting spesial hari ayah: "Menjadi Ayah Ibu Harmonis, Strategi jitu atasi 7 kelelahan orangtua dan bangun komunikasi lewat komunikasi BATIK (Baik, Tegas dan Efektif)"
                     </h4>
                     <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
-                      📍 Parenting Community Majalengka
+                      <MapPin className="inline-block w-3.5 h-3.5 mr-1 -mt-0.5 text-[#dac5a7]" />Parenting Community Majalengka
                     </p>
                   </div>
 
                   {/* Event 6 */}
-                  <div className="bg-gradient-to-br from-pink-50 to-white rounded-2xl p-5 md:p-6 border-2 border-pink-100 hover:border-pink-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                  <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl p-5 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all group">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a282e] mb-2 group-hover:text-[#1a5a66] transition-colors">
                       Seminar parenting: Bersama wujudkan sekolah nyaman dan aman
                     </h4>
                     <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
-                      📍 Sekolah Rimba Indonesia
+                      <MapPin className="inline-block w-3.5 h-3.5 mr-1 -mt-0.5 text-[#dac5a7]" />Sekolah Rimba Indonesia
                     </p>
                   </div>
 
                   {/* Event 7 */}
-                  <div className="bg-gradient-to-br from-rose-50 to-white rounded-2xl p-5 md:p-6 border-2 border-rose-100 hover:border-rose-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                  <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl p-5 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all group">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a282e] mb-2 group-hover:text-[#1a5a66] transition-colors">
                       Seminar parenting komunikasi dalam keluarga: jembatan membangun rasa
                     </h4>
                     <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
-                      📍 Yayasan Pendidikan Assalaam Jayapura Papua
+                      <MapPin className="inline-block w-3.5 h-3.5 mr-1 -mt-0.5 text-[#dac5a7]" />Yayasan Pendidikan Assalaam Jayapura Papua
                     </p>
                   </div>
 
                   {/* Event 8 */}
                   <div className="bg-gradient-to-br from-orange-50 to-white rounded-2xl p-5 md:p-6 border-2 border-orange-100 hover:border-orange-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a282e] mb-2 group-hover:text-[#1a5a66] transition-colors">
                       Pelatihan: strategi guru mengelola 7 jenis kelelahan sehari-hari
                     </h4>
                     <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
-                      📍 SMP Hikmah Teladan, PGTK Anak Ceria, TK Istiqamah, SDN 261 Margahayu Kota Bandung
+                      <MapPin className="inline-block w-3.5 h-3.5 mr-1 -mt-0.5 text-[#dac5a7]" />SMP Hikmah Teladan, PGTK Anak Ceria, TK Istiqamah, SDN 261 Margahayu Kota Bandung
                     </p>
                   </div>
 
                   {/* Event 9 */}
                   <div className="bg-gradient-to-br from-amber-50 to-white rounded-2xl p-5 md:p-6 border-2 border-amber-100 hover:border-amber-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a282e] mb-2 group-hover:text-[#1a5a66] transition-colors">
                       Seminar parenting strategi parenting anti bullying
                     </h4>
                     <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
-                      📍 Baitul Quran Daarut Tauhiid
+                      <MapPin className="inline-block w-3.5 h-3.5 mr-1 -mt-0.5 text-[#dac5a7]" />Baitul Quran Daarut Tauhiid
                     </p>
                   </div>
 
                   {/* Event 10 */}
-                  <div className="bg-gradient-to-br from-yellow-50 to-white rounded-2xl p-5 md:p-6 border-2 border-yellow-100 hover:border-yellow-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                  <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl p-5 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all group">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a282e] mb-2 group-hover:text-[#1a5a66] transition-colors">
                       Workshop metode design thinking untuk pembelajaran
                     </h4>
                     <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
-                      📍 SMP Salman Al Farisi, SMP Hikmah Teladan
+                      <MapPin className="inline-block w-3.5 h-3.5 mr-1 -mt-0.5 text-[#dac5a7]" />SMP Salman Al Farisi, SMP Hikmah Teladan
                     </p>
                   </div>
 
                   {/* Event 11 */}
                   <div className="bg-gradient-to-br from-lime-50 to-white rounded-2xl p-5 md:p-6 border-2 border-lime-100 hover:border-lime-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a282e] mb-2 group-hover:text-[#1a5a66] transition-colors">
                       Seni praktis mengelola stress sebagai orangtua
                     </h4>
                     <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
-                      📍 MI Yanuri
+                      <MapPin className="inline-block w-3.5 h-3.5 mr-1 -mt-0.5 text-[#dac5a7]" />MI Yanuri
                     </p>
                   </div>
 
                   {/* Event 12 */}
                   <div className="bg-gradient-to-br from-emerald-50 to-white rounded-2xl p-5 md:p-6 border-2 border-emerald-100 hover:border-emerald-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a282e] mb-2 group-hover:text-[#1a5a66] transition-colors">
                       Seminar parenting: optimalisasi partnership untuk membentuk generasi unggul
                     </h4>
                     <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
-                      📍 TK Assalaam Bandung
+                      <MapPin className="inline-block w-3.5 h-3.5 mr-1 -mt-0.5 text-[#dac5a7]" />TK Assalaam Bandung
                     </p>
                   </div>
                 </div>
@@ -1442,108 +1423,108 @@ export function RuangKolaborasi({
 
               {/* 2023 Events */}
               <div>
-                <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-full font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[16px] md:text-[18px] mb-6">
-                  <span>📆</span> 2023
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#0a282e] to-[#1a5a66] text-white rounded-full font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[16px] md:text-[18px] mb-6">
+                  <Calendar className="w-4 h-4" /> 2023
                 </div>
                 
                 <div className="space-y-4">
                   {/* Event 1 */}
-                  <div className="bg-gradient-to-br from-teal-50 to-white rounded-2xl p-5 md:p-6 border-2 border-teal-100 hover:border-teal-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                  <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl p-5 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all group">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a282e] mb-2 group-hover:text-[#1a5a66] transition-colors">
                       Seminar parenting 4M: Memahami diri untuk memahami anak
                     </h4>
                     <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
-                      📍 SD Mutiara Bunda
+                      <MapPin className="inline-block w-3.5 h-3.5 mr-1 -mt-0.5 text-[#dac5a7]" />SD Mutiara Bunda
                     </p>
                   </div>
 
                   {/* Event 2 */}
-                  <div className="bg-gradient-to-br from-cyan-50 to-white rounded-2xl p-5 md:p-6 border-2 border-cyan-100 hover:border-cyan-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                  <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl p-5 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all group">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a282e] mb-2 group-hover:text-[#1a5a66] transition-colors">
                       Seminar parenting 4M: Memahami diri untuk memahami anak
                     </h4>
                     <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
-                      📍 DP3AP2KB Provinsi Sumatera Barat
+                      <MapPin className="inline-block w-3.5 h-3.5 mr-1 -mt-0.5 text-[#dac5a7]" />DP3AP2KB Provinsi Sumatera Barat
                     </p>
                   </div>
 
                   {/* Event 3 */}
-                  <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-5 md:p-6 border-2 border-blue-100 hover:border-blue-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                  <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl p-5 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all group">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a282e] mb-2 group-hover:text-[#1a5a66] transition-colors">
                       Parenting Akhir Tahun: Melindungi anak dari bahaya cyber crime
                     </h4>
                     <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
-                      📍 Dinas Pendidikan Kota Bandung
+                      <MapPin className="inline-block w-3.5 h-3.5 mr-1 -mt-0.5 text-[#dac5a7]" />Dinas Pendidikan Kota Bandung
                     </p>
                   </div>
 
                   {/* Event 4 */}
-                  <div className="bg-gradient-to-br from-indigo-50 to-white rounded-2xl p-5 md:p-6 border-2 border-indigo-100 hover:border-indigo-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                  <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl p-5 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all group">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a282e] mb-2 group-hover:text-[#1a5a66] transition-colors">
                       Seminar parenting bersama mewujudukan sekolah zero bullying
                     </h4>
                     <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
-                      📍 Yayasan Pendidikan Amal Mulia Depok
+                      <MapPin className="inline-block w-3.5 h-3.5 mr-1 -mt-0.5 text-[#dac5a7]" />Yayasan Pendidikan Amal Mulia Depok
                     </p>
                   </div>
 
                   {/* Event 5 */}
-                  <div className="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-5 md:p-6 border-2 border-purple-100 hover:border-purple-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                  <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl p-5 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all group">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a282e] mb-2 group-hover:text-[#1a5a66] transition-colors">
                       Seminar edukasi remaja: play with purpose, pakai gadget dengan bijak
                     </h4>
                     <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
-                      📍 SMPN 24 Bandung
+                      <MapPin className="inline-block w-3.5 h-3.5 mr-1 -mt-0.5 text-[#dac5a7]" />SMPN 24 Bandung
                     </p>
                   </div>
 
                   {/* Event 6 */}
-                  <div className="bg-gradient-to-br from-pink-50 to-white rounded-2xl p-5 md:p-6 border-2 border-pink-100 hover:border-pink-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                  <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl p-5 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all group">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a282e] mb-2 group-hover:text-[#1a5a66] transition-colors">
                       Seminar parenting: kenali virus merah jambu dan beri anak rambu-rambu
                     </h4>
                     <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
-                      📍 SDIT Daarul Maza Depok
+                      <MapPin className="inline-block w-3.5 h-3.5 mr-1 -mt-0.5 text-[#dac5a7]" />SDIT Daarul Maza Depok
                     </p>
                   </div>
 
                   {/* Event 7 */}
-                  <div className="bg-gradient-to-br from-rose-50 to-white rounded-2xl p-5 md:p-6 border-2 border-rose-100 hover:border-rose-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                  <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl p-5 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all group">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a282e] mb-2 group-hover:text-[#1a5a66] transition-colors">
                       Seminar parenting internet CERIA: Cerdas dalam penggunaan, Empati dalam bersikap, Ramah dari cyberbully, Inklusif untuk semua anak, Aman dari pornografi dan eksploitasi
                     </h4>
                     <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
-                      📍 DP3AP2KB Provinsi Sumatera Barat
+                      <MapPin className="inline-block w-3.5 h-3.5 mr-1 -mt-0.5 text-[#dac5a7]" />DP3AP2KB Provinsi Sumatera Barat
                     </p>
                   </div>
 
                   {/* Event 8 */}
                   <div className="bg-gradient-to-br from-orange-50 to-white rounded-2xl p-5 md:p-6 border-2 border-orange-100 hover:border-orange-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a282e] mb-2 group-hover:text-[#1a5a66] transition-colors">
                       Seminar parenting orangtua berpijar: Bersama dampingi peduli proses belajar anak
                     </h4>
                     <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
-                      📍 Pijar Belajar Telkom Indonesia dan Fammi
+                      <MapPin className="inline-block w-3.5 h-3.5 mr-1 -mt-0.5 text-[#dac5a7]" />Pijar Belajar Telkom Indonesia dan Fammi
                     </p>
                   </div>
 
                   {/* Event 9 */}
                   <div className="bg-gradient-to-br from-amber-50 to-white rounded-2xl p-5 md:p-6 border-2 border-amber-100 hover:border-amber-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a282e] mb-2 group-hover:text-[#1a5a66] transition-colors">
                       Roadshow seminar pendidikan seputar Guru TERAMPIL: Terlatih, Aktif dan Tampil ke 10 kota di Indonesia
                     </h4>
                     <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
-                      📍 KEMDIKBUDRISTEK dan Fammi
+                      <MapPin className="inline-block w-3.5 h-3.5 mr-1 -mt-0.5 text-[#dac5a7]" />KEMDIKBUDRISTEK dan Fammi
                     </p>
                   </div>
 
                   {/* Event 10 */}
-                  <div className="bg-gradient-to-br from-yellow-50 to-white rounded-2xl p-5 md:p-6 border-2 border-yellow-100 hover:border-yellow-300 transition-all group">
-                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                  <div className="bg-gradient-to-br from-[#f5ede1] to-white rounded-2xl p-5 md:p-6 border-2 border-[#0a282e]/8 hover:border-[#dac5a7] transition-all group">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a282e] mb-2 group-hover:text-[#1a5a66] transition-colors">
                       Communication skill for startup founders
                     </h4>
                     <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
-                      📍 Bandung Techno Park Telkom University
+                      <MapPin className="inline-block w-3.5 h-3.5 mr-1 -mt-0.5 text-[#dac5a7]" />Bandung Techno Park Telkom University
                     </p>
                   </div>
                 </div>
@@ -1557,7 +1538,7 @@ export function RuangKolaborasi({
                 return (
                   <div key={year} className="mb-10">
                     <div className={`inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r ${yearStyle.gradient} text-white rounded-full font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[16px] md:text-[18px] mb-6`}>
-                      <span>📆</span> {year}
+                      <Calendar className="w-4 h-4" /> {year}
                     </div>
                     
                     <div className="grid grid-cols-1 gap-3 md:gap-4">
@@ -1566,11 +1547,10 @@ export function RuangKolaborasi({
                           key={idx}
                           className={`bg-gradient-to-br ${event.gradient} rounded-xl md:rounded-2xl p-4 md:p-6 border-2 ${event.border} transition-all`}
                         >
-                          <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 leading-snug">
+                          <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a282e] mb-2 md:mb-3 leading-snug">
                             {event.title}
                           </h4>
-                          <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
-                            📍 {event.location}
+                          <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed flex items-start gap-1.5"><MapPin className="w-3.5 h-3.5 mt-0.5 flex-shrink-0 text-[#dac5a7]" /> {event.location}
                           </p>
                         </div>
                       ))}
@@ -1581,12 +1561,11 @@ export function RuangKolaborasi({
 
               {/* More Events Notice */}
               <div className="text-center py-4 md:py-6">
-                <div className="inline-flex items-center gap-2 md:gap-3 px-4 md:px-6 py-3 md:py-4 bg-gradient-to-r from-teal-50 to-cyan-50 rounded-xl md:rounded-2xl border-2 border-teal-200">
-                  <span className="text-xl md:text-2xl flex-shrink-0">✨</span>
+                <div className="inline-flex items-center gap-2.5 md:gap-3 px-4 md:px-6 py-3 md:py-4 bg-[#f5ede1] rounded-xl md:rounded-2xl border border-[#dac5a7]">
+                  <Sparkles className="w-5 h-5 text-[#0a282e] flex-shrink-0" />
                   <p className="text-[12px] md:text-[15px] text-[#0a282e] font-['Plus_Jakarta_Sans',sans-serif] font-bold leading-tight">
                     Dan masih banyak kegiatan lainnya yang belum tercantum di sini
                   </p>
-                  <span className="text-xl md:text-2xl flex-shrink-0">🎯</span>
                 </div>
               </div>
             </div>
