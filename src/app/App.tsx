@@ -157,15 +157,15 @@ export default function App() {
             "Kolaborasi yang kuat lahir dari kejelasan tujuan, bukan sekadar kesepakatan di atas kertas."
           </blockquote>
           <div className="mt-6">
-            <p className="text-[13px] font-['Montserrat:SemiBold',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
+            <p className="text-[13px] font-['Plus_Jakarta_Sans',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
               Keahlian Terkait
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Strategic Partnership</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Program Design</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Stakeholder Engagement</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Pentahelix Collaboration</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">CSR Program</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Strategic Partnership</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Program Design</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Stakeholder Engagement</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Pentahelix Collaboration</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">CSR Program</span>
             </div>
           </div>
         </>
@@ -196,16 +196,16 @@ export default function App() {
             "Kepemimpinan saya dimulai dari keteladanan, menghargai keunikan setiap tim, dan mengajak fokus pada hal-hal yang berada dalam kendali, agar tujuan bersama tetap tercapai."
           </blockquote>
           <div className="mt-6">
-            <p className="text-[13px] font-['Montserrat:SemiBold',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
+            <p className="text-[13px] font-['Plus_Jakarta_Sans',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
               Keahlian Terkait
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Strategic Partnership</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Team Management</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Product Development</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Business Operations</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Sales & Marketing</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Pitching & Investment</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Strategic Partnership</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Team Management</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Product Development</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Business Operations</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Sales & Marketing</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Pitching & Investment</span>
             </div>
           </div>
         </>
@@ -218,25 +218,25 @@ export default function App() {
       content: (
         <>
           <p className="mb-4">
-            Saya aktif membahas dan mengembangkan berbagai konten edukasi seputar <strong className="font-['Montserrat:Bold',sans-serif] font-bold">parenting digital, komunikasi dalam keluarga, serta kesehatan mental</strong>.
+            Saya aktif membahas dan mengembangkan berbagai konten edukasi seputar <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">parenting digital, komunikasi dalam keluarga, serta kesehatan mental</strong>.
           </p>
           <p className="mb-4">
-            Fokus saya adalah membantu orang tua <strong className="font-['Montserrat:Bold',sans-serif] font-bold">membangun cara pandang yang lebih utuh</strong> dalam melihat persoalan anak, mulai dari usia dini hingga remaja dan dewasa. Bukan untuk menggurui, tetapi untuk membuka ruang refleksi dan dialog yang sehat.
+            Fokus saya adalah membantu orang tua <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">membangun cara pandang yang lebih utuh</strong> dalam melihat persoalan anak, mulai dari usia dini hingga remaja dan dewasa. Bukan untuk menggurui, tetapi untuk membuka ruang refleksi dan dialog yang sehat.
           </p>
           <p className="mb-4">
-            Dalam proses ini, saya tidak menempatkan diri sebagai pihak yang paling tahu. Saya memilih untuk terus belajar, sekaligus <strong className="font-['Montserrat:Bold',sans-serif] font-bold">membersamai orang tua dalam perjalanan tumbuh bersama anak-anak mereka</strong>.
+            Dalam proses ini, saya tidak menempatkan diri sebagai pihak yang paling tahu. Saya memilih untuk terus belajar, sekaligus <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">membersamai orang tua dalam perjalanan tumbuh bersama anak-anak mereka</strong>.
           </p>
           <blockquote className="border-l-4 border-[#0a282e] pl-4 py-2 mb-4 italic text-[#0a282e]/80">
             "Saya percaya bahwa anak hebat tidak selalu lahir dari orangtua yang sempurna, tapi dari orangtua yang mau tumbuh belajar bersama."
           </blockquote>
           <div className="mt-6">
-            <p className="text-[13px] font-['Montserrat:SemiBold',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
+            <p className="text-[13px] font-['Plus_Jakarta_Sans',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
               Keahlian Terkait
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Digital Parenting</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Content Development</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Parent Coaching</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Digital Parenting</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Content Development</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Parent Coaching</span>
             </div>
           </div>
         </>
@@ -249,10 +249,10 @@ export default function App() {
       content: (
         <>
           <p className="mb-4">
-            Saya membimbing anak dan remaja untuk menemukan potensi terbaik mereka sekaligus mengelola tantangan hidup melalui sesi mentoring privat. Dalam peran ini, saya dipercaya oleh <strong className="font-['Montserrat:Bold',sans-serif] font-bold">PKBM Daarut Tauhiid</strong> untuk terlibat dalam program pendampingan personal.
+            Saya membimbing anak dan remaja untuk menemukan potensi terbaik mereka sekaligus mengelola tantangan hidup melalui sesi mentoring privat. Dalam peran ini, saya dipercaya oleh <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">PKBM Daarut Tauhiid</strong> untuk terlibat dalam program pendampingan personal.
           </p>
           <p className="mb-4">
-            Selain pendampingan personal, saya juga aktif memfasilitasi perjalanan kewirausahaan remaja, mahasiswa, hingga startup, dari tahap ide, validasi, hingga eksekusi. Pengalaman ini diperkuat melalui peran saya sebagai <strong className="font-['Montserrat:Bold',sans-serif] font-bold">Dosen Kewirausahaan di STT Nurul Fikri Depok</strong> selama dua tahun, mentor di <strong className="font-['Montserrat:Bold',sans-serif] font-bold">The GreaterHub SBM ITB</strong>, serta mentor aktif di <strong className="font-['Montserrat:Bold',sans-serif] font-bold">Bandung Technopark Incubation Program Telkom University</strong> sejak 2024 hingga saat ini.
+            Selain pendampingan personal, saya juga aktif memfasilitasi perjalanan kewirausahaan remaja, mahasiswa, hingga startup, dari tahap ide, validasi, hingga eksekusi. Pengalaman ini diperkuat melalui peran saya sebagai <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">Dosen Kewirausahaan di STT Nurul Fikri Depok</strong> selama dua tahun, mentor di <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">The GreaterHub SBM ITB</strong>, serta mentor aktif di <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">Bandung Technopark Incubation Program Telkom University</strong> sejak 2024 hingga saat ini.
           </p>
           <p className="mb-4">
             Bagi saya, setiap sesi mentoring bukan sekadar berbagi pengetahuan, tetapi ruang untuk menumbuhkan kejelasan arah, kepercayaan diri, dan keberanian mengambil langkah.
@@ -261,14 +261,14 @@ export default function App() {
             "Mentor bukan memberi tahu jalan yang harus ditempuh, tetapi membantu seseorang menemukan jalannya sendiri dengan lebih yakin dan sadar."
           </blockquote>
           <div className="mt-6">
-            <p className="text-[13px] font-['Montserrat:SemiBold',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
+            <p className="text-[13px] font-['Plus_Jakarta_Sans',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
               Keahlian Terkait
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Youth Mentoring</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Entrepreneurship Coaching</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Personal Development</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Startup Mentoring</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Youth Mentoring</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Entrepreneurship Coaching</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Personal Development</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Startup Mentoring</span>
             </div>
           </div>
         </>
@@ -281,27 +281,27 @@ export default function App() {
       content: (
         <>
           <p className="mb-4">
-            Di bidang Creative Production, saya mendalami <strong className="font-['Montserrat:Bold',sans-serif] font-bold">pitching dan business presentation, desain grafis, hingga UI/UX</strong>. Kemampuan ini saya gunakan untuk membantu ide dan pesan edukasi tersampaikan secara lebih jelas dan mudah dipahami.
+            Di bidang Creative Production, saya mendalami <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">pitching dan business presentation, desain grafis, hingga UI/UX</strong>. Kemampuan ini saya gunakan untuk membantu ide dan pesan edukasi tersampaikan secara lebih jelas dan mudah dipahami.
           </p>
           <p className="mb-4">
-            Selain desain, saya juga terbiasa memproduksi konten multimedia. Saya mengoperasikan tools seperti <strong className="font-['Montserrat:Bold',sans-serif] font-bold">OBS Studio</strong> untuk kebutuhan <strong className="font-['Montserrat:Bold',sans-serif] font-bold">streaming dan recording</strong>, serta mengelola proses produksi konten dari perencanaan hingga eksekusi. Pendekatan ini membantu mengemas gagasan yang kompleks menjadi visual dan konten yang komunikatif untuk berbagai kalangan.
+            Selain desain, saya juga terbiasa memproduksi konten multimedia. Saya mengoperasikan tools seperti <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">OBS Studio</strong> untuk kebutuhan <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">streaming dan recording</strong>, serta mengelola proses produksi konten dari perencanaan hingga eksekusi. Pendekatan ini membantu mengemas gagasan yang kompleks menjadi visual dan konten yang komunikatif untuk berbagai kalangan.
           </p>
           <p className="mb-4">
-            Bagi saya, visual bukan sekadar tampilan, tetapi <strong className="font-['Montserrat:Bold',sans-serif] font-bold">sarana untuk memperjelas makna dan mendorong pemahaman yang lebih baik</strong>.
+            Bagi saya, visual bukan sekadar tampilan, tetapi <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">sarana untuk memperjelas makna dan mendorong pemahaman yang lebih baik</strong>.
           </p>
           <blockquote className="border-l-4 border-[#0a282e] pl-4 py-2 mb-4 italic text-[#0a282e]/80">
             "Saya percaya bahwa kekuatan visual dan konten multimedia dapat memberikan sudut pandang baru, menyederhanakan kompleksitas, dan menggerakkan orang untuk bertindak. Dari desain hingga produksi video, setiap karya adalah jembatan antara ide dan pemahaman."
           </blockquote>
           <div className="mt-6">
-            <p className="text-[13px] font-['Montserrat:SemiBold',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
+            <p className="text-[13px] font-['Plus_Jakarta_Sans',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
               Keahlian Terkait
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Graphic Design</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">UI/UX Design</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Content Production</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Video Streaming & Recording</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Business Presentation</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Graphic Design</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">UI/UX Design</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Content Production</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Video Streaming & Recording</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Business Presentation</span>
             </div>
           </div>
         </>
@@ -314,22 +314,22 @@ export default function App() {
       content: (
         <>
           <p className="mb-4">
-            Sebagai praktisi public speaking, saya telah terlibat dalam <strong className="font-['Montserrat:Bold',sans-serif] font-bold">ratusan sesi seminar dan pelatihan</strong> dengan fokus pada <strong className="font-['Montserrat:Bold',sans-serif] font-bold">pitching, storytelling, dan penyusunan narasi</strong> yang mendorong perubahan cara pandang.
+            Sebagai praktisi public speaking, saya telah terlibat dalam <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">ratusan sesi seminar dan pelatihan</strong> dengan fokus pada <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">pitching, storytelling, dan penyusunan narasi</strong> yang mendorong perubahan cara pandang.
           </p>
           <p className="mb-4">
-            Bagi saya, public speaking bukan sekadar menyampaikan materi, tetapi <strong className="font-['Montserrat:Bold',sans-serif] font-bold">membangun koneksi yang bermakna dengan audiens</strong>. Setiap sesi adalah ruang dialog untuk menyentuh, mengajak berpikir, dan membuka kemungkinan sudut pandang baru melalui kata-kata yang relevan dan kontekstual.
+            Bagi saya, public speaking bukan sekadar menyampaikan materi, tetapi <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">membangun koneksi yang bermakna dengan audiens</strong>. Setiap sesi adalah ruang dialog untuk menyentuh, mengajak berpikir, dan membuka kemungkinan sudut pandang baru melalui kata-kata yang relevan dan kontekstual.
           </p>
           <blockquote className="border-l-4 border-[#0a282e] pl-4 py-2 mb-4 italic text-[#0a282e]/80">
             "If you can speak, you can influence. If you can influence, you can change lives. Saya percaya bahwa public speaking bukan hanya tentang berbicara, tetapi tentang menciptakan koneksi yang bermakna dan meninggalkan jejak positif di hati pendengar."
           </blockquote>
           <div className="mt-6">
-            <p className="text-[13px] font-['Montserrat:SemiBold',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
+            <p className="text-[13px] font-['Plus_Jakarta_Sans',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
               Keahlian Terkait
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Storytelling</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Pitching</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Workshop Facilitation</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Storytelling</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Pitching</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Workshop Facilitation</span>
             </div>
           </div>
         </>
@@ -342,25 +342,25 @@ export default function App() {
       content: (
         <>
           <p className="mb-4">
-            Saya mendampingi berbagai institusi dalam <strong className="font-['Montserrat:Bold',sans-serif] font-bold">mengoptimalkan proses kerja melalui pemanfaatan teknologi digital</strong> agar lebih efektif dan efisien.
+            Saya mendampingi berbagai institusi dalam <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">mengoptimalkan proses kerja melalui pemanfaatan teknologi digital</strong> agar lebih efektif dan efisien.
           </p>
           <p className="mb-4">
-            Pendampingan dilakukan sejak tahap awal, mulai dari <strong className="font-['Montserrat:Bold',sans-serif] font-bold">riset kebutuhan yang mendalam, penyusunan konsep dan prototyping, hingga perancangan solusi digital</strong> yang selaras dengan kebutuhan pengguna dan konteks organisasi. Pendekatan ini memastikan transformasi digital tidak sekadar mengganti alat, tetapi benar-benar memperbaiki cara kerja.
+            Pendampingan dilakukan sejak tahap awal, mulai dari <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">riset kebutuhan yang mendalam, penyusunan konsep dan prototyping, hingga perancangan solusi digital</strong> yang selaras dengan kebutuhan pengguna dan konteks organisasi. Pendekatan ini memastikan transformasi digital tidak sekadar mengganti alat, tetapi benar-benar memperbaiki cara kerja.
           </p>
           <p className="mb-4">
-            Bagi saya, transformasi digital yang baik selalu berangkat dari <strong className="font-['Montserrat:Bold',sans-serif] font-bold">pemahaman masalah dan tujuan yang jelas</strong>.
+            Bagi saya, transformasi digital yang baik selalu berangkat dari <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">pemahaman masalah dan tujuan yang jelas</strong>.
           </p>
           <blockquote className="border-l-4 border-[#0a282e] pl-4 py-2 mb-4 italic text-[#0a282e]/80">
             "Saya menaruh perhatian besar dengan transformasi digital karena percaya bahwa solusi yang tepat dapat mengubah cara kerja menjadi lebih bermakna, menghemat waktu, dan memberdayakan lebih banyak orang untuk fokus pada hal-hal yang benar-benar penting dan berdampak besar."
           </blockquote>
           <div className="mt-6">
-            <p className="text-[13px] font-['Montserrat:SemiBold',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
+            <p className="text-[13px] font-['Plus_Jakarta_Sans',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
               Keahlian Terkait
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">EdTech Development</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">System Design</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Digital Strategy</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">EdTech Development</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">System Design</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Digital Strategy</span>
             </div>
           </div>
         </>
@@ -373,25 +373,25 @@ export default function App() {
       content: (
         <>
           <p className="mb-4">
-            Latar belakang pendidikan saya dimulai dari <strong className="font-['Montserrat:Bold',sans-serif] font-bold">Teknik Informatika</strong>, lalu dilanjutkan dengan lebih dari 10 tahun terlibat aktif dalam perancangan program pembelajaran dan pendekatan psikologi di berbagai konteks.
+            Latar belakang pendidikan saya dimulai dari <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">Teknik Informatika</strong>, lalu dilanjutkan dengan lebih dari 10 tahun terlibat aktif dalam perancangan program pembelajaran dan pendekatan psikologi di berbagai konteks.
           </p>
           <p className="mb-4">
-            Perjalanan tersebut membawa saya di tahun ini pada keputusan untuk melanjutkan kembali studi <strong className="font-['Montserrat:Bold',sans-serif] font-bold">Magister Psikologi Pendidikan</strong>. Kombinasi antara teknologi, psikologi, dan pendidikan ini memperluas cara pandang saya bahwa <strong className="font-['Montserrat:Bold',sans-serif] font-bold">proses belajar dan perilaku manusia tidak hanya terjadi di ruang kelas sekolah</strong>, tetapi juga relevan di lingkungan organisasi, korporasi, dan berbagai institusi lain selama di dalamnya terdapat proses pembelajaran dan interaksi manusia.
+            Perjalanan tersebut membawa saya di tahun ini pada keputusan untuk melanjutkan kembali studi <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">Magister Psikologi Pendidikan</strong>. Kombinasi antara teknologi, psikologi, dan pendidikan ini memperluas cara pandang saya bahwa <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">proses belajar dan perilaku manusia tidak hanya terjadi di ruang kelas sekolah</strong>, tetapi juga relevan di lingkungan organisasi, korporasi, dan berbagai institusi lain selama di dalamnya terdapat proses pembelajaran dan interaksi manusia.
           </p>
           <p className="mb-4">
-            Pendalaman teori dan praktik ini menjadi landasan bagi saya untuk merancang <strong className="font-['Montserrat:Bold',sans-serif] font-bold">intervensi, program, dan sistem pembelajaran yang lebih kontekstual dan berdampak</strong>.
+            Pendalaman teori dan praktik ini menjadi landasan bagi saya untuk merancang <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">intervensi, program, dan sistem pembelajaran yang lebih kontekstual dan berdampak</strong>.
           </p>
           <blockquote className="border-l-4 border-[#0a282e] pl-4 py-2 mb-4 italic text-[#0a282e]/80">
             "Memperdalam pemahaman teoritis dan praktis adalah langkah untuk memberi manfaat yang lebih luas dan berkelanjutan."
           </blockquote>
           <div className="mt-6">
-            <p className="text-[13px] font-['Montserrat:SemiBold',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
+            <p className="text-[13px] font-['Plus_Jakarta_Sans',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
               Keahlian Terkait
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Learning Theory</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Child Development</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Educational Research</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Learning Theory</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Child Development</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Educational Research</span>
             </div>
           </div>
         </>
@@ -404,24 +404,24 @@ export default function App() {
       content: (
         <>
           <p className="mb-4">
-            Pernah mengalami <strong className="font-['Montserrat:Bold',sans-serif] font-bold">kecanduan game lebih dari 13 tahun</strong> dan bermain hingga <strong className="font-['Montserrat:Bold',sans-serif] font-bold">30 jam non-stop</strong>. Saya berhenti bukan karena nasihat, tetapi karena peristiwa besar dalam hidup yaitu <strong className="font-['Montserrat:Bold',sans-serif] font-bold">kehilangan kedua orang tua saat masa kuliah</strong> yang membuat saya mulai menata ulang arah hidup.
+            Pernah mengalami <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">kecanduan game lebih dari 13 tahun</strong> dan bermain hingga <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">30 jam non-stop</strong>. Saya berhenti bukan karena nasihat, tetapi karena peristiwa besar dalam hidup yaitu <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">kehilangan kedua orang tua saat masa kuliah</strong> yang membuat saya mulai menata ulang arah hidup.
           </p>
           <p className="mb-4">
-            Pengalaman tersebut membentuk cara pandang saya terhadap isu kecanduan digital, terutama pada anak dan remaja. Karena pernah berada di posisi itu, saya memahami betul rasa terjebak, penyangkalan, dan sulitnya keluar tanpa dukungan yang tepat. Pengalaman pribadi inilah yang kini menjadi <strong className="font-['Montserrat:Bold',sans-serif] font-bold">dasar empati dan pendekatan saya dalam setiap pendampingan</strong>.
+            Pengalaman tersebut membentuk cara pandang saya terhadap isu kecanduan digital, terutama pada anak dan remaja. Karena pernah berada di posisi itu, saya memahami betul rasa terjebak, penyangkalan, dan sulitnya keluar tanpa dukungan yang tepat. Pengalaman pribadi inilah yang kini menjadi <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">dasar empati dan pendekatan saya dalam setiap pendampingan</strong>.
           </p>
           <blockquote className="border-l-4 border-[#0a282e] pl-4 py-2 mb-4 italic text-[#0a282e]/80">
             "Perubahan tidak dimulai dari menghakimi, tetapi dari memahami pengalaman manusia di balik perilakunya tersebut."
           </blockquote>
           <div className="mt-6">
-            <p className="text-[13px] font-['Montserrat:SemiBold',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
+            <p className="text-[13px] font-['Plus_Jakarta_Sans',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
               Keahlian Terkait
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Psikologi Anak</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Digital Wellness</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Parenting</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Growth Mindset</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Kesehatan Mental</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Psikologi Anak</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Digital Wellness</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Parenting</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Growth Mindset</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Kesehatan Mental</span>
             </div>
           </div>
         </>
@@ -434,25 +434,25 @@ export default function App() {
       content: (
         <>
           <p className="mb-4">
-            Sejak masa perkuliahan hingga saat ini, saya terlibat aktif dalam berbagai gerakan sosial yang berfokus pada anak, keluarga, dan pendidikan. Keterlibatan ini mencakup peran di <strong className="font-['Montserrat:Bold',sans-serif] font-bold">BERMA (Komunitas Pemerhati Yatim Piatu)</strong>, pengurus aktif <strong className="font-['Montserrat:Bold',sans-serif] font-bold">POKJA Bunda PAUD Kota Bandung</strong>, serta fasilitator <strong className="font-['Montserrat:Bold',sans-serif] font-bold">GAHARU Keluarga</strong> (Gerakan Pembaharu/Changemaker Keluarga) dari Ashoka.
+            Sejak masa perkuliahan hingga saat ini, saya terlibat aktif dalam berbagai gerakan sosial yang berfokus pada anak, keluarga, dan pendidikan. Keterlibatan ini mencakup peran di <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">BERMA (Komunitas Pemerhati Yatim Piatu)</strong>, pengurus aktif <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">POKJA Bunda PAUD Kota Bandung</strong>, serta fasilitator <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">GAHARU Keluarga</strong> (Gerakan Pembaharu/Changemaker Keluarga) dari Ashoka.
           </p>
           <p className="mb-4">
-            Selain itu, saya juga terlibat langsung sebagai <strong className="font-['Montserrat:Bold',sans-serif] font-bold">pengajar di wilayah terpencil dan komunitas dengan keterbatasan akses</strong>, serta melakukan <strong className="font-['Montserrat:Bold',sans-serif] font-bold">home visit untuk mendampingi remaja yang mengalami kecanduan game</strong>. Pengalaman ini mempertemukan saya dengan realitas lapangan yang beragam dan memperkuat keyakinan bahwa perubahan selalu dimulai dari kehadiran yang tulus dan konsisten.
+            Selain itu, saya juga terlibat langsung sebagai <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">pengajar di wilayah terpencil dan komunitas dengan keterbatasan akses</strong>, serta melakukan <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">home visit untuk mendampingi remaja yang mengalami kecanduan game</strong>. Pengalaman ini mempertemukan saya dengan realitas lapangan yang beragam dan memperkuat keyakinan bahwa perubahan selalu dimulai dari kehadiran yang tulus dan konsisten.
           </p>
           <p className="mb-4">
-            Bagi saya, aksi sosial bukan sekadar kegiatan sukarela, tetapi <strong className="font-['Montserrat:Bold',sans-serif] font-bold">ruang belajar untuk memahami manusia, konteks, dan kebutuhan nyata di sekitar kita</strong>.
+            Bagi saya, aksi sosial bukan sekadar kegiatan sukarela, tetapi <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">ruang belajar untuk memahami manusia, konteks, dan kebutuhan nyata di sekitar kita</strong>.
           </p>
           <blockquote className="border-l-4 border-[#0a282e] pl-4 py-2 mb-4 italic text-[#0a282e]/80">
             "Setiap aksi sosial adalah kesempatan untuk hadir, belajar, dan memberi dampak nyata bagi sesama."
           </blockquote>
           <div className="mt-6">
-            <p className="text-[13px] font-['Montserrat:SemiBold',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
+            <p className="text-[13px] font-['Plus_Jakarta_Sans',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
               Keahlian Terkait
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Social Facilitation</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Community Engagement</span>
-              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Child & Family Advocacy</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Social Facilitation</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Community Engagement</span>
+              <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Child & Family Advocacy</span>
             </div>
           </div>
         </>
@@ -861,8 +861,8 @@ Terima kasih.`;
         ],
       },
       cta: 'Diskusi Kegiatan',
-      borderColor: '#0a7c7c', // teal
-      iconBg: '#ccf5f5', // teal light
+      borderColor: '#0a282e', // brand deep teal
+      iconBg: '#e7efed', // brand teal tint
     },
     {
       title: 'Program & Campaign Manager',
@@ -994,8 +994,8 @@ Terima kasih.`;
       ],
       servicesTitle: 'Apa yang bisa saya bantu?',
       cta: 'Diskusi Program',
-      borderColor: '#ef4444', // red
-      iconBg: '#fee2e2', // red light
+      borderColor: '#a47148', // brand warm sienna
+      iconBg: '#f3e9dc', // brand sand tint
     },
     {
       title: 'IT Consultant',
@@ -1011,8 +1011,8 @@ Terima kasih.`;
       ],
       servicesTitle: 'Apa saja yang bisa saya bantu.',
       cta: 'Konsultasi Teknologi',
-      borderColor: '#3b82f6', // blue
-      iconBg: '#dbeafe', // blue light
+      borderColor: '#1a5a66', // brand teal light
+      iconBg: '#e4eff0', // brand teal tint
     },
     {
       title: 'Mentoring',
@@ -1093,8 +1093,8 @@ Terima kasih.`;
         ]
       },
       cta: 'Ngobrol-ngobrol dulu sekarang',
-      borderColor: '#8b5cf6', // purple
-      iconBg: '#ede9fe', // purple light
+      borderColor: '#0f3a42', // brand teal mid
+      iconBg: '#e7eeec', // brand teal tint
     },
   ];
 
@@ -1139,7 +1139,7 @@ Terima kasih.`;
             <div className="md:hidden flex items-center justify-between h-full w-full">
               <button 
                 onClick={() => scrollToSection('home')}
-                className="text-[20px] font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-white"
+                className="text-[20px] font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-white"
               >
                 Kak Mumu
               </button>
@@ -1147,7 +1147,7 @@ Terima kasih.`;
               <div className="flex items-center gap-2">
                 <button 
                   onClick={() => scrollToSection('tentang-saya')}
-                  className={`px-2 py-1 text-[11px] font-['Montserrat:Medium',sans-serif] font-medium ${
+                  className={`px-2 py-1 text-[11px] font-['Plus_Jakarta_Sans',sans-serif] font-medium ${
                     activeSection === 'tentang-saya' ? 'text-[#dac5a7]' : 'text-white/70'
                   }`}
                 >
@@ -1155,7 +1155,7 @@ Terima kasih.`;
                 </button>
                 <button 
                   onClick={() => scrollToSection('ruang-kolaborasi')}
-                  className={`px-2 py-1 text-[11px] font-['Montserrat:Medium',sans-serif] font-medium ${
+                  className={`px-2 py-1 text-[11px] font-['Plus_Jakarta_Sans',sans-serif] font-medium ${
                     activeSection === 'ruang-kolaborasi' ? 'text-[#dac5a7]' : 'text-white/70'
                   }`}
                 >
@@ -1163,7 +1163,7 @@ Terima kasih.`;
                 </button>
                 <button 
                   onClick={() => scrollToSection('blog')}
-                  className={`px-2 py-1 text-[11px] font-['Montserrat:Medium',sans-serif] font-medium ${
+                  className={`px-2 py-1 text-[11px] font-['Plus_Jakarta_Sans',sans-serif] font-medium ${
                     activeSection === 'blog' ? 'text-[#dac5a7]' : 'text-white/70'
                   }`}
                 >
@@ -1179,7 +1179,7 @@ Terima kasih.`;
                 <button 
                   ref={tentangRef}
                   onClick={() => scrollToSection('tentang-saya')}
-                  className={`px-4 py-2 text-[15px] lg:text-[16px] font-['Montserrat:Medium',sans-serif] font-medium transition-colors hover:text-white whitespace-nowrap cursor-pointer ${
+                  className={`px-4 py-2 text-[15px] lg:text-[16px] font-['Plus_Jakarta_Sans',sans-serif] font-medium transition-colors hover:text-white whitespace-nowrap cursor-pointer ${
                     activeSection === 'tentang-saya' ? 'text-[#0a282e]' : 'text-[#d9c4a7]'
                   }`}
                 >
@@ -1188,7 +1188,7 @@ Terima kasih.`;
                 <button 
                   ref={kolaborasiRef}
                   onClick={() => scrollToSection('ruang-kolaborasi')}
-                  className={`px-4 py-2 text-[15px] lg:text-[16px] font-['Montserrat:Medium',sans-serif] font-medium transition-colors hover:text-white whitespace-nowrap cursor-pointer ${
+                  className={`px-4 py-2 text-[15px] lg:text-[16px] font-['Plus_Jakarta_Sans',sans-serif] font-medium transition-colors hover:text-white whitespace-nowrap cursor-pointer ${
                     activeSection === 'ruang-kolaborasi' ? 'text-[#0a282e]' : 'text-[#d9c4a7]'
                   }`}
                 >
@@ -1200,7 +1200,7 @@ Terima kasih.`;
               <div className="absolute left-1/2 -translate-x-1/2 z-20">
                 <button 
                   onClick={() => scrollToSection('home')}
-                  className={`px-6 py-2 text-[24px] lg:text-[26px] xl:text-[28px] font-['Montserrat:ExtraBold',sans-serif] font-extrabold transition-all cursor-pointer ${
+                  className={`px-6 py-2 text-[24px] lg:text-[26px] xl:text-[28px] font-['Plus_Jakarta_Sans',sans-serif] font-extrabold transition-all cursor-pointer ${
                     activeSection === 'home' ? 'text-[#0a282e]' : 'text-[#d9c4a7] hover:text-white'
                   }`}
                 >
@@ -1213,7 +1213,7 @@ Terima kasih.`;
                 <button 
                   ref={karyaRef}
                   onClick={() => scrollToSection('karya')}
-                  className={`px-4 py-2 text-[15px] lg:text-[16px] font-['Montserrat:Medium',sans-serif] font-medium transition-colors hover:text-white whitespace-nowrap cursor-pointer ${
+                  className={`px-4 py-2 text-[15px] lg:text-[16px] font-['Plus_Jakarta_Sans',sans-serif] font-medium transition-colors hover:text-white whitespace-nowrap cursor-pointer ${
                     activeSection === 'karya' ? 'text-[#0a282e]' : 'text-[#d9c4a7]'
                   }`}
                 >
@@ -1221,7 +1221,7 @@ Terima kasih.`;
                 </button>
                 <button 
                   onClick={() => scrollToSection('blog')}
-                  className={`px-4 py-2 text-[15px] lg:text-[16px] font-['Montserrat:Medium',sans-serif] font-medium transition-colors hover:text-white whitespace-nowrap cursor-pointer ${
+                  className={`px-4 py-2 text-[15px] lg:text-[16px] font-['Plus_Jakarta_Sans',sans-serif] font-medium transition-colors hover:text-white whitespace-nowrap cursor-pointer ${
                     activeSection === 'blog' ? 'text-[#0a282e]' : 'text-[#d9c4a7]'
                   }`}
                 >
@@ -1276,7 +1276,7 @@ Terima kasih.`;
               
               {/* Text above logos - NOW INSIDE WHITE SECTION */}
               <div className="absolute left-0 w-full text-center px-8 lg:px-16 xl:px-24" style={{ bottom: '95px' }}>
-                <p className="font-['Montserrat:Bold',sans-serif] font-bold text-gray-700 text-[15px] lg:text-[16px] xl:text-[17px] leading-[24px] max-w-[1000px] mx-auto">
+                <p className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-gray-700 text-[15px] lg:text-[16px] xl:text-[17px] leading-[24px] max-w-[1000px] mx-auto">
                   Narasumber dan Trainer untuk Institusi, Sekolah & Organisasi di 50+ Kota
                 </p>
               </div>
@@ -1378,7 +1378,7 @@ Terima kasih.`;
               {/* Mari Berkolaborasi - Right side - RESPONSIVE */}
               <button 
                 onClick={() => scrollToSection('ruang-kolaborasi')}
-                className="absolute top-[350px] inline-flex items-center gap-3 text-[#dac5a7] hover:text-white font-['Montserrat:Medium',sans-serif] font-medium text-[clamp(22px,2vw,28px)] leading-[25px] transition-colors group cursor-pointer"
+                className="absolute top-[350px] inline-flex items-center gap-3 text-[#dac5a7] hover:text-white font-['Plus_Jakarta_Sans',sans-serif] font-medium text-[clamp(22px,2vw,28px)] leading-[25px] transition-colors group cursor-pointer"
                 style={{
                   right: 'max(31px, 2%)'
                 }}
@@ -1404,7 +1404,7 @@ Terima kasih.`;
                 <span className="text-[#dac5a7]/80 text-[10px] font-medium tracking-widest uppercase">10+ Tahun · 50+ Kota</span>
               </div>
 
-              <p className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold leading-[1.05] text-[clamp(28px,2.8vw,41px)] text-white mb-1">
+              <p className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold leading-[1.05] text-[clamp(28px,2.8vw,41px)] text-white mb-1">
                 Assalamu'alaikum<span className="text-[#dac5a7]">.</span>
               </p>
 
@@ -1433,25 +1433,25 @@ Terima kasih.`;
                       <path clipRule="evenodd" d={svgDownload.p3baeb000} fill="#0E0E0E" fillRule="evenodd" />
                     </g>
                   </svg>
-                  <span className="font-['Montserrat:SemiBold',sans-serif] font-semibold text-[#0e0e0e] text-[14px]">Download CV</span>
+                  <span className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[#0e0e0e] text-[14px]">Download CV</span>
                 </a>
               </div>
             </div>
             
             {/* Right Content - RESPONSIVE */}
             <p 
-              className="absolute font-['Montserrat:Medium',sans-serif] font-medium leading-[25px] text-[#dac5a7] text-[clamp(14px,1.1vw,16px)] text-justify top-[130px] w-[min(431px,30%)] whitespace-pre-wrap"
+              className="absolute font-['Plus_Jakarta_Sans',sans-serif] font-medium leading-[25px] text-[#dac5a7] text-[clamp(14px,1.1vw,16px)] text-justify top-[130px] w-[min(431px,30%)] whitespace-pre-wrap"
               style={{
                 right: 'max(31px, 2%)'
               }}
             >
-              <span className="font-['Montserrat:Bold',sans-serif] font-bold">Digital Parenting Mentor & IT Consultant — </span>
+              <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">Digital Parenting Mentor & IT Consultant. </span>
               <span>Praktisi di persimpangan </span>
-              <span className="font-['Montserrat:Bold',sans-serif] font-bold">edukasi, psikologi & teknologi</span>
+              <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">edukasi, psikologi & teknologi</span>
               <span>. Pengalaman </span>
-              <span className="font-['Montserrat:Bold',sans-serif] font-bold">10+ tahun </span>
+              <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">10+ tahun </span>
               <span>membangun program, aplikasi, sistem, dan solusi digital untuk </span>
-              <span className="font-['Montserrat:Bold',sans-serif] font-bold">pemerintah, institusi, sekolah, dan keluarga</span>
+              <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">pemerintah, institusi, sekolah, dan keluarga</span>
               <span> di 50+ kota Indonesia.</span>
             </p>
           </div>
@@ -1466,7 +1466,7 @@ Terima kasih.`;
               </div>
 
               <p className="text-[#dac5a7]/60 text-[11px] font-semibold tracking-widest uppercase mb-2">Assalamu'alaikum</p>
-              <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[30px] text-white mb-1 leading-tight">
+              <h1 className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[30px] text-white mb-1 leading-tight">
                 Muhamad Nur Awaludin
               </h1>
               <div className="w-10 h-[3px] rounded-full bg-[#dac5a7] mx-auto my-4" />
@@ -1521,7 +1521,7 @@ Terima kasih.`;
               <div className="bg-white rounded-t-[24px] px-4 py-6">
                 {/* Text above logos */}
                 <div className="mb-4">
-                  <p className="font-['Montserrat:Bold',sans-serif] font-bold text-gray-700 text-[11px] leading-[16px] text-center">
+                  <p className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-gray-700 text-[11px] leading-[16px] text-center">
                     Narasumber Parenting Digital, Kecanduan Gadget & Game - Dipercaya oleh institusi, sekolah & organisasi di 50+ kota di Indonesia
                   </p>
                 </div>
@@ -1626,42 +1626,45 @@ Terima kasih.`;
       </section>
 
       {/* Tentang Saya Section */}
-      <section id="tentang-saya" className="bg-[#fffcf8] py-10 md:py-16">
-        <div className="max-w-[1200px] mx-auto px-6 md:px-8 lg:px-16">
+      <section id="tentang-saya" className="bg-[#fffcf8] section-block">
+        <div className="section-wrap">
           {/* Header */}
-          <div className="mb-8">
-            <div className="flex items-center gap-3 mb-3">
-              <div className="w-8 h-[3px] rounded-full bg-[#dac5a7]" />
-              <span className="text-[#0a282e]/50 text-[12px] font-semibold tracking-widest uppercase">Profil & Perjalanan</span>
+          <div className="mb-10 md:mb-12 max-w-2xl">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]" />
+              <span className="eyebrow text-[#0a282e]/50">Profil &amp; Perjalanan</span>
             </div>
-            <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[28px] md:text-[36px] lg:text-[44px] text-[#0a282e] mb-6">
+            <h2 className="t-h1 text-[#0a282e] mb-4">
               Tentang Saya
-            </h1>
+            </h2>
+            <p className="t-body text-[#0a282e]/60">
+              Satu perjalanan, banyak peran. Pilih topik untuk melihat fokus dan pengalaman saya di setiap bidang.
+            </p>
+          </div>
 
-            {/* Timeline Horizontal Pills */}
-            <div className="flex flex-wrap gap-2.5 mb-8">
-              {Object.values(timelineData).map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => setActiveTimeline(item.id)}
-                  className={`px-5 py-2.5 rounded-full font-['Montserrat:Medium',sans-serif] text-[14px] md:text-[15px] transition-all whitespace-nowrap ${
-                    activeTimeline === item.id
-                      ? 'bg-[#0a282e] text-[#dac5a7] shadow-md scale-[1.03]'
-                      : 'bg-[#f5ede1] text-[#0a282e]/70 hover:bg-[#edd9bc] hover:text-[#0a282e]'
-                  }`}
-                >
-                  {item.title}
-                </button>
-              ))}
-            </div>
+          {/* Timeline Horizontal Pills */}
+          <div className="flex flex-wrap gap-2.5 mb-10 md:mb-12">
+            {Object.values(timelineData).map((item) => (
+              <button
+                key={item.id}
+                onClick={() => setActiveTimeline(item.id)}
+                className={`px-5 py-2.5 rounded-full t-meta transition-all duration-300 whitespace-nowrap ${
+                  activeTimeline === item.id
+                    ? 'bg-[#0a282e] text-[#dac5a7] shadow-[0_6px_18px_rgba(10,40,46,0.18)]'
+                    : 'bg-[#f3ebde] text-[#0a282e]/65 hover:bg-[#ede2d0] hover:text-[#0a282e]'
+                }`}
+              >
+                {item.title}
+              </button>
+            ))}
           </div>
 
           {/* Content: 2 Kolom */}
-          <div className="flex flex-col md:flex-row gap-8 items-start">
-            {/* Left: Photo - COMPACT */}
-            <div className="w-full md:w-[320px] flex-shrink-0">
-              <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
-                <ImageWithFallback 
+          <div className="flex flex-col md:flex-row gap-8 lg:gap-12 items-start">
+            {/* Left: Photo */}
+            <div className="w-full md:w-[340px] flex-shrink-0 md:sticky md:top-28">
+              <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(10,40,46,0.15)] border border-[#0a282e]/5">
+                <ImageWithFallback
                   key={activeTimeline}
                   src={currentTimeline.image}
                   alt={currentTimeline.title}
@@ -1671,18 +1674,15 @@ Terima kasih.`;
             </div>
 
             {/* Right: Content - DYNAMIC */}
-            <div className="flex-1">
-              {/* Current timeline content dengan fade */}
-              <div 
+            <div className="flex-1 min-w-0">
+              <div
                 key={`content-${activeTimeline}`}
                 className="animate-fadeIn"
               >
-                <h2 className="font-['Montserrat:Bold',sans-serif] font-bold text-[22px] md:text-[26px] text-[#0a282e] mb-4">
+                <h3 className="t-h2 text-[#0a282e] mb-5">
                   {currentTimeline.title}
-                </h2>
-                
-                {/* Render konten langsung dari timelineData */}
-                <div className="text-[16px] md:text-[18px] text-[#0a282e] leading-relaxed mb-6 text-justify">
+                </h3>
+                <div className="t-body-lg text-[#0a282e]/80 [&_strong]:text-[#0a282e] [&_strong]:font-bold [&>*+*]:mt-4">
                   {currentTimeline.content}
                 </div>
               </div>
@@ -1702,10 +1702,10 @@ Terima kasih.`;
         <div className="max-w-[1400px] mx-auto px-6 md:px-8 lg:px-16">
           {/* Header */}
           <div className="mb-12 md:mb-16 text-center">
-            <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[28px] md:text-[36px] lg:text-[48px] text-[#0a282e] mb-4">
+            <h1 className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[28px] md:text-[36px] lg:text-[48px] text-[#0a282e] mb-4">
               Ruang Kolaborasi
             </h1>
-            <p className="text-[#0a282e]/70 text-[16px] md:text-[20px] font-['Montserrat:Medium',sans-serif] font-medium">
+            <p className="text-[#0a282e]/70 text-[16px] md:text-[20px] font-['Plus_Jakarta_Sans',sans-serif] font-medium">
               Klik untuk melihat detail kolaborasi
             </p>
           </div>
@@ -1750,20 +1750,20 @@ Terima kasih.`;
 
                           {/* Title */}
                           <h3 
-                            className="font-['Montserrat:Bold',sans-serif] font-bold text-[20px] md:text-[24px] lg:text-[28px] mb-3 leading-tight"
+                            className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[20px] md:text-[24px] lg:text-[28px] mb-3 leading-tight"
                             style={{ color: collab.borderColor }}
                           >
                             {collab.title}
                           </h3>
 
                           {/* Short Description */}
-                          <p className="text-[#0a282e]/70 text-[14px] md:text-[15px] font-['Montserrat:Medium',sans-serif] font-medium leading-relaxed">
+                          <p className="text-[#0a282e]/70 text-[14px] md:text-[15px] font-['Plus_Jakarta_Sans',sans-serif] font-medium leading-relaxed">
                             {collab.description.split('.')[0]}.
                           </p>
                         </div>
 
                         {/* CTA */}
-                        <div className="flex items-center gap-2 mt-4 font-['Montserrat:SemiBold',sans-serif] font-semibold text-[14px] md:text-[15px]" style={{ color: collab.borderColor }}>
+                        <div className="flex items-center gap-2 mt-4 font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[14px] md:text-[15px]" style={{ color: collab.borderColor }}>
                           Lihat Detail
                           <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                         </div>
@@ -1782,7 +1782,7 @@ Terima kasih.`;
                               <Icon className="w-8 h-8" style={{ color: collab.borderColor }} strokeWidth={2} />
                             </div>
                             <h3 
-                              className="font-['Montserrat:Bold',sans-serif] font-bold text-[22px] md:text-[26px] leading-tight"
+                              className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[22px] md:text-[26px] leading-tight"
                               style={{ color: collab.borderColor }}
                             >
                               {collab.title}
@@ -1801,7 +1801,7 @@ Terima kasih.`;
                           </button>
                         </div>
 
-                        <p className="text-[#0a282e]/80 text-[14px] md:text-[15px] leading-relaxed mb-6 font-['Montserrat:Medium',sans-serif] font-medium">
+                        <p className="text-[#0a282e]/80 text-[14px] md:text-[15px] leading-relaxed mb-6 font-['Plus_Jakarta_Sans',sans-serif] font-medium">
                           {collab.description}
                         </p>
 
@@ -1810,12 +1810,12 @@ Terima kasih.`;
                           {/* For Narasumber - Show Topics by Category */}
                           {collab.topics && Object.entries(collab.topics).map(([category, items], idx) => (
                             <div key={idx} className="bg-white/80 rounded-2xl p-4">
-                              <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[14px] md:text-[15px] mb-3" style={{ color: collab.borderColor }}>
+                              <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[15px] mb-3" style={{ color: collab.borderColor }}>
                                 {category}
                               </h4>
                               <ul className="space-y-2">
                                 {items.map((item, itemIdx) => (
-                                  <li key={itemIdx} className="flex items-start gap-2 text-[#0a282e]/70 text-[12px] md:text-[13px] font-['Montserrat:Medium',sans-serif] font-medium leading-tight">
+                                  <li key={itemIdx} className="flex items-start gap-2 text-[#0a282e]/70 text-[12px] md:text-[13px] font-['Plus_Jakarta_Sans',sans-serif] font-medium leading-tight">
                                     <span className="text-[8px] mt-1">●</span>
                                     {item}
                                   </li>
@@ -1831,7 +1831,7 @@ Terima kasih.`;
                                 <div key={idx} className="bg-gradient-to-br from-white/95 to-white/80 rounded-3xl p-5 shadow-sm border border-white/50 backdrop-blur-sm">
                                   <div className="flex items-center gap-2 mb-4">
                                     <div 
-                                      className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] px-6 py-2.5 rounded-full"
+                                      className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] px-6 py-2.5 rounded-full"
                                       style={{ 
                                         backgroundColor: collab.borderColor,
                                         color: 'white'
@@ -1846,7 +1846,7 @@ Terima kasih.`;
                                         <div className="flex items-start gap-2.5 mb-3">
                                           <div className="w-2 h-2 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: collab.borderColor }}></div>
                                           <span 
-                                            className="text-[#0a282e] text-[13px] md:text-[14px] font-['Montserrat:Bold',sans-serif] font-bold leading-snug px-4 py-2 rounded-lg inline-block shadow-sm"
+                                            className="text-[#0a282e] text-[13px] md:text-[14px] font-['Plus_Jakarta_Sans',sans-serif] font-bold leading-snug px-4 py-2 rounded-lg inline-block shadow-sm"
                                             style={{ backgroundColor: item.bgColor || '#F3F4F6' }}
                                           >
                                             {item.name}
@@ -1877,7 +1877,7 @@ Terima kasih.`;
                                                       <div className="p-3 flex items-center justify-between">
                                                         <div className="flex items-center gap-2">
                                                           <Video className="w-4 h-4" style={{ color: collab.borderColor }} />
-                                                          <span className="text-[12px] md:text-[13px] font-['Montserrat:SemiBold',sans-serif] font-semibold text-[#0a282e]/70">{link.label}</span>
+                                                          <span className="text-[12px] md:text-[13px] font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[#0a282e]/70">{link.label}</span>
                                                         </div>
                                                         <ExternalLink className="w-3.5 h-3.5 text-[#0a282e]/40" />
                                                       </div>
@@ -1891,8 +1891,8 @@ Terima kasih.`;
                                                           <FileText className="w-5 h-5" style={{ color: collab.borderColor }} />
                                                         </div>
                                                         <div className="flex-1 min-w-0">
-                                                          <div className="text-[12px] md:text-[13px] font-['Montserrat:SemiBold',sans-serif] font-semibold text-[#0a282e]/80 mb-0.5">{link.label}</div>
-                                                          <div className="text-[10px] md:text-[11px] font-['Montserrat:Medium',sans-serif] text-[#0a282e]/50 truncate">{new URL(link.url).hostname}</div>
+                                                          <div className="text-[12px] md:text-[13px] font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[#0a282e]/80 mb-0.5">{link.label}</div>
+                                                          <div className="text-[10px] md:text-[11px] font-['Plus_Jakarta_Sans',sans-serif] text-[#0a282e]/50 truncate">{new URL(link.url).hostname}</div>
                                                         </div>
                                                         <ExternalLink className="w-4 h-4 text-[#0a282e]/30 group-hover/article:text-[#0a282e]/60 transition-colors flex-shrink-0" />
                                                       </div>
@@ -1913,13 +1913,13 @@ Terima kasih.`;
                                 <div className="bg-gradient-to-br from-white/95 to-white/80 rounded-3xl p-5 shadow-sm border border-white/50 backdrop-blur-sm">
                                   <div className="flex items-center gap-2 mb-4">
                                     <div className="w-1 h-6 rounded-full" style={{ backgroundColor: collab.borderColor }}></div>
-                                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px]" style={{ color: collab.borderColor }}>
+                                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px]" style={{ color: collab.borderColor }}>
                                       {collab.servicesTitle || 'Services'}
                                     </h4>
                                   </div>
                                   <ul className="space-y-2.5">
                                     {collab.services.map((service, idx) => (
-                                      <li key={idx} className="flex items-start gap-2.5 text-[#0a282e]/70 text-[12px] md:text-[13px] font-['Montserrat:Medium',sans-serif] font-medium leading-snug">
+                                      <li key={idx} className="flex items-start gap-2.5 text-[#0a282e]/70 text-[12px] md:text-[13px] font-['Plus_Jakarta_Sans',sans-serif] font-medium leading-snug">
                                         <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: collab.borderColor }}></div>
                                         {service}
                                       </li>
@@ -1933,12 +1933,12 @@ Terima kasih.`;
                           {/* For Software Development & Creative Consultation - Show Services */}
                           {!collab.topics && !collab.clients && collab.services && (
                             <div className="bg-white/80 rounded-2xl p-4">
-                              <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[14px] md:text-[15px] mb-3" style={{ color: collab.borderColor }}>
+                              <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[15px] mb-3" style={{ color: collab.borderColor }}>
                                 Apa saja yang bisa saya bantu.
                               </h4>
                               <ul className="space-y-2">
                                 {collab.services.map((service, idx) => (
-                                  <li key={idx} className="flex items-start gap-2 text-[#0a282e]/70 text-[12px] md:text-[13px] font-['Montserrat:Medium',sans-serif] font-medium leading-tight">
+                                  <li key={idx} className="flex items-start gap-2 text-[#0a282e]/70 text-[12px] md:text-[13px] font-['Plus_Jakarta_Sans',sans-serif] font-medium leading-tight">
                                     <span className="text-[8px] mt-1">●</span>
                                     {service}
                                   </li>
@@ -1955,7 +1955,7 @@ Terima kasih.`;
                               e.stopPropagation();
                               scrollToSection('kontak');
                             }}
-                            className="px-8 py-3 rounded-xl font-['Montserrat:Bold',sans-serif] font-bold text-[14px] text-white transition-all hover:opacity-90 hover:scale-105"
+                            className="px-8 py-3 rounded-xl font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] text-white transition-all hover:opacity-90 hover:scale-105"
                             style={{ backgroundColor: collab.borderColor }}
                           >
                             {collab.cta}
@@ -1972,37 +1972,33 @@ Terima kasih.`;
       </section></div>
 
       {/* Apresiasi dan Liputan Media Section */}
-      <section id="karya" className="min-h-screen bg-[#0b2d35] py-16 md:py-24">
-        <div className="max-w-[1400px] mx-auto px-6 md:px-8 lg:px-16">
+      <section id="karya" className="bg-[#0a282e] section-block">
+        <div className="section-wrap !max-w-[1320px]">
           {/* Header */}
-          <div className="mb-12 md:mb-20 text-center">
-            <div className="flex items-center justify-center gap-3 mb-5">
+          <div className="mb-12 md:mb-16 text-center">
+            <div className="flex items-center justify-center gap-3 mb-4">
               <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
-              <span className="text-[#dac5a7]/60 text-[11px] font-semibold tracking-widest uppercase">Rekam Jejak</span>
+              <span className="eyebrow text-[#dac5a7]/60">Rekam Jejak</span>
               <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
             </div>
-
-            <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[28px] md:text-[40px] lg:text-[50px] text-white mb-4 leading-tight">
+            <h2 className="t-h1 text-white mb-4">
               Apresiasi &amp; Liputan Media
-            </h1>
-            <p className="text-white/65 text-[14px] md:text-[16px] max-w-2xl mx-auto mb-6 px-4 leading-relaxed">
+            </h2>
+            <p className="t-body text-white/55 max-w-2xl mx-auto">
               Pengalaman mendampingi institusi, pemerintah, dan keluarga di berbagai kota Indonesia. Dipercaya media nasional untuk membahas parenting digital, literasi teknologi, dan pendidikan anak.
             </p>
-            <div className="flex justify-center">
-              <div className="w-12 h-[3px] bg-[#dac5a7] rounded-full" />
-            </div>
           </div>
 
           {/* Filter Tabs */}
-          <div className="flex flex-wrap gap-3 mb-12 md:mb-16 justify-center">
+          <div className="flex flex-wrap gap-2.5 mb-12 md:mb-16 justify-center">
             {filters.map((filter) => (
               <button
                 key={filter.id}
                 onClick={() => setActiveFilter(filter.id)}
-                className={`px-5 md:px-8 py-2.5 md:py-3 rounded-full font-['Montserrat:SemiBold',sans-serif] font-semibold text-[14px] md:text-[16px] transition-all duration-300 ${
+                className={`px-5 md:px-7 py-2.5 rounded-full t-meta transition-all duration-300 ${
                   activeFilter === filter.id
-                    ? 'bg-[#dac5a7] text-[#0a282e] shadow-lg scale-105'
-                    : 'bg-white/10 text-white/80 hover:bg-white/20 hover:text-white border border-white/20 hover:border-white/40'
+                    ? 'bg-[#dac5a7] text-[#0a282e] shadow-[0_6px_18px_rgba(218,197,167,0.25)]'
+                    : 'bg-white/[0.06] text-white/70 hover:bg-white/[0.12] hover:text-white border border-white/10 hover:border-white/25'
                 }`}
               >
                 {filter.label}
@@ -2026,10 +2022,10 @@ Terima kasih.`;
                       />
                     </div>
                     <div>
-                      <h2 className="font-['Montserrat:Bold',sans-serif] font-bold text-[18px] md:text-[22px] text-white mb-0.5">
+                      <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] md:text-[22px] text-white mb-0.5">
                         Semasa Kuliah
                       </h2>
-                      <p className="text-white/60 text-[12px] md:text-[14px] font-['Montserrat:Medium',sans-serif]">
+                      <p className="text-white/60 text-[12px] md:text-[14px] font-['Plus_Jakarta_Sans',sans-serif]">
                         Teknik Informatika UNIKOM
                       </p>
                     </div>
@@ -2057,7 +2053,7 @@ Terima kasih.`;
                             <Trophy className="w-4 h-4 text-[#dac5a7]" />
                           </div>
                           <div className="flex-1 min-w-0">
-                            <h3 className="font-['Montserrat:SemiBold',sans-serif] font-semibold text-[13px] md:text-[14px] text-white leading-snug group-hover:text-[#dac5a7] transition-colors">
+                            <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[13px] md:text-[14px] text-white leading-snug group-hover:text-[#dac5a7] transition-colors">
                               {award.title}
                             </h3>
                           </div>
@@ -2078,10 +2074,10 @@ Terima kasih.`;
                       />
                     </div>
                     <div>
-                      <h2 className="font-['Montserrat:Bold',sans-serif] font-bold text-[18px] md:text-[22px] text-white mb-0.5">
+                      <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] md:text-[22px] text-white mb-0.5">
                         Semasa Menjadi Entrepreneur
                       </h2>
-                      <p className="text-white/60 text-[12px] md:text-[14px] font-['Montserrat:Medium',sans-serif]">
+                      <p className="text-white/60 text-[12px] md:text-[14px] font-['Plus_Jakarta_Sans',sans-serif]">
                         2014 - Sekarang
                       </p>
                     </div>
@@ -2100,7 +2096,7 @@ Terima kasih.`;
 
                   {/* Kakatu Awards - Compact */}
                   <div className="mb-5">
-                    <h3 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[18px] text-[#dac5a7] mb-3">
+                    <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[18px] text-[#dac5a7] mb-3">
                       Awards with Kakatu (Parenting Startup)
                     </h3>
                     <div className="grid grid-cols-1 gap-3">
@@ -2114,7 +2110,7 @@ Terima kasih.`;
                               <Trophy className="w-4 h-4 text-[#dac5a7]" />
                             </div>
                             <div className="flex-1">
-                              <h4 className="font-['Montserrat:SemiBold',sans-serif] font-semibold text-[13px] md:text-[14px] text-white leading-snug group-hover:text-[#dac5a7] transition-colors duration-300">
+                              <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[13px] md:text-[14px] text-white leading-snug group-hover:text-[#dac5a7] transition-colors duration-300">
                                 {award.title}
                               </h4>
                             </div>
@@ -2126,7 +2122,7 @@ Terima kasih.`;
 
                   {/* Fammi Awards - Compact */}
                   <div>
-                    <h3 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[18px] text-[#dac5a7] mb-3">
+                    <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[18px] text-[#dac5a7] mb-3">
                       Awards with Fammi (Education Consultant)
                     </h3>
                     <div className="grid grid-cols-1 gap-3">
@@ -2140,7 +2136,7 @@ Terima kasih.`;
                               <Trophy className="w-4 h-4 text-[#dac5a7]" />
                             </div>
                             <div className="flex-1">
-                              <h4 className="font-['Montserrat:SemiBold',sans-serif] font-semibold text-[13px] md:text-[14px] text-white leading-snug group-hover:text-[#dac5a7] transition-colors duration-300">
+                              <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[13px] md:text-[14px] text-white leading-snug group-hover:text-[#dac5a7] transition-colors duration-300">
                                 {award.title}
                               </h4>
                             </div>
@@ -2159,7 +2155,7 @@ Terima kasih.`;
             <div>
               {/* Video Liputan */}
               <div className="mb-12 md:mb-16">
-                <h2 className="font-['Montserrat:Bold',sans-serif] font-bold text-[24px] md:text-[32px] text-white mb-8 md:mb-10 text-center">
+                <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[24px] md:text-[32px] text-white mb-8 md:mb-10 text-center">
                   Liputan Video
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -2190,7 +2186,7 @@ Terima kasih.`;
                             />
                           </div>
                         </div>
-                        <h3 className="font-['Montserrat:SemiBold',sans-serif] font-semibold text-[14px] md:text-[15px] text-white leading-snug group-hover:text-[#dac5a7] transition-colors">
+                        <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[14px] md:text-[15px] text-white leading-snug group-hover:text-[#dac5a7] transition-colors">
                           {video.title}
                         </h3>
                       </div>
@@ -2201,7 +2197,7 @@ Terima kasih.`;
 
               {/* Artikel Liputan */}
               <div>
-                <h2 className="font-['Montserrat:Bold',sans-serif] font-bold text-[24px] md:text-[32px] text-white mb-8 md:mb-10 text-center">
+                <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[24px] md:text-[32px] text-white mb-8 md:mb-10 text-center">
                   Liputan Artikel
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -2222,10 +2218,10 @@ Terima kasih.`;
                           />
                         </div>
                       </div>
-                      <h3 className="font-['Montserrat:SemiBold',sans-serif] font-semibold text-[15px] md:text-[16px] text-white leading-snug mb-3 group-hover:text-[#dac5a7] transition-colors">
+                      <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[15px] md:text-[16px] text-white leading-snug mb-3 group-hover:text-[#dac5a7] transition-colors">
                         {article.title}
                       </h3>
-                      <div className="flex items-center text-white/60 text-[13px] md:text-[14px] font-['Montserrat:Medium',sans-serif] group-hover:text-white transition-colors">
+                      <div className="flex items-center text-white/60 text-[13px] md:text-[14px] font-['Plus_Jakarta_Sans',sans-serif] group-hover:text-white transition-colors">
                         <span>Baca selengkapnya</span>
                         <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -2244,23 +2240,22 @@ Terima kasih.`;
       <BlogSection />
 
       {/* Events & Kontak Section - Side by Side */}
-      <section id="events" className="min-h-screen bg-[#0a282e] py-24">
-        <div className="max-w-[1400px] mx-auto px-8 md:px-16">
+      <section id="events" className="bg-[#0a282e] section-block border-t border-white/[0.06]">
+        <div className="section-wrap !max-w-[1320px]">
           {/* DESKTOP: 2 Columns Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-16">
-            
+
             {/* LEFT: Upcoming Events */}
             <div>
-              <div className="mb-12 text-center lg:text-left">
-                <div className="flex items-center gap-3 mb-3 justify-center lg:justify-start">
+              <div className="mb-10 md:mb-12 text-center lg:text-left">
+                <div className="flex items-center gap-3 mb-4 justify-center lg:justify-start">
                   <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
-                  <span className="text-[#dac5a7]/60 text-[11px] font-semibold tracking-widest uppercase">Agenda</span>
-                  <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
+                  <span className="eyebrow text-[#dac5a7]/60">Agenda</span>
                 </div>
-                <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[32px] md:text-[44px] text-white mb-4 leading-tight">
+                <h2 className="t-h1 text-white mb-4">
                   Upcoming Events
-                </h1>
-                <p className="text-white/60 text-[15px] md:text-[16px] leading-relaxed">
+                </h2>
+                <p className="t-body text-white/55">
                   Bergabunglah dengan kegiatan mendatang untuk belajar dan berkembang bersama.
                 </p>
               </div>
@@ -2276,9 +2271,9 @@ Terima kasih.`;
                         setSelectedEvent(event.id);
                         setShowEventDialog(true);
                       }}
-                      className="group relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/10 hover:border-[#dac5a7]/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#dac5a7]/20 cursor-pointer"
+                      className="group relative rounded-3xl overflow-hidden border border-white/10 hover:border-[#dac5a7]/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(0,0,0,0.25)] cursor-pointer"
                       style={{
-                        transformStyle: 'preserve-3d',
+                        background: 'rgba(255,255,255,0.04)',
                       }}
                     >
                       {/* Event Card Content */}
@@ -2286,11 +2281,11 @@ Terima kasih.`;
                         <div className="flex gap-6">
                           {/* Date Badge */}
                           <div className="flex-shrink-0">
-                            <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${event.color} flex flex-col items-center justify-center text-white shadow-lg`}>
-                              <div className="text-[10px] font-['Montserrat:Bold',sans-serif] uppercase tracking-wider opacity-90">
+                            <div className="w-[72px] h-[72px] rounded-2xl bg-[#dac5a7] flex flex-col items-center justify-center text-[#0a282e] shadow-[0_8px_20px_rgba(0,0,0,0.2)]">
+                              <div className="text-[10px] font-semibold uppercase tracking-wider opacity-80">
                                 {event.date}
                               </div>
-                              <div className="text-[28px] font-['Montserrat:ExtraBold',sans-serif] leading-none">
+                              <div className="text-[28px] font-extrabold leading-none">
                                 {event.day}
                               </div>
                             </div>
@@ -2299,15 +2294,15 @@ Terima kasih.`;
                           {/* Event Info */}
                           <div className="flex-1 min-w-0">
                             {/* Category Badge */}
-                            <div className="inline-block px-3 py-1 bg-[#dac5a7]/20 text-[#dac5a7] text-[11px] font-['Montserrat:SemiBold',sans-serif] rounded-full mb-3">
+                            <div className="inline-block px-3 py-1 bg-[#dac5a7]/15 text-[#dac5a7] eyebrow rounded-full mb-3">
                               {event.category}
                             </div>
 
-                            <h3 className="font-['Montserrat:Bold',sans-serif] font-bold text-[18px] md:text-[20px] text-white mb-3 group-hover:text-[#dac5a7] transition-colors line-clamp-2">
+                            <h3 className="t-h3 text-white mb-2.5 group-hover:text-[#dac5a7] transition-colors line-clamp-2">
                               {event.title}
                             </h3>
 
-                            <p className="text-white/70 text-[14px] font-['Montserrat:Regular',sans-serif] mb-5 line-clamp-2 leading-relaxed">
+                            <p className="t-meta font-normal text-white/55 mb-5 line-clamp-2">
                               {event.description}
                             </p>
 
@@ -2316,9 +2311,9 @@ Terima kasih.`;
                               const daysLeft = calculateDaysRemaining(event.fullDate);
                               if (daysLeft > 0) {
                                 return (
-                                  <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-amber-500/20 to-orange-500/20 border border-amber-400/30 rounded-full mb-4">
-                                    <Calendar className="w-3.5 h-3.5 text-amber-400" />
-                                    <span className="text-amber-300 text-[12px] font-['Montserrat:Bold',sans-serif]">
+                                  <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#dac5a7]/10 border border-[#dac5a7]/25 rounded-full mb-4">
+                                    <Calendar className="w-3.5 h-3.5 text-[#dac5a7]" />
+                                    <span className="text-[#dac5a7] text-[12px] font-semibold">
                                       {daysLeft} hari lagi
                                     </span>
                                   </div>
@@ -2331,11 +2326,11 @@ Terima kasih.`;
                             <div className="space-y-2">
                               <div className="flex items-center text-white/60 text-[13px]">
                                 <Clock className="w-4 h-4 mr-2 flex-shrink-0" />
-                                <span className="font-['Montserrat:Medium',sans-serif]">{event.time}</span>
+                                <span className="font-['Plus_Jakarta_Sans',sans-serif]">{event.time}</span>
                               </div>
                               <div className="flex items-center text-white/60 text-[13px]">
                                 <MapPin className="w-4 h-4 mr-2 flex-shrink-0" />
-                                <span className="font-['Montserrat:Medium',sans-serif] truncate">{event.location}</span>
+                                <span className="font-['Plus_Jakarta_Sans',sans-serif] truncate">{event.location}</span>
                               </div>
                             </div>
                           </div>
@@ -2349,7 +2344,7 @@ Terima kasih.`;
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={(e) => e.stopPropagation()}
-                            className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-[#0f3a42] hover:bg-[#1a5a66] text-[#dac5a7] rounded-xl font-['Montserrat:Bold',sans-serif] font-bold text-[13px] md:text-[14px] transition-all hover:scale-[1.02] border border-[#dac5a7]/20 hover:border-[#dac5a7]/40"
+                            className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-[#0f3a42] hover:bg-[#1a5a66] text-[#dac5a7] rounded-xl font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[13px] md:text-[14px] transition-all hover:scale-[1.02] border border-[#dac5a7]/20 hover:border-[#dac5a7]/40"
                           >
                             <ClipboardList className="w-4 h-4 md:w-5 md:h-5" />
                             <span>Isi Pre-Test</span>
@@ -2359,7 +2354,7 @@ Terima kasih.`;
 
                         {/* Click indicator for detail dialog */}
                         <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                          <div className="flex items-center gap-2 text-[#dac5a7] text-[11px] font-['Montserrat:SemiBold',sans-serif] bg-[#0a282e]/80 backdrop-blur-sm px-3 py-1.5 rounded-full">
+                          <div className="flex items-center gap-2 text-[#dac5a7] text-[11px] font-['Plus_Jakarta_Sans',sans-serif] bg-[#0a282e]/80 backdrop-blur-sm px-3 py-1.5 rounded-full">
                             <span>Klik untuk detail</span>
                             <ArrowRight className="w-3 h-3" />
                           </div>
@@ -2373,26 +2368,25 @@ Terima kasih.`;
 
             {/* RIGHT: Mari Berdiskusi (Kontak Form) */}
             <div id="kontak">
-              <div className="mb-12 text-center lg:text-left">
-                <div className="flex items-center gap-3 mb-3 justify-center lg:justify-start">
+              <div className="mb-10 md:mb-12 text-center lg:text-left">
+                <div className="flex items-center gap-3 mb-4 justify-center lg:justify-start">
                   <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
-                  <span className="text-[#dac5a7]/60 text-[11px] font-semibold tracking-widest uppercase">Kontak</span>
-                  <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
+                  <span className="eyebrow text-[#dac5a7]/60">Kontak</span>
                 </div>
-                <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[32px] md:text-[44px] text-white mb-4 leading-tight">
+                <h2 className="t-h1 text-white mb-4">
                   Mari Berdiskusi
-                </h1>
-                <p className="text-white/60 text-[15px] md:text-[16px] leading-relaxed">
+                </h2>
+                <p className="t-body text-white/55">
                   Tertarik mengundang sebagai narasumber, mendiskusikan program, atau menjajaki kolaborasi? Hubungi melalui formulir berikut.
                 </p>
               </div>
 
-              <div className="bg-white/8 backdrop-blur-sm rounded-3xl p-8 md:p-10 border border-[#dac5a7]/15" style={{ background: 'rgba(255,255,255,0.06)' }}>
-                <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="rounded-3xl p-7 md:p-9 border border-white/10" style={{ background: 'rgba(255,255,255,0.04)' }}>
+                <form onSubmit={handleSubmit} className="space-y-5">
                     <div>
-                      <label 
-                        htmlFor="nama" 
-                        className="block text-white font-['Montserrat:SemiBold',sans-serif] text-[16px] md:text-[18px] mb-3"
+                      <label
+                        htmlFor="nama"
+                        className="block text-white/90 t-meta mb-2.5"
                       >
                         Nama
                       </label>
@@ -2403,15 +2397,15 @@ Terima kasih.`;
                         value={formData.nama}
                         onChange={handleChange}
                         required
-                        className="w-full px-6 py-4 bg-white/10 border border-[#dac5a7]/20 rounded-xl text-white placeholder-white/40 focus:outline-none focus:border-[#dac5a7] focus:bg-white/15 transition-all text-[16px]"
+                        className="w-full px-5 py-3.5 bg-white/[0.06] border border-white/10 rounded-2xl text-white placeholder-white/35 focus:outline-none focus:border-[#dac5a7]/60 focus:bg-white/[0.09] transition-all t-body"
                         placeholder="Nama lengkap Anda"
                       />
                     </div>
 
                     <div>
-                      <label 
-                        htmlFor="institusi" 
-                        className="block text-white font-['Montserrat:SemiBold',sans-serif] text-[16px] md:text-[18px] mb-3"
+                      <label
+                        htmlFor="institusi"
+                        className="block text-white/90 t-meta mb-2.5"
                       >
                         Institusi
                       </label>
@@ -2422,15 +2416,15 @@ Terima kasih.`;
                         value={formData.institusi}
                         onChange={handleChange}
                         required
-                        className="w-full px-6 py-4 bg-white/10 border border-[#dac5a7]/20 rounded-xl text-white placeholder-white/40 focus:outline-none focus:border-[#dac5a7] focus:bg-white/15 transition-all text-[16px]"
+                        className="w-full px-5 py-3.5 bg-white/[0.06] border border-white/10 rounded-2xl text-white placeholder-white/35 focus:outline-none focus:border-[#dac5a7]/60 focus:bg-white/[0.09] transition-all t-body"
                         placeholder="Sekolah, organisasi, atau perusahaan"
                       />
                     </div>
 
                     <div>
-                      <label 
-                        htmlFor="kebutuhan" 
-                        className="block text-white font-['Montserrat:SemiBold',sans-serif] text-[16px] md:text-[18px] mb-3"
+                      <label
+                        htmlFor="kebutuhan"
+                        className="block text-white/90 t-meta mb-2.5"
                       >
                         Kebutuhan / Rencana Kegiatan
                       </label>
@@ -2440,15 +2434,15 @@ Terima kasih.`;
                         value={formData.kebutuhan}
                         onChange={handleChange}
                         required
-                        rows={6}
-                        className="w-full px-6 py-4 bg-white/10 border border-[#dac5a7]/20 rounded-xl text-white placeholder-white/40 focus:outline-none focus:border-[#dac5a7] focus:bg-white/15 transition-all resize-none text-[16px]"
+                        rows={5}
+                        className="w-full px-5 py-3.5 bg-white/[0.06] border border-white/10 rounded-2xl text-white placeholder-white/35 focus:outline-none focus:border-[#dac5a7]/60 focus:bg-white/[0.09] transition-all resize-none t-body"
                         placeholder="Ceritakan tentang kebutuhan atau rencana kegiatan Anda..."
                       />
                     </div>
 
                     <button
                       type="submit"
-                      className="w-full px-8 py-4 bg-[#dac5a7] hover:bg-[#c9b496] text-[#0a282e] rounded-xl font-['Montserrat:SemiBold',sans-serif] font-semibold text-[18px] transition-colors"
+                      className="w-full px-8 py-4 bg-[#dac5a7] hover:bg-[#edd9bc] text-[#0a282e] rounded-2xl font-semibold t-h3 transition-all hover:shadow-[0_8px_24px_rgba(218,197,167,0.25)]"
                     >
                       Kirim Pesan
                     </button>
@@ -2456,19 +2450,19 @@ Terima kasih.`;
               </div>
 
                   {/* Instagram Footer Link */}
-              <div className="mt-12 text-center lg:text-left">
-                <p className="text-white/60 text-[14px] md:text-[16px] mb-6">
-                  Atau hubungi langsung melalui email atau media sosial
+              <div className="mt-8 text-center lg:text-left">
+                <p className="t-body text-white/55 mb-4">
+                  Atau hubungi langsung melalui media sosial
                 </p>
-                
+
                 {/* Instagram Link */}
-                <a 
-                  href="https://instagram.com/mumuawaludin" 
-                  target="_blank" 
+                <a
+                  href="https://instagram.com/mumuawaludin"
+                  target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white rounded-xl font-['Inter',sans-serif] font-semibold text-[15px] md:text-[16px] transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+                  className="inline-flex items-center gap-2.5 px-5 py-3 bg-white/[0.06] hover:bg-white/[0.12] border border-white/10 hover:border-[#dac5a7]/40 text-white rounded-2xl t-meta transition-all"
                 >
-                  <Instagram className="w-5 h-5" />
+                  <Instagram className="w-[18px] h-[18px] text-[#dac5a7]" />
                   Follow @mumuawaludin
                 </a>
               </div>
@@ -2504,36 +2498,36 @@ Terima kasih.`;
                     
                     <div className="flex items-center gap-4 mb-4">
                       <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${event.color} flex flex-col items-center justify-center text-white shadow-lg flex-shrink-0`}>
-                        <div className="text-[10px] font-['Montserrat:Bold',sans-serif] uppercase tracking-wider opacity-90">
+                        <div className="text-[10px] font-['Plus_Jakarta_Sans',sans-serif] uppercase tracking-wider opacity-90">
                           {event.date}
                         </div>
-                        <div className="text-[24px] font-['Montserrat:ExtraBold',sans-serif] leading-none">
+                        <div className="text-[24px] font-['Plus_Jakarta_Sans',sans-serif] leading-none">
                           {event.day}
                         </div>
                       </div>
                       
                       <div>
-                        <div className="inline-block px-3 py-1 bg-[#dac5a7]/20 text-[#dac5a7] text-[11px] font-['Montserrat:SemiBold',sans-serif] rounded-full mb-2">
+                        <div className="inline-block px-3 py-1 bg-[#dac5a7]/20 text-[#dac5a7] text-[11px] font-['Plus_Jakarta_Sans',sans-serif] rounded-full mb-2">
                           {event.category}
                         </div>
-                        <h2 className="font-['Montserrat:Bold',sans-serif] font-bold text-[20px] text-white leading-tight">
+                        <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[20px] text-white leading-tight">
                           {event.title}
                         </h2>
                       </div>
                     </div>
 
-                    <p className="text-white/70 text-[14px] font-['Montserrat:Regular',sans-serif] mb-5 leading-relaxed">
+                    <p className="text-white/70 text-[14px] font-['Plus_Jakarta_Sans',sans-serif] mb-5 leading-relaxed">
                       {event.description}
                     </p>
 
                     <div className="space-y-2">
                       <div className="flex items-center text-white/60 text-[13px]">
                         <Clock className="w-4 h-4 mr-2 flex-shrink-0" />
-                        <span className="font-['Montserrat:Medium',sans-serif]">{event.time}</span>
+                        <span className="font-['Plus_Jakarta_Sans',sans-serif]">{event.time}</span>
                       </div>
                       <div className="flex items-center text-white/60 text-[13px]">
                         <MapPin className="w-4 h-4 mr-2 flex-shrink-0" />
-                        <span className="font-['Montserrat:Medium',sans-serif]">{event.location}</span>
+                        <span className="font-['Plus_Jakarta_Sans',sans-serif]">{event.location}</span>
                       </div>
                     </div>
                   </div>
@@ -2544,7 +2538,7 @@ Terima kasih.`;
                       href={event.preTestUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center gap-3 w-full px-6 py-4 bg-[#0f3a42] hover:bg-[#1a5a66] text-[#dac5a7] rounded-xl font-['Montserrat:SemiBold',sans-serif] font-semibold text-[15px] transition-all hover:scale-[1.02] border border-[#dac5a7]/20"
+                      className="flex items-center justify-center gap-3 w-full px-6 py-4 bg-[#0f3a42] hover:bg-[#1a5a66] text-[#dac5a7] rounded-xl font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[15px] transition-all hover:scale-[1.02] border border-[#dac5a7]/20"
                     >
                       <ClipboardList className="w-5 h-5" />
                       Isi Pre-Test
@@ -2559,7 +2553,7 @@ Terima kasih.`;
                             href={event.worksheetUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center justify-center gap-3 w-full px-6 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-xl font-['Montserrat:SemiBold',sans-serif] font-semibold text-[15px] transition-all hover:scale-[1.02] shadow-lg"
+                            className="flex items-center justify-center gap-3 w-full px-6 py-4 bg-[#dac5a7] hover:bg-[#edd9bc] text-[#0a282e] rounded-2xl font-semibold text-[15px] transition-all hover:shadow-[0_8px_24px_rgba(218,197,167,0.25)]"
                           >
                             <Download className="w-5 h-5" />
                             Download Worksheet
@@ -2573,12 +2567,12 @@ Terima kasih.`;
                     <div className="relative">
                       <button
                         disabled
-                        className="flex items-center justify-center gap-3 w-full px-6 py-4 bg-gray-600/30 text-gray-400 rounded-xl font-['Montserrat:SemiBold',sans-serif] font-semibold text-[15px] cursor-not-allowed"
+                        className="flex items-center justify-center gap-3 w-full px-6 py-4 bg-gray-600/30 text-gray-400 rounded-xl font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[15px] cursor-not-allowed"
                       >
                         <CheckCircle2 className="w-5 h-5" />
                         Isi Post-Test
                       </button>
-                      <span className="absolute top-2 right-3 text-[10px] font-['Montserrat:Bold',sans-serif] text-gray-500 bg-gray-700/50 px-2 py-0.5 rounded-full">
+                      <span className="absolute top-2 right-3 text-[10px] font-['Plus_Jakarta_Sans',sans-serif] text-gray-500 bg-gray-700/50 px-2 py-0.5 rounded-full">
                         Coming Soon
                       </span>
                     </div>
@@ -2587,12 +2581,12 @@ Terima kasih.`;
                     <div className="relative">
                       <button
                         disabled
-                        className="flex items-center justify-center gap-3 w-full px-6 py-4 bg-gray-600/30 text-gray-400 rounded-xl font-['Montserrat:SemiBold',sans-serif] font-semibold text-[15px] cursor-not-allowed"
+                        className="flex items-center justify-center gap-3 w-full px-6 py-4 bg-gray-600/30 text-gray-400 rounded-xl font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[15px] cursor-not-allowed"
                       >
                         <ExternalLink className="w-5 h-5" />
                         Lihat Event Lebih Detail
                       </button>
-                      <span className="absolute top-2 right-3 text-[10px] font-['Montserrat:Bold',sans-serif] text-gray-500 bg-gray-700/50 px-2 py-0.5 rounded-full">
+                      <span className="absolute top-2 right-3 text-[10px] font-['Plus_Jakarta_Sans',sans-serif] text-gray-500 bg-gray-700/50 px-2 py-0.5 rounded-full">
                         Coming Soon
                       </span>
                     </div>

@@ -68,19 +68,19 @@ export function RuangKolaborasi({
   };
 
   return (
-    <section id="ruang-kolaborasi" className="min-h-screen bg-white py-16 md:py-24" style={{ borderTop: '1px solid #f0e8da' }}>
-      <div className="max-w-[1200px] mx-auto px-6 md:px-8 lg:px-16">
+    <section id="ruang-kolaborasi" className="bg-[#fffcf8] section-block" style={{ borderTop: '1px solid #f0e8da' }}>
+      <div className="section-wrap">
         {/* Header */}
-        <div className="mb-12 md:mb-20 text-center">
+        <div className="mb-12 md:mb-16 text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-8 h-[3px] rounded-full bg-[#dac5a7]" />
-            <span className="text-[#0a282e]/40 text-[11px] font-semibold tracking-widest uppercase">Kolaborasi</span>
-            <div className="w-8 h-[3px] rounded-full bg-[#dac5a7]" />
+            <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]" />
+            <span className="eyebrow text-[#0a282e]/45">Kolaborasi</span>
+            <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]" />
           </div>
-          <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[28px] md:text-[40px] lg:text-[48px] text-[#0a282e] mb-4">
+          <h2 className="t-h1 text-[#0a282e] mb-4">
             Ruang Kolaborasi
-          </h1>
-          <p className="text-[#0a282e]/55 text-[15px] md:text-[17px] max-w-xl mx-auto leading-relaxed">
+          </h2>
+          <p className="t-body text-[#0a282e]/55 max-w-xl mx-auto">
             Eksplorasi berbagai bentuk kolaborasi yang bisa kita wujudkan bersama
           </p>
         </div>
@@ -118,19 +118,19 @@ export function RuangKolaborasi({
 
                 {/* Title */}
                 <h3 
-                  className="font-['Montserrat:Bold',sans-serif] font-bold text-[22px] md:text-[26px] mb-4 leading-tight transition-colors"
+                  className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[22px] md:text-[26px] mb-4 leading-tight transition-colors"
                   style={{ color: collab.borderColor }}
                 >
                   {collab.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-[#0a282e]/70 text-[14px] md:text-[15px] leading-relaxed mb-6 font-['Montserrat:Medium',sans-serif] font-medium">
+                <p className="text-[#0a282e]/70 text-[14px] md:text-[15px] leading-relaxed mb-6 font-['Plus_Jakarta_Sans',sans-serif] font-medium">
                   {collab.description.split('.')[0]}.
                 </p>
 
                 {/* CTA dengan arrow animation */}
-                <div className="flex items-center gap-2 font-['Montserrat:SemiBold',sans-serif] font-semibold text-[15px] group-hover:gap-3 transition-all" style={{ color: collab.borderColor }}>
+                <div className="flex items-center gap-2 font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[15px] group-hover:gap-3 transition-all" style={{ color: collab.borderColor }}>
                   Lihat Detail
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
                 </div>
@@ -177,7 +177,7 @@ export function RuangKolaborasi({
                           <Icon className="w-7 h-7" style={{ color: collab.borderColor }} strokeWidth={2} />
                         </div>
                         <h2 
-                          className="font-['Montserrat:Bold',sans-serif] font-bold text-[22px] md:text-[28px]"
+                          className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[22px] md:text-[28px]"
                           style={{ color: collab.borderColor }}
                         >
                           {collab.title}
@@ -201,7 +201,7 @@ export function RuangKolaborasi({
                   {/* Body Modal */}
                   <div className="px-6 md:px-10 py-8">
                     {/* Description */}
-                    <p className="text-[#0a282e]/80 text-[15px] md:text-[16px] leading-relaxed mb-8 font-['Montserrat:Medium',sans-serif] font-medium">
+                    <p className="text-[#0a282e]/80 text-[15px] md:text-[16px] leading-relaxed mb-8 font-['Plus_Jakarta_Sans',sans-serif] font-medium">
                       {collab.description}
                     </p>
 
@@ -217,7 +217,7 @@ export function RuangKolaborasi({
                                 <div className="w-12 h-12 rounded-xl flex items-center justify-center text-[24px]" style={{ backgroundColor: collab.iconBg }}>
                                   ✨
                                 </div>
-                                <h3 className="font-['Montserrat:Bold',sans-serif] font-bold text-[20px] md:text-[24px]" style={{ color: collab.borderColor }}>
+                                <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[20px] md:text-[24px]" style={{ color: collab.borderColor }}>
                                   {collab.whyDifferent.title}
                                 </h3>
                               </div>
@@ -227,10 +227,10 @@ export function RuangKolaborasi({
                                     <div className="flex items-start gap-3">
                                       <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: collab.borderColor }}></div>
                                       <div>
-                                        <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[14px] md:text-[15px] mb-2" style={{ color: collab.borderColor }}>
+                                        <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[15px] mb-2" style={{ color: collab.borderColor }}>
                                           {point.label}
                                         </h4>
-                                        <p className="text-[#0a282e]/70 text-[13px] md:text-[14px] font-['Montserrat:Medium',sans-serif] leading-relaxed">
+                                        <p className="text-[#0a282e]/70 text-[13px] md:text-[14px] font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
                                           {point.text}
                                         </p>
                                       </div>
@@ -244,10 +244,10 @@ export function RuangKolaborasi({
 
                         {/* Issues Section - Categorized */}
                         <div className="mb-8">
-                          <h3 className="font-['Montserrat:Bold',sans-serif] font-bold text-[18px] md:text-[22px] mb-3 text-[#0a282e]">
+                          <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] md:text-[22px] mb-3 text-[#0a282e]">
                             Siapa yang cocok dengan program ini?
                           </h3>
-                          <p className="text-[#0a282e]/60 text-[14px] md:text-[15px] mb-6 font-['Montserrat:Medium',sans-serif] leading-relaxed">
+                          <p className="text-[#0a282e]/60 text-[14px] md:text-[15px] mb-6 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
                             Program ini dirancang untuk anak dan remaja <span className="font-bold" style={{ color: collab.borderColor }}>usia {collab.mentoringTargetAge}</span> yang sedang menghadapi tantangan seperti:
                           </p>
                           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
@@ -257,13 +257,13 @@ export function RuangKolaborasi({
                                   <div className="w-8 h-8 rounded-lg flex items-center justify-center text-[18px]" style={{ backgroundColor: collab.iconBg }}>
                                     {idx === 0 ? '🎯' : idx === 1 ? '🔄' : '💬'}
                                   </div>
-                                  <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[14px] md:text-[15px] text-[#0a282e]">
+                                  <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[15px] text-[#0a282e]">
                                     {issue.category}
                                   </h4>
                                 </div>
                                 <ul className="space-y-2.5">
                                   {issue.problems.map((problem, pIdx) => (
-                                    <li key={pIdx} className="flex items-start gap-2 text-[#0a282e]/70 text-[12px] md:text-[13px] font-['Montserrat:Medium',sans-serif] leading-snug">
+                                    <li key={pIdx} className="flex items-start gap-2 text-[#0a282e]/70 text-[12px] md:text-[13px] font-['Plus_Jakarta_Sans',sans-serif] leading-snug">
                                       <span style={{ color: collab.borderColor }} className="mt-0.5">•</span>
                                       <span>{problem}</span>
                                     </li>
@@ -277,10 +277,10 @@ export function RuangKolaborasi({
                         {/* Process Section - Visual Timeline */}
                         {collab.mentoringProcess && (
                           <div className="mb-8 bg-gradient-to-br from-purple-50 to-indigo-50 rounded-3xl p-6 md:p-8 border-2 border-purple-100">
-                            <h3 className="font-['Montserrat:Bold',sans-serif] font-bold text-[18px] md:text-[22px] mb-3 text-[#0a282e]">
+                            <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] md:text-[22px] mb-3 text-[#0a282e]">
                               {collab.mentoringProcess.title}
                             </h3>
-                            <p className="text-[#0a282e]/60 text-[13px] md:text-[14px] mb-6 font-['Montserrat:Medium',sans-serif] leading-relaxed">
+                            <p className="text-[#0a282e]/60 text-[13px] md:text-[14px] mb-6 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
                               {collab.mentoringProcess.description}
                             </p>
                             <div className="space-y-5 md:space-y-6">
@@ -288,7 +288,7 @@ export function RuangKolaborasi({
                                 <div key={idx} className="bg-white/80 backdrop-blur-sm rounded-2xl p-5 md:p-6 border border-purple-100">
                                   <div className="flex gap-4">
                                     <div className="flex flex-col items-center flex-shrink-0">
-                                      <div className="w-10 h-10 rounded-full flex items-center justify-center font-['Montserrat:Bold',sans-serif] font-bold text-white text-[16px]" style={{ backgroundColor: collab.borderColor }}>
+                                      <div className="w-10 h-10 rounded-full flex items-center justify-center font-['Plus_Jakarta_Sans',sans-serif] font-bold text-white text-[16px]" style={{ backgroundColor: collab.borderColor }}>
                                         {idx + 1}
                                       </div>
                                       {idx < collab.mentoringProcess.steps.length - 1 && (
@@ -296,20 +296,20 @@ export function RuangKolaborasi({
                                       )}
                                     </div>
                                     <div className="flex-1">
-                                      <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] mb-2 text-[#0a282e]">
+                                      <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] mb-2 text-[#0a282e]">
                                         {step.title}
                                       </h4>
                                       <div className="flex items-center gap-2 mb-3">
-                                        <span className="text-[12px] md:text-[13px] font-['Montserrat:SemiBold',sans-serif] font-semibold px-3 py-1 rounded-full bg-purple-100" style={{ color: collab.borderColor }}>
+                                        <span className="text-[12px] md:text-[13px] font-['Plus_Jakarta_Sans',sans-serif] font-semibold px-3 py-1 rounded-full bg-purple-100" style={{ color: collab.borderColor }}>
                                           {step.detail}
                                         </span>
                                       </div>
-                                      <p className="text-[#0a282e]/60 text-[12px] md:text-[13px] mb-3 font-['Montserrat:Medium',sans-serif] italic leading-relaxed">
+                                      <p className="text-[#0a282e]/60 text-[12px] md:text-[13px] mb-3 font-['Plus_Jakarta_Sans',sans-serif] italic leading-relaxed">
                                         {step.note}
                                       </p>
                                       <ul className="space-y-2">
                                         {step.features.map((feature, fIdx) => (
-                                          <li key={fIdx} className="flex items-start gap-2 text-[#0a282e]/70 text-[12px] md:text-[13px] font-['Montserrat:Medium',sans-serif] leading-snug">
+                                          <li key={fIdx} className="flex items-start gap-2 text-[#0a282e]/70 text-[12px] md:text-[13px] font-['Plus_Jakarta_Sans',sans-serif] leading-snug">
                                             <span className="text-green-500 mt-0.5">✓</span>
                                             <span>{feature}</span>
                                           </li>
@@ -331,10 +331,10 @@ export function RuangKolaborasi({
                                 🎯
                               </div>
                               <div>
-                                <h3 className="font-['Montserrat:Bold',sans-serif] font-bold text-[18px] md:text-[22px] text-[#0a282e]">
+                                <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] md:text-[22px] text-[#0a282e]">
                                   Apa yang akan mereka dapatkan?
                                 </h3>
-                                <p className="text-[#0a282e]/60 text-[13px] md:text-[14px] font-['Montserrat:Medium',sans-serif]">
+                                <p className="text-[#0a282e]/60 text-[13px] md:text-[14px] font-['Plus_Jakarta_Sans',sans-serif]">
                                   Outcome yang bisa diharapkan dari program ini
                                 </p>
                               </div>
@@ -345,7 +345,7 @@ export function RuangKolaborasi({
                                   <div className="w-6 h-6 rounded-lg flex items-center justify-center text-[14px] flex-shrink-0" style={{ backgroundColor: collab.iconBg }}>
                                     ✓
                                   </div>
-                                  <span className="text-[#0a282e]/80 text-[13px] md:text-[14px] font-['Montserrat:Medium',sans-serif] leading-snug">
+                                  <span className="text-[#0a282e]/80 text-[13px] md:text-[14px] font-['Plus_Jakarta_Sans',sans-serif] leading-snug">
                                     {outcome}
                                   </span>
                                 </div>
@@ -357,7 +357,7 @@ export function RuangKolaborasi({
                         {/* Testimonials Section - Social Proof */}
                         {collab.mentoringTestimonials && (
                           <div className="mb-8">
-                            <h3 className="font-['Montserrat:Bold',sans-serif] font-bold text-[18px] md:text-[22px] mb-6 text-[#0a282e]">
+                            <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] md:text-[22px] mb-6 text-[#0a282e]">
                               Kata mereka yang sudah mengikuti program ini
                             </h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
@@ -365,23 +365,23 @@ export function RuangKolaborasi({
                                 <div key={idx} className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-5 md:p-6 border-2 border-purple-100 relative">
                                   <div className="flex items-start justify-between mb-4">
                                     <div className="flex items-center gap-2">
-                                      <div className="w-10 h-10 rounded-full flex items-center justify-center font-['Montserrat:Bold',sans-serif] font-bold text-white text-[14px]" style={{ backgroundColor: collab.borderColor }}>
+                                      <div className="w-10 h-10 rounded-full flex items-center justify-center font-['Plus_Jakarta_Sans',sans-serif] font-bold text-white text-[14px]" style={{ backgroundColor: collab.borderColor }}>
                                         {testimonial.name[0]}
                                       </div>
                                       <div>
-                                        <p className="font-['Montserrat:Bold',sans-serif] font-bold text-[14px] md:text-[15px] text-[#0a282e]">
+                                        <p className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[15px] text-[#0a282e]">
                                           {testimonial.name}, {testimonial.age} tahun
                                         </p>
-                                        <p className="text-[11px] md:text-[12px] text-[#0a282e]/60 font-['Montserrat:Medium',sans-serif]">
+                                        <p className="text-[11px] md:text-[12px] text-[#0a282e]/60 font-['Plus_Jakarta_Sans',sans-serif]">
                                           {testimonial.context}
                                         </p>
                                       </div>
                                     </div>
-                                    <span className="text-[11px] font-['Montserrat:SemiBold',sans-serif] font-semibold px-2 py-1 rounded-full bg-white/70 text-[#0a282e]/60">
+                                    <span className="text-[11px] font-['Plus_Jakarta_Sans',sans-serif] font-semibold px-2 py-1 rounded-full bg-white/70 text-[#0a282e]/60">
                                       {testimonial.format}
                                     </span>
                                   </div>
-                                  <p className="text-[#0a282e]/70 text-[13px] md:text-[14px] font-['Montserrat:Medium',sans-serif] leading-relaxed mb-4 italic">
+                                  <p className="text-[#0a282e]/70 text-[13px] md:text-[14px] font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed mb-4 italic">
                                     "{testimonial.quote}"
                                   </p>
                                   <div className="flex items-center justify-between pt-4 border-t border-purple-200">
@@ -391,9 +391,9 @@ export function RuangKolaborasi({
                                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                         </svg>
                                       ))}
-                                      <span className="ml-2 text-[12px] text-[#0a282e]/50 font-['Montserrat:Medium',sans-serif]">Rating</span>
+                                      <span className="ml-2 text-[12px] text-[#0a282e]/50 font-['Plus_Jakarta_Sans',sans-serif]">Rating</span>
                                     </div>
-                                    <span className="text-[20px] font-['Montserrat:ExtraBold',sans-serif] font-extrabold" style={{ color: collab.borderColor }}>
+                                    <span className="text-[20px] font-['Plus_Jakarta_Sans',sans-serif] font-extrabold" style={{ color: collab.borderColor }}>
                                       {testimonial.rating}
                                     </span>
                                   </div>
@@ -415,10 +415,10 @@ export function RuangKolaborasi({
                               <span className="text-lg md:text-2xl">⭐</span>
                             </div>
                             <div className="flex-1 min-w-0">
-                              <h3 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[20px] mb-1 leading-tight">
+                              <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[20px] mb-1 leading-tight">
                                 Pengalaman & Track Record
                               </h3>
-                              <p className="text-[11px] md:text-[13px] text-white/90 font-['Montserrat:Medium',sans-serif] leading-snug">
+                              <p className="text-[11px] md:text-[13px] text-white/90 font-['Plus_Jakarta_Sans',sans-serif] leading-snug">
                                 Berpengalaman 10+ tahun mengisi berbagai sesi edukasi dari Sumatera hingga Papua
                               </p>
                             </div>
@@ -439,9 +439,9 @@ export function RuangKolaborasi({
                               </div>
                               <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
                               <div className="relative">
-                                <div className="font-['Montserrat:Bold',sans-serif] font-bold text-[22px] md:text-[28px] mb-0.5 leading-none">200+</div>
+                                <div className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[22px] md:text-[28px] mb-0.5 leading-none">200+</div>
                                 <div className="text-[10px] md:text-[13px] text-white/90 leading-tight mb-1">Seminar & Pelatihan</div>
-                                <div className="text-[9px] md:text-[10px] text-white/70 font-['Montserrat:SemiBold',sans-serif] font-semibold leading-tight">👆 Klik untuk detail</div>
+                                <div className="text-[9px] md:text-[10px] text-white/70 font-['Plus_Jakarta_Sans',sans-serif] font-semibold leading-tight">👆 Klik untuk detail</div>
                               </div>
                             </button>
                             <button
@@ -458,9 +458,9 @@ export function RuangKolaborasi({
                               </div>
                               <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
                               <div className="relative">
-                                <div className="font-['Montserrat:Bold',sans-serif] font-bold text-[22px] md:text-[28px] mb-0.5 leading-none">95%</div>
+                                <div className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[22px] md:text-[28px] mb-0.5 leading-none">95%</div>
                                 <div className="text-[10px] md:text-[13px] text-white/90 leading-tight mb-1">Kepuasan Peserta</div>
-                                <div className="text-[9px] md:text-[10px] text-white/70 font-['Montserrat:SemiBold',sans-serif] font-semibold leading-tight">👆 Klik lihat testimoni</div>
+                                <div className="text-[9px] md:text-[10px] text-white/70 font-['Plus_Jakarta_Sans',sans-serif] font-semibold leading-tight">👆 Klik lihat testimoni</div>
                               </div>
                             </button>
                           </div>
@@ -468,7 +468,7 @@ export function RuangKolaborasi({
 
                         {/* Metode Penyelenggaraan */}
                         <div className="p-4 md:p-6">
-                          <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a282e] mb-3 md:mb-4">
+                          <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a282e] mb-3 md:mb-4">
                             Metode Penyelenggaraan
                           </h4>
                           <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
@@ -488,7 +488,7 @@ export function RuangKolaborasi({
                                   <div className={`w-7 h-7 md:w-8 md:h-8 rounded-lg bg-gradient-to-br ${method.color} flex items-center justify-center text-white text-xs md:text-sm flex-shrink-0`}>
                                     {method.icon}
                                   </div>
-                                  <span className="text-[11px] md:text-[13px] font-['Montserrat:SemiBold',sans-serif] font-semibold text-[#0a282e] leading-tight">
+                                  <span className="text-[11px] md:text-[13px] font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[#0a282e] leading-tight">
                                     {method.label}
                                   </span>
                                 </div>
@@ -504,12 +504,12 @@ export function RuangKolaborasi({
                       {/* For Narasumber - Show Topics by Category */}
                       {collab.topics && Object.entries(collab.topics).map(([category, items], idx) => (
                         <div key={idx} className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-5 border border-gray-100">
-                          <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] mb-4" style={{ color: collab.borderColor }}>
+                          <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] mb-4" style={{ color: collab.borderColor }}>
                             {category}
                           </h4>
                           <ul className="space-y-2.5">
                             {items.map((item, itemIdx) => (
-                              <li key={itemIdx} className="flex items-start gap-2.5 text-[#0a282e]/75 text-[13px] md:text-[14px] font-['Montserrat:Medium',sans-serif] font-medium leading-snug">
+                              <li key={itemIdx} className="flex items-start gap-2.5 text-[#0a282e]/75 text-[13px] md:text-[14px] font-['Plus_Jakarta_Sans',sans-serif] font-medium leading-snug">
                                 <span className="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: collab.borderColor }} />
                                 {item}
                               </li>
@@ -525,7 +525,7 @@ export function RuangKolaborasi({
                             <div key={idx} className="bg-gradient-to-br from-white to-gray-50/50 rounded-3xl p-6 border border-white/80 shadow-sm backdrop-blur-sm">
                               <div className="flex items-center gap-2.5 mb-5">
                                 <div className="w-1 h-7 rounded-full" style={{ backgroundColor: collab.borderColor }}></div>
-                                <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[16px] md:text-[17px]" style={{ color: collab.borderColor }}>
+                                <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[16px] md:text-[17px]" style={{ color: collab.borderColor }}>
                                   {category}
                                 </h4>
                               </div>
@@ -534,7 +534,7 @@ export function RuangKolaborasi({
                                   <div key={itemIdx} className="group">
                                     <div className="flex items-start gap-2.5 mb-3">
                                       <div className="w-2 h-2 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: collab.borderColor }}></div>
-                                      <span className="text-[#0a282e]/80 text-[14px] md:text-[15px] font-['Montserrat:SemiBold',sans-serif] font-semibold leading-snug">
+                                      <span className="text-[#0a282e]/80 text-[14px] md:text-[15px] font-['Plus_Jakarta_Sans',sans-serif] font-semibold leading-snug">
                                         {item.name}
                                       </span>
                                     </div>
@@ -563,7 +563,7 @@ export function RuangKolaborasi({
                                                   <div className="p-4 flex items-center justify-between">
                                                     <div className="flex items-center gap-2">
                                                       <Video className="w-4 h-4" style={{ color: collab.borderColor }} />
-                                                      <span className="text-[13px] md:text-[14px] font-['Montserrat:SemiBold',sans-serif] font-semibold text-[#0a282e]/70">{link.label}</span>
+                                                      <span className="text-[13px] md:text-[14px] font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[#0a282e]/70">{link.label}</span>
                                                     </div>
                                                     <ExternalLink className="w-4 h-4 text-[#0a282e]/40" />
                                                   </div>
@@ -577,8 +577,8 @@ export function RuangKolaborasi({
                                                       <FileText className="w-5 h-5" style={{ color: collab.borderColor }} />
                                                     </div>
                                                     <div className="flex-1 min-w-0">
-                                                      <div className="text-[13px] md:text-[14px] font-['Montserrat:SemiBold',sans-serif] font-semibold text-[#0a282e]/80 mb-1">{link.label}</div>
-                                                      <div className="text-[11px] md:text-[12px] font-['Montserrat:Medium',sans-serif] text-[#0a282e]/50 truncate">{new URL(link.url).hostname}</div>
+                                                      <div className="text-[13px] md:text-[14px] font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[#0a282e]/80 mb-1">{link.label}</div>
+                                                      <div className="text-[11px] md:text-[12px] font-['Plus_Jakarta_Sans',sans-serif] text-[#0a282e]/50 truncate">{new URL(link.url).hostname}</div>
                                                     </div>
                                                     <ExternalLink className="w-4 h-4 text-[#0a282e]/30 group-hover/article:text-[#0a282e]/60 transition-colors flex-shrink-0" />
                                                   </div>
@@ -599,13 +599,13 @@ export function RuangKolaborasi({
                             <div className="bg-gradient-to-br from-white to-gray-50/50 rounded-3xl p-6 border border-white/80 shadow-sm backdrop-blur-sm">
                               <div className="flex items-center gap-2.5 mb-5">
                                 <div className="w-1 h-7 rounded-full" style={{ backgroundColor: collab.borderColor }}></div>
-                                <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[16px] md:text-[17px]" style={{ color: collab.borderColor }}>
+                                <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[16px] md:text-[17px]" style={{ color: collab.borderColor }}>
                                   {collab.servicesTitle || 'Services'}
                                 </h4>
                               </div>
                               <ul className="space-y-3">
                                 {collab.services.map((service, idx) => (
-                                  <li key={idx} className="flex items-start gap-2.5 text-[#0a282e]/75 text-[13px] md:text-[14px] font-['Montserrat:Medium',sans-serif] font-medium leading-snug">
+                                  <li key={idx} className="flex items-start gap-2.5 text-[#0a282e]/75 text-[13px] md:text-[14px] font-['Plus_Jakarta_Sans',sans-serif] font-medium leading-snug">
                                     <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: collab.borderColor }}></div>
                                     {service}
                                   </li>
@@ -619,12 +619,12 @@ export function RuangKolaborasi({
                       {/* For Software Development & Creative Consultation - Show Services */}
                       {!collab.topics && !collab.clients && collab.services && (
                         <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-5 border border-gray-100 md:col-span-2 lg:col-span-3">
-                          <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] mb-4" style={{ color: collab.borderColor }}>
+                          <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] mb-4" style={{ color: collab.borderColor }}>
                             Apa saja yang bisa saya bantu.
                           </h4>
                           <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2.5">
                             {collab.services.map((service, idx) => (
-                              <li key={idx} className="flex items-start gap-2.5 text-[#0a282e]/75 text-[13px] md:text-[14px] font-['Montserrat:Medium',sans-serif] font-medium leading-snug">
+                              <li key={idx} className="flex items-start gap-2.5 text-[#0a282e]/75 text-[13px] md:text-[14px] font-['Plus_Jakarta_Sans',sans-serif] font-medium leading-snug">
                                 <span className="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: collab.borderColor }} />
                                 {service}
                               </li>
@@ -651,10 +651,10 @@ export function RuangKolaborasi({
                                 <Video className="w-6 h-6" />
                               </div>
                               <div className="text-left">
-                                <h3 className="font-['Montserrat:Bold',sans-serif] font-bold text-[16px] md:text-[18px] mb-1">
+                                <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[16px] md:text-[18px] mb-1">
                                   Portfolio Video
                                 </h3>
-                                <p className="font-['Montserrat:Medium',sans-serif] font-medium text-[13px] md:text-[14px] text-white/80">
+                                <p className="font-['Plus_Jakarta_Sans',sans-serif] font-medium text-[13px] md:text-[14px] text-white/80">
                                   Lihat dokumentasi video seminar dan workshop yang sudah dilakukan
                                 </p>
                               </div>
@@ -690,10 +690,10 @@ export function RuangKolaborasi({
                                     <span className="w-2 h-2 bg-teal-500 rounded-full animate-pulse" />
                                     Instagram Reel
                                   </div>
-                                  <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[18px] text-[#0a282e] mb-2">
+                                  <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] text-[#0a282e] mb-2">
                                     Edukasi Changemaker di Sekolah
                                   </h4>
-                                  <p className="text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif] leading-relaxed">
+                                  <p className="text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
                                     Sesi inspiring untuk siswa, guru, dan orangtua tentang bagaimana menjadi agen perubahan di era digital. Membangun mindset positif dan actionable skills untuk membuat dampak nyata.
                                   </p>
                                 </div>
@@ -718,10 +718,10 @@ export function RuangKolaborasi({
                                     <span className="w-2 h-2 bg-cyan-500 rounded-full animate-pulse" />
                                     Instagram Reel
                                   </div>
-                                  <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[18px] text-[#0a282e] mb-2">
+                                  <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] text-[#0a282e] mb-2">
                                     Seminar Komunikasi Efektif
                                   </h4>
-                                  <p className="text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif] leading-relaxed">
+                                  <p className="text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
                                     Workshop praktis tentang teknik komunikasi yang powerful untuk membangun relasi yang lebih baik dengan anak, rekan kerja, dan komunitas.
                                   </p>
                                 </div>
@@ -735,10 +735,10 @@ export function RuangKolaborasi({
                                   <span className="w-2 h-2 bg-rose-500 rounded-full animate-pulse" />
                                   YouTube
                                 </div>
-                                <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[18px] text-[#0a282e] mb-2">
+                                <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] text-[#0a282e] mb-2">
                                   Memahami Diri dan Mengelola Emosi
                                 </h4>
-                                <p className="text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif] leading-relaxed mb-4">
+                                <p className="text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed mb-4">
                                   Deep dive session tentang self-awareness dan emotional intelligence. Pelajari cara mengenali pola emosi, memahami trigger, dan teknik praktis mengelola emosi untuk well-being yang lebih baik.
                                 </p>
                               </div>
@@ -771,10 +771,10 @@ export function RuangKolaborasi({
                                     <span className="w-2 h-2 bg-purple-500 rounded-full animate-pulse" />
                                     Instagram Reel
                                   </div>
-                                  <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[18px] text-[#0a282e] mb-2">
+                                  <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] text-[#0a282e] mb-2">
                                     Kesehatan Mental di Era Digital
                                   </h4>
-                                  <p className="text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif] leading-relaxed">
+                                  <p className="text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
                                     Mengatasi anxiety, burnout, dan stress di tengah tuntutan digital. Strategi praktis untuk menjaga keseimbangan mental health dalam kehidupan sehari-hari.
                                   </p>
                                 </div>
@@ -799,10 +799,10 @@ export function RuangKolaborasi({
                                     <span className="w-2 h-2 bg-amber-500 rounded-full animate-pulse" />
                                     Instagram Post
                                   </div>
-                                  <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[18px] text-[#0a282e] mb-2">
+                                  <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] text-[#0a282e] mb-2">
                                     Design Thinking for Innovation
                                   </h4>
-                                  <p className="text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif] leading-relaxed">
+                                  <p className="text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
                                     Workshop interaktif tentang metodologi design thinking. Belajar empathize, define, ideate, prototype, dan test untuk menciptakan solusi inovatif yang human-centered.
                                   </p>
                                 </div>
@@ -827,10 +827,10 @@ export function RuangKolaborasi({
                                     <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
                                     Instagram Reel
                                   </div>
-                                  <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[18px] text-[#0a282e] mb-2">
+                                  <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] text-[#0a282e] mb-2">
                                     Growth Mindset & Wellbeing
                                   </h4>
-                                  <p className="text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif] leading-relaxed">
+                                  <p className="text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
                                     Mengembangkan pola pikir berkembang untuk mencapai potensi maksimal. Kombinasi mindset transformation dengan praktik wellbeing untuk kehidupan yang lebih bermakna dan produktif.
                                   </p>
                                 </div>
@@ -858,10 +858,10 @@ export function RuangKolaborasi({
                                 <MessageCircle className="w-6 h-6" />
                               </div>
                               <div className="text-left">
-                                <h3 className="font-['Montserrat:Bold',sans-serif] font-bold text-[16px] md:text-[18px] mb-1">
+                                <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[16px] md:text-[18px] mb-1">
                                   Testimoni Peserta
                                 </h3>
-                                <p className="font-['Montserrat:Medium',sans-serif] font-medium text-[13px] md:text-[14px] text-white/80">
+                                <p className="font-['Plus_Jakarta_Sans',sans-serif] font-medium text-[13px] md:text-[14px] text-white/80">
                                   Lihat apa kata peserta tentang pengalaman mengikuti sesi bersama saya
                                 </p>
                               </div>
@@ -881,7 +881,7 @@ export function RuangKolaborasi({
                           <div className="mt-6 space-y-4 animate-in fade-in slide-in-from-top-4 duration-500">
                             {/* PARENTS TESTIMONIALS */}
                             <div className="mb-6">
-                              <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[18px] md:text-[20px] text-[#0a7c7c] mb-4 flex items-center gap-2">
+                              <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] md:text-[20px] text-[#0a7c7c] mb-4 flex items-center gap-2">
                                 <span className="text-2xl">👨‍👩‍👧‍👦</span> Parents Testimonials
                               </h4>
                               
@@ -901,13 +901,13 @@ export function RuangKolaborasi({
                                         <span className="text-yellow-400 text-sm">⭐</span>
                                         <span className="text-yellow-400 text-sm">⭐</span>
                                       </div>
-                                      <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Montserrat:Medium',sans-serif] leading-relaxed italic">
-                                        <span className="font-['Montserrat:Bold',sans-serif] font-bold text-[#0a7c7c] not-italic">Sangat interaktif, seru gaya pembawaannya, sesuai realita.</span> Tema dan materinya sesuai dengan realita sehari-hari, dan <span className="font-['Montserrat:Bold',sans-serif] font-bold text-[#0a7c7c] not-italic">pembahasan materinya sangat solutif.</span>
+                                      <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed italic">
+                                        <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">Sangat interaktif, seru gaya pembawaannya, sesuai realita.</span> Tema dan materinya sesuai dengan realita sehari-hari, dan <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">pembahasan materinya sangat solutif.</span>
                                       </p>
                                     </div>
                                   </div>
                                   <div className="ml-13 pt-3 border-t border-teal-100">
-                                    <p className="text-xs md:text-[13px] text-[#0a282e]/60 font-['Montserrat:SemiBold',sans-serif] font-semibold">
+                                    <p className="text-xs md:text-[13px] text-[#0a282e]/60 font-['Plus_Jakarta_Sans',sans-serif] font-semibold">
                                       Orangtua Kelas 5C – SD An Nahl Islamic School
                                     </p>
                                   </div>
@@ -928,13 +928,13 @@ export function RuangKolaborasi({
                                         <span className="text-yellow-400 text-sm">⭐</span>
                                         <span className="text-yellow-400 text-sm">⭐</span>
                                       </div>
-                                      <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Montserrat:Medium',sans-serif] leading-relaxed italic">
-                                        <span className="font-['Montserrat:Bold',sans-serif] font-bold text-[#0a7c7c] not-italic">Satu-satunya workshop yang pernah diikuti, nggak ngebosenin.</span>
+                                      <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed italic">
+                                        <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">Satu-satunya workshop yang pernah diikuti, nggak ngebosenin.</span>
                                       </p>
                                     </div>
                                   </div>
                                   <div className="ml-13 pt-3 border-t border-cyan-100">
-                                    <p className="text-xs md:text-[13px] text-[#0a282e]/60 font-['Montserrat:SemiBold',sans-serif] font-semibold">
+                                    <p className="text-xs md:text-[13px] text-[#0a282e]/60 font-['Plus_Jakarta_Sans',sans-serif] font-semibold">
                                       Orangtua Kelas 3B – SD An Nahl Islamic School
                                     </p>
                                   </div>
@@ -955,13 +955,13 @@ export function RuangKolaborasi({
                                         <span className="text-yellow-400 text-sm">⭐</span>
                                         <span className="text-yellow-400 text-sm">⭐</span>
                                       </div>
-                                      <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Montserrat:Medium',sans-serif] leading-relaxed italic">
-                                        Dengan mengikuti parenting Kak Mumu, <span className="font-['Montserrat:Bold',sans-serif] font-bold text-[#0a7c7c] not-italic">perasaan jadi lebih lega dan merasa beban berkurang</span>, karena materinya <span className="font-['Montserrat:Bold',sans-serif] font-bold text-[#0a7c7c] not-italic">benar-benar yang kami alami sehari-hari.</span>
+                                      <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed italic">
+                                        Dengan mengikuti parenting Kak Mumu, <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">perasaan jadi lebih lega dan merasa beban berkurang</span>, karena materinya <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">benar-benar yang kami alami sehari-hari.</span>
                                       </p>
                                     </div>
                                   </div>
                                   <div className="ml-13 pt-3 border-t border-blue-100">
-                                    <p className="text-xs md:text-[13px] text-[#0a282e]/60 font-['Montserrat:SemiBold',sans-serif] font-semibold">
+                                    <p className="text-xs md:text-[13px] text-[#0a282e]/60 font-['Plus_Jakarta_Sans',sans-serif] font-semibold">
                                       Orangtua SMP Al Muslim Tambun
                                     </p>
                                   </div>
@@ -982,13 +982,13 @@ export function RuangKolaborasi({
                                         <span className="text-yellow-400 text-sm">⭐</span>
                                         <span className="text-yellow-400 text-sm">⭐</span>
                                       </div>
-                                      <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Montserrat:Medium',sans-serif] leading-relaxed italic">
-                                        Kak Mumu itu <span className="font-['Montserrat:Bold',sans-serif] font-bold text-[#0a7c7c] not-italic">komunikatif, interaktif, dan solutif</span>. <span className="font-['Montserrat:Bold',sans-serif] font-bold text-[#0a7c7c] not-italic">Membuka pemahaman baru tentang bagaimana cara memahami sifat anak.</span>
+                                      <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed italic">
+                                        Kak Mumu itu <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">komunikatif, interaktif, dan solutif</span>. <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">Membuka pemahaman baru tentang bagaimana cara memahami sifat anak.</span>
                                       </p>
                                     </div>
                                   </div>
                                   <div className="ml-13 pt-3 border-t border-indigo-100">
-                                    <p className="text-xs md:text-[13px] text-[#0a282e]/60 font-['Montserrat:SemiBold',sans-serif] font-semibold">
+                                    <p className="text-xs md:text-[13px] text-[#0a282e]/60 font-['Plus_Jakarta_Sans',sans-serif] font-semibold">
                                       Orangtua Kelas 7 – MTs Yanuri
                                     </p>
                                   </div>
@@ -1009,13 +1009,13 @@ export function RuangKolaborasi({
                                         <span className="text-yellow-400 text-sm">⭐</span>
                                         <span className="text-yellow-400 text-sm">⭐</span>
                                       </div>
-                                      <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Montserrat:Medium',sans-serif] leading-relaxed italic">
-                                        <span className="font-['Montserrat:Bold',sans-serif] font-bold text-[#0a7c7c] not-italic">Penjelasan dan penyampaiannya sangat logis</span> dan <span className="font-['Montserrat:Bold',sans-serif] font-bold text-[#0a7c7c] not-italic">menjadi masukan yang bagus untuk kami para orang tua.</span>
+                                      <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed italic">
+                                        <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">Penjelasan dan penyampaiannya sangat logis</span> dan <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">menjadi masukan yang bagus untuk kami para orang tua.</span>
                                       </p>
                                     </div>
                                   </div>
                                   <div className="ml-13 pt-3 border-t border-purple-100">
-                                    <p className="text-xs md:text-[13px] text-[#0a282e]/60 font-['Montserrat:SemiBold',sans-serif] font-semibold">
+                                    <p className="text-xs md:text-[13px] text-[#0a282e]/60 font-['Plus_Jakarta_Sans',sans-serif] font-semibold">
                                       Orangtua Kelas 6 – SD Manaaratul Islami
                                     </p>
                                   </div>
@@ -1025,7 +1025,7 @@ export function RuangKolaborasi({
 
                             {/* TEACHERS TESTIMONIALS */}
                             <div>
-                              <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[18px] md:text-[20px] text-[#0a7c7c] mb-4 flex items-center gap-2">
+                              <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] md:text-[20px] text-[#0a7c7c] mb-4 flex items-center gap-2">
                                 <span className="text-2xl">👨‍🏫</span> Teachers Testimonials
                               </h4>
                               
@@ -1045,13 +1045,13 @@ export function RuangKolaborasi({
                                         <span className="text-yellow-400 text-sm">⭐</span>
                                         <span className="text-yellow-400 text-sm">⭐</span>
                                       </div>
-                                      <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Montserrat:Medium',sans-serif] leading-relaxed italic">
-                                        <span className="font-['Montserrat:Bold',sans-serif] font-bold text-[#0a7c7c] not-italic">Lebih menghargai diri sendiri.</span> Dalam penyampaian, <span className="font-['Montserrat:Bold',sans-serif] font-bold text-[#0a7c7c] not-italic">Kak Mumu tidak menghakimi sama sekali.</span> Apalagi pada sesi ketika saya tidak bisa menjawab pertanyaan tentang komunikasi asertif, karena: pertanyaan yang diajukan sangat relate dengan diri saya, dan kebanyakan tidak diberi kesempatan untuk menyampaikan pendapat pribadi mengenai sesuatu yang sudah diberikan oleh atasan. <span className="font-['Montserrat:Bold',sans-serif] font-bold text-[#0a7c7c] not-italic">Pikiran jadi lebih positif, lebih 'up', tahu cara mengontrol stres, dan tahu cara mengatasi emosi.</span>
+                                      <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed italic">
+                                        <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">Lebih menghargai diri sendiri.</span> Dalam penyampaian, <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">Kak Mumu tidak menghakimi sama sekali.</span> Apalagi pada sesi ketika saya tidak bisa menjawab pertanyaan tentang komunikasi asertif, karena: pertanyaan yang diajukan sangat relate dengan diri saya, dan kebanyakan tidak diberi kesempatan untuk menyampaikan pendapat pribadi mengenai sesuatu yang sudah diberikan oleh atasan. <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">Pikiran jadi lebih positif, lebih 'up', tahu cara mengontrol stres, dan tahu cara mengatasi emosi.</span>
                                       </p>
                                     </div>
                                   </div>
                                   <div className="ml-13 pt-3 border-t border-rose-100">
-                                    <p className="text-xs md:text-[13px] text-[#0a282e]/60 font-['Montserrat:SemiBold',sans-serif] font-semibold">
+                                    <p className="text-xs md:text-[13px] text-[#0a282e]/60 font-['Plus_Jakarta_Sans',sans-serif] font-semibold">
                                       Guru di TK Assalaam Bandung
                                     </p>
                                   </div>
@@ -1072,13 +1072,13 @@ export function RuangKolaborasi({
                                         <span className="text-yellow-400 text-sm">⭐</span>
                                         <span className="text-yellow-400 text-sm">⭐</span>
                                       </div>
-                                      <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Montserrat:Medium',sans-serif] leading-relaxed italic">
-                                        Kak Mumu <span className="font-['Montserrat:Bold',sans-serif] font-bold text-[#0a7c7c] not-italic">memberikan penjelasan serta contoh nyata yang sangat related dengan kondisi saat ini</span>, bahkan kondisi masa lalu yang dialami pendengar. Beliau juga <span className="font-['Montserrat:Bold',sans-serif] font-bold text-[#0a7c7c] not-italic">menyampaikan solusi konkret</span> sehingga dapat tergambar oleh pendengar apa yang harus dilakukan.
+                                      <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed italic">
+                                        Kak Mumu <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">memberikan penjelasan serta contoh nyata yang sangat related dengan kondisi saat ini</span>, bahkan kondisi masa lalu yang dialami pendengar. Beliau juga <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">menyampaikan solusi konkret</span> sehingga dapat tergambar oleh pendengar apa yang harus dilakukan.
                                       </p>
                                     </div>
                                   </div>
                                   <div className="ml-13 pt-3 border-t border-orange-100">
-                                    <p className="text-xs md:text-[13px] text-[#0a282e]/60 font-['Montserrat:SemiBold',sans-serif] font-semibold">
+                                    <p className="text-xs md:text-[13px] text-[#0a282e]/60 font-['Plus_Jakarta_Sans',sans-serif] font-semibold">
                                       Orangtua di SD Mutiara Bunda Bandung
                                     </p>
                                   </div>
@@ -1099,13 +1099,13 @@ export function RuangKolaborasi({
                                         <span className="text-yellow-400 text-sm">⭐</span>
                                         <span className="text-yellow-400 text-sm">⭐</span>
                                       </div>
-                                      <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Montserrat:Medium',sans-serif] leading-relaxed italic">
-                                        Alhamdulillah, <span className="font-['Montserrat:Bold',sans-serif] font-bold text-[#0a7c7c] not-italic">Kak Mumu menjelaskannya dengan sangat detail</span> dan juga <span className="font-['Montserrat:Bold',sans-serif] font-bold text-[#0a7c7c] not-italic">memberikan beberapa gambaran sebagai contoh</span>. Menurut saya pribadi, <span className="font-['Montserrat:Bold',sans-serif] font-bold text-[#0a7c7c] not-italic">penjelasan dari Kak Mumu mudah diterima dan dipahami.</span>
+                                      <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed italic">
+                                        Alhamdulillah, <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">Kak Mumu menjelaskannya dengan sangat detail</span> dan juga <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">memberikan beberapa gambaran sebagai contoh</span>. Menurut saya pribadi, <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">penjelasan dari Kak Mumu mudah diterima dan dipahami.</span>
                                       </p>
                                     </div>
                                   </div>
                                   <div className="ml-13 pt-3 border-t border-amber-100">
-                                    <p className="text-xs md:text-[13px] text-[#0a282e]/60 font-['Montserrat:SemiBold',sans-serif] font-semibold">
+                                    <p className="text-xs md:text-[13px] text-[#0a282e]/60 font-['Plus_Jakarta_Sans',sans-serif] font-semibold">
                                       Guru Cubbyhouse Daycare
                                     </p>
                                   </div>
@@ -1126,13 +1126,13 @@ export function RuangKolaborasi({
                                         <span className="text-yellow-400 text-sm">⭐</span>
                                         <span className="text-yellow-400 text-sm">⭐</span>
                                       </div>
-                                      <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Montserrat:Medium',sans-serif] leading-relaxed italic">
-                                        Saya merasa paparan yang disampaikan oleh Kak Mumu <span className="font-['Montserrat:Bold',sans-serif] font-bold text-[#0a7c7c] not-italic">amat sangat bermanfaat dan relate dengan keadaan saat ini</span>. Hal ini <span className="font-['Montserrat:Bold',sans-serif] font-bold text-[#0a7c7c] not-italic">membuat saya merasa terbantu mengenai bagaimana cara menangani dan memvalidasi perasaan peserta didik dengan tepat dan baik</span>, sehingga mereka tidak merasa dihakimi oleh gurunya, karena kita juga tidak tahu bagaimana kondisi ananda di rumah.
+                                      <p className="text-[13px] md:text-[14px] text-[#0a282e]/80 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed italic">
+                                        Saya merasa paparan yang disampaikan oleh Kak Mumu <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">amat sangat bermanfaat dan relate dengan keadaan saat ini</span>. Hal ini <span className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[#0a7c7c] not-italic">membuat saya merasa terbantu mengenai bagaimana cara menangani dan memvalidasi perasaan peserta didik dengan tepat dan baik</span>, sehingga mereka tidak merasa dihakimi oleh gurunya, karena kita juga tidak tahu bagaimana kondisi ananda di rumah.
                                       </p>
                                     </div>
                                   </div>
                                   <div className="ml-13 pt-3 border-t border-emerald-100">
-                                    <p className="text-xs md:text-[13px] text-[#0a282e]/60 font-['Montserrat:SemiBold',sans-serif] font-semibold">
+                                    <p className="text-xs md:text-[13px] text-[#0a282e]/60 font-['Plus_Jakarta_Sans',sans-serif] font-semibold">
                                       Guru di SD Emiisc Jakarta
                                     </p>
                                   </div>
@@ -1153,7 +1153,7 @@ export function RuangKolaborasi({
                           setShowTestimonials(false);
                           scrollToSection('kontak');
                         }}
-                        className="px-10 py-4 rounded-2xl font-['Montserrat:Bold',sans-serif] font-bold text-[15px] text-white transition-all hover:opacity-90 hover:scale-105 shadow-lg"
+                        className="px-10 py-4 rounded-2xl font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] text-white transition-all hover:opacity-90 hover:scale-105 shadow-lg"
                         style={{ backgroundColor: collab.borderColor }}
                       >
                         {collab.cta}
@@ -1185,10 +1185,10 @@ export function RuangKolaborasi({
                     <span className="text-2xl md:text-3xl">📅</span>
                   </div>
                   <div className="min-w-0 flex-1">
-                    <h2 className="font-['Montserrat:Bold',sans-serif] font-bold text-[16px] md:text-[28px] text-white leading-tight">
+                    <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[16px] md:text-[28px] text-white leading-tight">
                       Narasumber di 200+ Seminar & Kelas Edukasi
                     </h2>
-                    <p className="text-[11px] md:text-[14px] text-white/80 font-['Montserrat:Medium',sans-serif] mt-0.5 md:mt-1">
+                    <p className="text-[11px] md:text-[14px] text-white/80 font-['Plus_Jakarta_Sans',sans-serif] mt-0.5 md:mt-1">
                       Sejak Tahun 2013
                     </p>
                   </div>
@@ -1209,7 +1209,7 @@ export function RuangKolaborasi({
               {/* 2026 Events */}
               {eventsByYear[2026] && (
                 <div className="mb-10">
-                  <div className={`inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r ${yearGradients[2026].gradient} text-white rounded-full font-['Montserrat:Bold',sans-serif] font-bold text-[16px] md:text-[18px] mb-6`}>
+                  <div className={`inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r ${yearGradients[2026].gradient} text-white rounded-full font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[16px] md:text-[18px] mb-6`}>
                     <span>📆</span> 2026
                   </div>
                   
@@ -1219,10 +1219,10 @@ export function RuangKolaborasi({
                         key={idx}
                         className={`bg-gradient-to-br ${event.gradient} rounded-xl md:rounded-2xl p-4 md:p-6 border-2 ${event.border} transition-all`}
                       >
-                        <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 leading-snug">
+                        <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 leading-snug">
                           {event.title}
                         </h4>
-                        <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif] leading-relaxed">
+                        <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
                           📍 {event.location}
                         </p>
                       </div>
@@ -1233,77 +1233,77 @@ export function RuangKolaborasi({
 
               {/* 2025 Events */}
               <div className="mb-10">
-                <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-teal-500 to-cyan-500 text-white rounded-full font-['Montserrat:Bold',sans-serif] font-bold text-[16px] md:text-[18px] mb-6">
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-teal-500 to-cyan-500 text-white rounded-full font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[16px] md:text-[18px] mb-6">
                   <span>📆</span> 2025
                 </div>
                 
                 <div className="space-y-3 md:space-y-4">
                   {/* Event 1 */}
                   <div className="bg-gradient-to-br from-teal-50 to-white rounded-xl md:rounded-2xl p-4 md:p-6 border-2 border-teal-100 hover:border-teal-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 group-hover:text-[#0a5c5c] transition-colors leading-snug">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 group-hover:text-[#0a5c5c] transition-colors leading-snug">
                       Seminar parenting: membangun karakter changemaker di sekolah dan di rumah
                     </h4>
-                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif] leading-relaxed">
+                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
                       📍 SD An Nahl, SD Manaaratul Iman, Hayat School, MTs Yanuri
                     </p>
                   </div>
 
                   {/* Event 2 */}
                   <div className="bg-gradient-to-br from-cyan-50 to-white rounded-xl md:rounded-2xl p-4 md:p-6 border-2 border-cyan-100 hover:border-cyan-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 group-hover:text-[#0a5c5c] transition-colors leading-snug">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 group-hover:text-[#0a5c5c] transition-colors leading-snug">
                       Seminar parenting: membangun koneksi emosional dengan remaja
                     </h4>
-                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif] leading-relaxed">
+                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
                       📍 SMPIT Al Muslim Tambun
                     </p>
                   </div>
 
                   {/* Event 3 */}
                   <div className="bg-gradient-to-br from-blue-50 to-white rounded-xl md:rounded-2xl p-4 md:p-6 border-2 border-blue-100 hover:border-blue-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 group-hover:text-[#0a5c5c] transition-colors leading-snug">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 group-hover:text-[#0a5c5c] transition-colors leading-snug">
                       Startup workshop: value proposition dan customer journey map
                     </h4>
-                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif] leading-relaxed">
+                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
                       📍 Bandung Techno Park Telkom University
                     </p>
                   </div>
 
                   {/* Event 4 */}
                   <div className="bg-gradient-to-br from-indigo-50 to-white rounded-xl md:rounded-2xl p-4 md:p-6 border-2 border-indigo-100 hover:border-indigo-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 group-hover:text-[#0a5c5c] transition-colors leading-snug">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 group-hover:text-[#0a5c5c] transition-colors leading-snug">
                       Seminar parenting mempersiapkan masa depan anak kita: kolaborasi sekolah, orangtua, dan komunitas dalam memahami realita perubahan dan pengasuhan di abad 21
                     </h4>
-                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif] leading-relaxed">
+                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
                       📍 Ashoka Indonesia
                     </p>
                   </div>
 
                   {/* Event 5 */}
                   <div className="bg-gradient-to-br from-purple-50 to-white rounded-xl md:rounded-2xl p-4 md:p-6 border-2 border-purple-100 hover:border-purple-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 group-hover:text-[#0a5c5c] transition-colors leading-snug">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 group-hover:text-[#0a5c5c] transition-colors leading-snug">
                       Seminar parenting: anak hebat, orangtua terlibat membangun 7 kebiasaan baik
                     </h4>
-                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif] leading-relaxed">
+                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
                       📍 TK Kartika Bandung
                     </p>
                   </div>
 
                   {/* Event 6 */}
                   <div className="bg-gradient-to-br from-pink-50 to-white rounded-xl md:rounded-2xl p-4 md:p-6 border-2 border-pink-100 hover:border-pink-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 group-hover:text-[#0a5c5c] transition-colors leading-snug">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 group-hover:text-[#0a5c5c] transition-colors leading-snug">
                       Seminar parenting: tantangan mendidik Gen Alpha untuk membangun lingkungan ramah masa depan anak
                     </h4>
-                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif] leading-relaxed">
+                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
                       📍 SDIT Insan Rabbani Majalengka
                     </p>
                   </div>
 
                   {/* Event 7 */}
                   <div className="bg-gradient-to-br from-rose-50 to-white rounded-xl md:rounded-2xl p-4 md:p-6 border-2 border-rose-100 hover:border-rose-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 group-hover:text-[#0a5c5c] transition-colors leading-snug">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 group-hover:text-[#0a5c5c] transition-colors leading-snug">
                       Mengelola stress orangtua dengan memahami 7 jenis kelelahan
                     </h4>
-                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif] leading-relaxed">
+                    <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
                       📍 SD An Nahl, TK Growing Star, KB TK Istiqamah
                     </p>
                   </div>
@@ -1312,127 +1312,127 @@ export function RuangKolaborasi({
 
               {/* 2024 Events */}
               <div className="mb-10">
-                <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-full font-['Montserrat:Bold',sans-serif] font-bold text-[16px] md:text-[18px] mb-6">
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-full font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[16px] md:text-[18px] mb-6">
                   <span>📆</span> 2024
                 </div>
                 
                 <div className="space-y-4">
                   {/* Event 1 */}
                   <div className="bg-gradient-to-br from-teal-50 to-white rounded-2xl p-5 md:p-6 border-2 border-teal-100 hover:border-teal-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
                       Seminar parenting anti bullying: aman di sekolah, nyaman di rumah
                     </h4>
-                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif]">
+                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
                       📍 SD Islam Al-Ikhlas Cipete Jakarta
                     </p>
                   </div>
 
                   {/* Event 2 */}
                   <div className="bg-gradient-to-br from-cyan-50 to-white rounded-2xl p-5 md:p-6 border-2 border-cyan-100 hover:border-cyan-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
                       Menyambut ramadhan dengan memahami diri dan mengelola emosi
                     </h4>
-                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif]">
+                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
                       📍 Daarut Tauhiid Bandung
                     </p>
                   </div>
 
                   {/* Event 3 */}
                   <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-5 md:p-6 border-2 border-blue-100 hover:border-blue-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
                       Parenting Akbar diikuti kepala sekolah dan komite orangtua dari ratusan PAUD di Kota Bandung: Strategi mengelola konflik pada anak usia dini
                     </h4>
-                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif]">
+                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
                       📍 Dinas Pendidikan Kota Bandung
                     </p>
                   </div>
 
                   {/* Event 4 */}
                   <div className="bg-gradient-to-br from-indigo-50 to-white rounded-2xl p-5 md:p-6 border-2 border-indigo-100 hover:border-indigo-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
                       Seminar parenting: strategi mengelola konflik pada anak usia dini
                     </h4>
-                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif]">
+                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
                       📍 TK Lab UPI Bandung, SPS Eco Pesantren Daarut Tauhiid & TK Mulya Insani Cilegon
                     </p>
                   </div>
 
                   {/* Event 5 */}
                   <div className="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-5 md:p-6 border-2 border-purple-100 hover:border-purple-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
                       Seminar parenting spesial hari ayah: "Menjadi Ayah Ibu Harmonis, Strategi jitu atasi 7 kelelahan orangtua dan bangun komunikasi lewat komunikasi BATIK (Baik, Tegas dan Efektif)"
                     </h4>
-                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif]">
+                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
                       📍 Parenting Community Majalengka
                     </p>
                   </div>
 
                   {/* Event 6 */}
                   <div className="bg-gradient-to-br from-pink-50 to-white rounded-2xl p-5 md:p-6 border-2 border-pink-100 hover:border-pink-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
                       Seminar parenting: Bersama wujudkan sekolah nyaman dan aman
                     </h4>
-                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif]">
+                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
                       📍 Sekolah Rimba Indonesia
                     </p>
                   </div>
 
                   {/* Event 7 */}
                   <div className="bg-gradient-to-br from-rose-50 to-white rounded-2xl p-5 md:p-6 border-2 border-rose-100 hover:border-rose-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
                       Seminar parenting komunikasi dalam keluarga: jembatan membangun rasa
                     </h4>
-                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif]">
+                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
                       📍 Yayasan Pendidikan Assalaam Jayapura Papua
                     </p>
                   </div>
 
                   {/* Event 8 */}
                   <div className="bg-gradient-to-br from-orange-50 to-white rounded-2xl p-5 md:p-6 border-2 border-orange-100 hover:border-orange-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
                       Pelatihan: strategi guru mengelola 7 jenis kelelahan sehari-hari
                     </h4>
-                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif]">
+                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
                       📍 SMP Hikmah Teladan, PGTK Anak Ceria, TK Istiqamah, SDN 261 Margahayu Kota Bandung
                     </p>
                   </div>
 
                   {/* Event 9 */}
                   <div className="bg-gradient-to-br from-amber-50 to-white rounded-2xl p-5 md:p-6 border-2 border-amber-100 hover:border-amber-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
                       Seminar parenting strategi parenting anti bullying
                     </h4>
-                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif]">
+                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
                       📍 Baitul Quran Daarut Tauhiid
                     </p>
                   </div>
 
                   {/* Event 10 */}
                   <div className="bg-gradient-to-br from-yellow-50 to-white rounded-2xl p-5 md:p-6 border-2 border-yellow-100 hover:border-yellow-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
                       Workshop metode design thinking untuk pembelajaran
                     </h4>
-                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif]">
+                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
                       📍 SMP Salman Al Farisi, SMP Hikmah Teladan
                     </p>
                   </div>
 
                   {/* Event 11 */}
                   <div className="bg-gradient-to-br from-lime-50 to-white rounded-2xl p-5 md:p-6 border-2 border-lime-100 hover:border-lime-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
                       Seni praktis mengelola stress sebagai orangtua
                     </h4>
-                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif]">
+                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
                       📍 MI Yanuri
                     </p>
                   </div>
 
                   {/* Event 12 */}
                   <div className="bg-gradient-to-br from-emerald-50 to-white rounded-2xl p-5 md:p-6 border-2 border-emerald-100 hover:border-emerald-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
                       Seminar parenting: optimalisasi partnership untuk membentuk generasi unggul
                     </h4>
-                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif]">
+                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
                       📍 TK Assalaam Bandung
                     </p>
                   </div>
@@ -1441,107 +1441,107 @@ export function RuangKolaborasi({
 
               {/* 2023 Events */}
               <div>
-                <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-full font-['Montserrat:Bold',sans-serif] font-bold text-[16px] md:text-[18px] mb-6">
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-full font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[16px] md:text-[18px] mb-6">
                   <span>📆</span> 2023
                 </div>
                 
                 <div className="space-y-4">
                   {/* Event 1 */}
                   <div className="bg-gradient-to-br from-teal-50 to-white rounded-2xl p-5 md:p-6 border-2 border-teal-100 hover:border-teal-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
                       Seminar parenting 4M: Memahami diri untuk memahami anak
                     </h4>
-                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif]">
+                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
                       📍 SD Mutiara Bunda
                     </p>
                   </div>
 
                   {/* Event 2 */}
                   <div className="bg-gradient-to-br from-cyan-50 to-white rounded-2xl p-5 md:p-6 border-2 border-cyan-100 hover:border-cyan-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
                       Seminar parenting 4M: Memahami diri untuk memahami anak
                     </h4>
-                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif]">
+                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
                       📍 DP3AP2KB Provinsi Sumatera Barat
                     </p>
                   </div>
 
                   {/* Event 3 */}
                   <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-5 md:p-6 border-2 border-blue-100 hover:border-blue-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
                       Parenting Akhir Tahun: Melindungi anak dari bahaya cyber crime
                     </h4>
-                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif]">
+                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
                       📍 Dinas Pendidikan Kota Bandung
                     </p>
                   </div>
 
                   {/* Event 4 */}
                   <div className="bg-gradient-to-br from-indigo-50 to-white rounded-2xl p-5 md:p-6 border-2 border-indigo-100 hover:border-indigo-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
                       Seminar parenting bersama mewujudukan sekolah zero bullying
                     </h4>
-                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif]">
+                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
                       📍 Yayasan Pendidikan Amal Mulia Depok
                     </p>
                   </div>
 
                   {/* Event 5 */}
                   <div className="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-5 md:p-6 border-2 border-purple-100 hover:border-purple-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
                       Seminar edukasi remaja: play with purpose, pakai gadget dengan bijak
                     </h4>
-                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif]">
+                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
                       📍 SMPN 24 Bandung
                     </p>
                   </div>
 
                   {/* Event 6 */}
                   <div className="bg-gradient-to-br from-pink-50 to-white rounded-2xl p-5 md:p-6 border-2 border-pink-100 hover:border-pink-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
                       Seminar parenting: kenali virus merah jambu dan beri anak rambu-rambu
                     </h4>
-                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif]">
+                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
                       📍 SDIT Daarul Maza Depok
                     </p>
                   </div>
 
                   {/* Event 7 */}
                   <div className="bg-gradient-to-br from-rose-50 to-white rounded-2xl p-5 md:p-6 border-2 border-rose-100 hover:border-rose-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
                       Seminar parenting internet CERIA: Cerdas dalam penggunaan, Empati dalam bersikap, Ramah dari cyberbully, Inklusif untuk semua anak, Aman dari pornografi dan eksploitasi
                     </h4>
-                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif]">
+                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
                       📍 DP3AP2KB Provinsi Sumatera Barat
                     </p>
                   </div>
 
                   {/* Event 8 */}
                   <div className="bg-gradient-to-br from-orange-50 to-white rounded-2xl p-5 md:p-6 border-2 border-orange-100 hover:border-orange-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
                       Seminar parenting orangtua berpijar: Bersama dampingi peduli proses belajar anak
                     </h4>
-                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif]">
+                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
                       📍 Pijar Belajar Telkom Indonesia dan Fammi
                     </p>
                   </div>
 
                   {/* Event 9 */}
                   <div className="bg-gradient-to-br from-amber-50 to-white rounded-2xl p-5 md:p-6 border-2 border-amber-100 hover:border-amber-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
                       Roadshow seminar pendidikan seputar Guru TERAMPIL: Terlatih, Aktif dan Tampil ke 10 kota di Indonesia
                     </h4>
-                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif]">
+                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
                       📍 KEMDIKBUDRISTEK dan Fammi
                     </p>
                   </div>
 
                   {/* Event 10 */}
                   <div className="bg-gradient-to-br from-yellow-50 to-white rounded-2xl p-5 md:p-6 border-2 border-yellow-100 hover:border-yellow-300 transition-all group">
-                    <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
+                    <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[15px] md:text-[16px] text-[#0a7c7c] mb-2 group-hover:text-[#0a5c5c] transition-colors">
                       Communication skill for startup founders
                     </h4>
-                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif]">
+                    <p className="text-[13px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif]">
                       📍 Bandung Techno Park Telkom University
                     </p>
                   </div>
@@ -1555,7 +1555,7 @@ export function RuangKolaborasi({
                 
                 return (
                   <div key={year} className="mb-10">
-                    <div className={`inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r ${yearStyle.gradient} text-white rounded-full font-['Montserrat:Bold',sans-serif] font-bold text-[16px] md:text-[18px] mb-6`}>
+                    <div className={`inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r ${yearStyle.gradient} text-white rounded-full font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[16px] md:text-[18px] mb-6`}>
                       <span>📆</span> {year}
                     </div>
                     
@@ -1565,10 +1565,10 @@ export function RuangKolaborasi({
                           key={idx}
                           className={`bg-gradient-to-br ${event.gradient} rounded-xl md:rounded-2xl p-4 md:p-6 border-2 ${event.border} transition-all`}
                         >
-                          <h4 className="font-['Montserrat:Bold',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 leading-snug">
+                          <h4 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[14px] md:text-[16px] text-[#0a7c7c] mb-2 md:mb-3 leading-snug">
                             {event.title}
                           </h4>
-                          <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Montserrat:Medium',sans-serif] leading-relaxed">
+                          <p className="text-[12px] md:text-[14px] text-[#0a282e]/70 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
                             📍 {event.location}
                           </p>
                         </div>
@@ -1582,7 +1582,7 @@ export function RuangKolaborasi({
               <div className="text-center py-4 md:py-6">
                 <div className="inline-flex items-center gap-2 md:gap-3 px-4 md:px-6 py-3 md:py-4 bg-gradient-to-r from-teal-50 to-cyan-50 rounded-xl md:rounded-2xl border-2 border-teal-200">
                   <span className="text-xl md:text-2xl flex-shrink-0">✨</span>
-                  <p className="text-[12px] md:text-[15px] text-[#0a282e] font-['Montserrat:Bold',sans-serif] font-bold leading-tight">
+                  <p className="text-[12px] md:text-[15px] text-[#0a282e] font-['Plus_Jakarta_Sans',sans-serif] font-bold leading-tight">
                     Dan masih banyak kegiatan lainnya yang belum tercantum di sini
                   </p>
                   <span className="text-xl md:text-2xl flex-shrink-0">🎯</span>
