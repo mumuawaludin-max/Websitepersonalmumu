@@ -1381,31 +1381,31 @@ Terima kasih.`;
               }}
             >
               {/* Subtle credential badge */}
-              <div className="mb-4 inline-flex items-center gap-2 bg-[#dac5a7]/12 border border-[#dac5a7]/20 rounded-full px-3 py-1">
+              <div className="mb-5 inline-flex items-center gap-2 bg-[#dac5a7]/12 border border-[#dac5a7]/20 rounded-full px-3 py-1">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#dac5a7]" />
                 <span className="text-[#dac5a7]/80 text-[10px] font-medium tracking-widest uppercase">10+ Tahun · 50+ Kota</span>
               </div>
 
-              <p className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold leading-[1.05] text-[clamp(28px,2.8vw,41px)] text-white mb-1">
+              <p className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold leading-[1.05] text-[clamp(28px,2.8vw,41px)] text-white mb-1.5">
                 Assalamu'alaikum<span className="text-[#dac5a7]">.</span>
               </p>
 
-              <p className="font-medium leading-[normal] ml-[51px] text-[#dac5a7] text-[clamp(13px,1.2vw,17px)] mb-5">
+              <p className="font-medium leading-snug text-[#dac5a7] text-[clamp(13px,1.2vw,17px)] mb-5">
                 Saya Muhamad Nur Awaludin
               </p>
 
-              <div className="font-medium leading-[1.55] text-[clamp(13px,1.15vw,17px)] text-white/90 mb-1">
+              <div className="font-medium leading-[1.55] text-[clamp(13px,1.15vw,17px)] text-white/90 mb-6">
                 <p>Narasumber & Trainer · Mentor</p>
                 <p className="text-[#dac5a7]/80">Digital Parenting & Youth Learning</p>
                 <p className="text-[#dac5a7]/80">IT Consultant · Product Designer</p>
               </div>
 
-              <div className="mt-7">
+              <div className="flex flex-col gap-3">
                 <a
                   href="https://s.id/profilkakmumu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 bg-[#dac5a7] hover:bg-[#edd9bc] h-[52px] px-6 rounded-full transition-all duration-300 hover:shadow-[0_8px_24px_rgba(218,197,167,0.35)] group cursor-pointer"
+                  className="inline-flex items-center justify-center gap-2.5 bg-[#dac5a7] hover:bg-[#edd9bc] h-[50px] px-6 rounded-full transition-all duration-300 hover:shadow-[0_8px_24px_rgba(218,197,167,0.35)] group cursor-pointer"
                 >
                   <svg className="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 18 18">
                     <g>
@@ -1415,6 +1415,13 @@ Terima kasih.`;
                   </svg>
                   <span className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[#0e0e0e] text-[14px]">Download CV</span>
                 </a>
+                <button
+                  onClick={() => setSelectedCollab(0)}
+                  className="inline-flex items-center justify-center gap-2 h-[50px] px-6 rounded-full border border-[#dac5a7]/40 text-[#dac5a7] hover:border-[#dac5a7] hover:bg-[#dac5a7]/10 transition-all duration-300 cursor-pointer"
+                >
+                  <Star className="w-4 h-4 flex-shrink-0" />
+                  <span className="font-['Plus_Jakarta_Sans',sans-serif] font-semibold text-[14px]">Lihat Rekam Jejak</span>
+                </button>
               </div>
             </div>
             
