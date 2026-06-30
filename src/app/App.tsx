@@ -3,7 +3,7 @@ import { Presentation, Code, Users, Lightbulb, Sparkles, ArrowRight, Trophy, Awa
 
 // Set document title and meta for SEO
 if (typeof document !== 'undefined') {
-  document.title = 'Kak Mumu - Narasumber Parenting Digital, Kecanduan Gadget & Game | Trainer Komunikasi Keluarga';
+  document.title = 'Kak Mumu - Digital Parenting Mentor & IT Consultant';
   
   // Set or update meta description
   let metaDesc = document.querySelector('meta[name="description"]');
