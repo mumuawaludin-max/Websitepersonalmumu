@@ -36,7 +36,7 @@ export function FloatingContactButton({ onClick }: FloatingContactButtonProps) {
           isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4 pointer-events-none'
         }`}
       >
-        <div className="bg-white text-[#0a282e] px-4 py-2 rounded-lg shadow-xl whitespace-nowrap font-['Montserrat:SemiBold',sans-serif] text-sm">
+        <div className="bg-white text-[#0a282e] px-4 py-2 rounded-lg shadow-xl whitespace-nowrap font-['Plus_Jakarta_Sans',sans-serif] text-sm">
           Hubungi Kami
           {/* Arrow */}
           <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-full">

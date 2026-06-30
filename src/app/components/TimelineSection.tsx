@@ -18,15 +18,15 @@ const TIMELINE_DATA = {
           "Kolaborasi yang kuat lahir dari kejelasan tujuan, bukan sekadar kesepakatan di atas kertas."
         </blockquote>
         <div className="mt-6">
-          <p className="text-[13px] font-['Montserrat:SemiBold',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
+          <p className="text-[13px] font-['Plus_Jakarta_Sans',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
             Keahlian Terkait
           </p>
           <div className="flex flex-wrap gap-2">
-            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Strategic Partnership</span>
-            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Program Design</span>
-            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Stakeholder Engagement</span>
-            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[#13px] rounded-full font-['Montserrat:Medium',sans-serif]">Pentahelix Collaboration</span>
-            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">CSR Program</span>
+            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Strategic Partnership</span>
+            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Program Design</span>
+            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Stakeholder Engagement</span>
+            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[#13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Pentahelix Collaboration</span>
+            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">CSR Program</span>
           </div>
         </div>
       </>
@@ -57,16 +57,16 @@ const TIMELINE_DATA = {
           "Kepemimpinan saya dimulai dari keteladanan, menghargai keunikan setiap tim, dan mengajak fokus pada hal-hal yang berada dalam kendali, agar tujuan bersama tetap tercapai."
         </blockquote>
         <div className="mt-6">
-          <p className="text-[13px] font-['Montserrat:SemiBold',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
+          <p className="text-[13px] font-['Plus_Jakarta_Sans',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
             Keahlian Terkait
           </p>
           <div className="flex flex-wrap gap-2">
-            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Strategic Partnership</span>
-            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Team Management</span>
-            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Product Development</span>
-            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Business Operations</span>
-            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Sales & Marketing</span>
-            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Pitching & Investment</span>
+            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Strategic Partnership</span>
+            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Team Management</span>
+            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Product Development</span>
+            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Business Operations</span>
+            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Sales & Marketing</span>
+            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Pitching & Investment</span>
           </div>
         </div>
       </>
@@ -79,25 +79,25 @@ const TIMELINE_DATA = {
     content: (
       <>
         <p className="mb-4">
-          Saya aktif membahas dan mengembangkan berbagai konten edukasi seputar <strong className="font-['Montserrat:Bold',sans-serif] font-bold">parenting digital, komunikasi dalam keluarga, serta kesehatan mental</strong>.
+          Saya aktif membahas dan mengembangkan berbagai konten edukasi seputar <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">parenting digital, komunikasi dalam keluarga, serta kesehatan mental</strong>.
         </p>
         <p className="mb-4">
-          Fokus saya adalah membantu orang tua <strong className="font-['Montserrat:Bold',sans-serif] font-bold">membangun cara pandang yang lebih utuh</strong> dalam melihat persoalan anak, mulai dari usia dini hingga remaja dan dewasa. Bukan untuk menggurui, tetapi untuk membuka ruang refleksi dan dialog yang sehat.
+          Fokus saya adalah membantu orang tua <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">membangun cara pandang yang lebih utuh</strong> dalam melihat persoalan anak, mulai dari usia dini hingga remaja dan dewasa. Bukan untuk menggurui, tetapi untuk membuka ruang refleksi dan dialog yang sehat.
         </p>
         <p className="mb-4">
-          Dalam proses ini, saya tidak menempatkan diri sebagai pihak yang paling tahu. Saya memilih untuk terus belajar, sekaligus <strong className="font-['Montserrat:Bold',sans-serif] font-bold">membersamai orang tua dalam perjalanan tumbuh bersama anak-anak mereka</strong>.
+          Dalam proses ini, saya tidak menempatkan diri sebagai pihak yang paling tahu. Saya memilih untuk terus belajar, sekaligus <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">membersamai orang tua dalam perjalanan tumbuh bersama anak-anak mereka</strong>.
         </p>
         <blockquote className="border-l-4 border-[#0a282e] pl-4 py-2 mb-4 italic text-[#0a282e]/80">
           "Saya percaya bahwa anak hebat tidak selalu lahir dari orangtua yang sempurna, tapi dari orangtua yang mau tumbuh belajar bersama."
         </blockquote>
         <div className="mt-6">
-          <p className="text-[13px] font-['Montserrat:SemiBold',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
+          <p className="text-[13px] font-['Plus_Jakarta_Sans',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
             Keahlian Terkait
           </p>
           <div className="flex flex-wrap gap-2">
-            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Digital Parenting</span>
-            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Content Development</span>
-            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Parent Coaching</span>
+            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Digital Parenting</span>
+            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Content Development</span>
+            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Parent Coaching</span>
           </div>
         </div>
       </>
@@ -110,10 +110,10 @@ const TIMELINE_DATA = {
     content: (
       <>
         <p className="mb-4">
-          Saya membimbing anak dan remaja untuk menemukan potensi terbaik mereka sekaligus mengelola tantangan hidup melalui sesi mentoring privat. Dalam peran ini, saya dipercaya oleh <strong className="font-['Montserrat:Bold',sans-serif] font-bold">PKBM Daarut Tauhiid</strong> untuk terlibat dalam program pendampingan personal.
+          Saya membimbing anak dan remaja untuk menemukan potensi terbaik mereka sekaligus mengelola tantangan hidup melalui sesi mentoring privat. Dalam peran ini, saya dipercaya oleh <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">PKBM Daarut Tauhiid</strong> untuk terlibat dalam program pendampingan personal.
         </p>
         <p className="mb-4">
-          Selain pendampingan personal, saya juga aktif memfasilitasi perjalanan kewirausahaan remaja, mahasiswa, hingga startup, dari tahap ide, validasi, hingga eksekusi. Pengalaman ini diperkuat melalui peran saya sebagai <strong className="font-['Montserrat:Bold',sans-serif] font-bold">Dosen Kewirausahaan di STT Nurul Fikri Depok</strong> selama dua tahun, mentor di <strong className="font-['Montserrat:Bold',sans-serif] font-bold">The GreaterHub SBM ITB</strong>, serta mentor aktif di <strong className="font-['Montserrat:Bold',sans-serif] font-bold">Bandung Technopark Incubation Program Telkom University</strong> sejak 2024 hingga saat ini.
+          Selain pendampingan personal, saya juga aktif memfasilitasi perjalanan kewirausahaan remaja, mahasiswa, hingga startup, dari tahap ide, validasi, hingga eksekusi. Pengalaman ini diperkuat melalui peran saya sebagai <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">Dosen Kewirausahaan di STT Nurul Fikri Depok</strong> selama dua tahun, mentor di <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">The GreaterHub SBM ITB</strong>, serta mentor aktif di <strong className="font-['Plus_Jakarta_Sans',sans-serif] font-bold">Bandung Technopark Incubation Program Telkom University</strong> sejak 2024 hingga saat ini.
         </p>
         <p className="mb-4">
           Bagi saya, setiap sesi mentoring bukan sekadar berbagi pengetahuan, tetapi ruang untuk menumbuhkan kejelasan arah, kepercayaan diri, dan keberanian mengambil langkah.
@@ -122,14 +122,14 @@ const TIMELINE_DATA = {
           "Mentor bukan memberi tahu jalan yang harus ditempuh, tetapi membantu seseorang menemukan jalannya sendiri dengan lebih yakin dan sadar."
         </blockquote>
         <div className="mt-6">
-          <p className="text-[13px] font-['Montserrat:SemiBold',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
+          <p className="text-[13px] font-['Plus_Jakarta_Sans',sans-serif] text-[#0a282e]/60 mb-3 uppercase tracking-wide">
             Keahlian Terkait
           </p>
           <div className="flex flex-wrap gap-2">
-            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Youth Mentoring</span>
-            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Entrepreneurship Coaching</span>
-            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Personal Development</span>
-            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Montserrat:Medium',sans-serif]">Startup Mentoring</span>
+            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Youth Mentoring</span>
+            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Entrepreneurship Coaching</span>
+            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Personal Development</span>
+            <span className="px-3 py-1.5 bg-[#0a282e]/5 text-[#0a282e] text-[13px] rounded-full font-['Plus_Jakarta_Sans',sans-serif]">Startup Mentoring</span>
           </div>
         </div>
       </>
@@ -160,7 +160,7 @@ export function TimelineSection({ activeTimeline, onTimelineChange }: TimelineSe
             }`}
           >
             <h3
-              className={`font-['Montserrat:Bold',sans-serif] font-bold text-[18px] md:text-[20px] ${
+              className={`font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] md:text-[20px] ${
                 activeTimeline === item.id ? 'text-[#0a282e]' : 'text-white'
               }`}
             >
@@ -181,10 +181,10 @@ export function TimelineSection({ activeTimeline, onTimelineChange }: TimelineSe
           <div className="absolute inset-0 bg-gradient-to-t from-[#dac5a7] to-transparent" />
         </div>
         <div className="p-8 md:p-10">
-          <h2 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[24px] md:text-[28px] text-[#0a282e] mb-6">
+          <h2 className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[24px] md:text-[28px] text-[#0a282e] mb-6">
             {currentTimeline.title}
           </h2>
-          <div className="text-[#0a282e] text-[15px] md:text-[16px] leading-relaxed font-['Montserrat:Regular',sans-serif]">
+          <div className="text-[#0a282e] text-[15px] md:text-[16px] leading-relaxed font-['Plus_Jakarta_Sans',sans-serif]">
             {currentTimeline.content}
           </div>
         </div>

@@ -72,7 +72,7 @@ export function BlogSection() {
           {/* Back Button */}
           <button
             onClick={() => setSelectedBlog(null)}
-            className="flex items-center gap-2 text-[#dac5a7] hover:text-white mb-8 transition-colors font-['Montserrat:SemiBold',sans-serif]"
+            className="flex items-center gap-2 text-[#dac5a7] hover:text-white mb-8 transition-colors font-['Plus_Jakarta_Sans',sans-serif]"
           >
             <ArrowRight className="w-5 h-5 rotate-180" />
             Kembali ke Blog
@@ -91,11 +91,11 @@ export function BlogSection() {
 
           {/* Blog Header */}
           <div className="mb-8">
-            <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[32px] md:text-[48px] text-white mb-4 leading-tight">
+            <h1 className="font-['Plus_Jakarta_Sans',sans-serif] font-extrabold text-[32px] md:text-[48px] text-white mb-4 leading-tight">
               {selectedBlog.title}
             </h1>
 
-            <div className="flex flex-wrap items-center gap-4 text-white/60 text-sm font-['Montserrat:Medium',sans-serif] mb-6">
+            <div className="flex flex-wrap items-center gap-4 text-white/60 text-sm font-['Plus_Jakarta_Sans',sans-serif] mb-6">
               <div className="flex items-center gap-2">
                 <Calendar className="w-4 h-4" />
                 {formatDate(selectedBlog.publishedDate)}
@@ -109,7 +109,7 @@ export function BlogSection() {
                 {selectedBlog.tags.map(tag => (
                   <span
                     key={tag}
-                    className="px-3 py-1 bg-[#dac5a7]/20 text-[#dac5a7] text-sm rounded-full font-['Montserrat:SemiBold',sans-serif]"
+                    className="px-3 py-1 bg-[#dac5a7]/20 text-[#dac5a7] text-sm rounded-full font-['Plus_Jakarta_Sans',sans-serif]"
                   >
                     {tag}
                   </span>
@@ -121,7 +121,7 @@ export function BlogSection() {
           {/* Blog Content */}
           <div className="prose prose-invert prose-lg max-w-none">
             <div 
-              className="text-white/90 leading-relaxed font-['Montserrat:Regular',sans-serif] whitespace-pre-wrap"
+              className="text-white/90 leading-relaxed font-['Plus_Jakarta_Sans',sans-serif] whitespace-pre-wrap"
               style={{ lineHeight: '1.8' }}
             >
               {selectedBlog.content}
@@ -130,7 +130,7 @@ export function BlogSection() {
 
           {/* Share Section */}
           <div className="mt-12 pt-8 border-t border-white/10">
-            <p className="text-white/60 font-['Montserrat:Medium',sans-serif] mb-4">
+            <p className="text-white/60 font-['Plus_Jakarta_Sans',sans-serif] mb-4">
               Bagikan artikel ini:
             </p>
             <div className="flex gap-3">
@@ -138,7 +138,7 @@ export function BlogSection() {
                 href={`https://wa.me/?text=${encodeURIComponent(selectedBlog.title + ' - ' + window.location.href)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors font-['Montserrat:SemiBold',sans-serif] text-sm"
+                className="px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors font-['Plus_Jakarta_Sans',sans-serif] text-sm"
               >
                 WhatsApp
               </a>
@@ -146,7 +146,7 @@ export function BlogSection() {
                 href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors font-['Montserrat:SemiBold',sans-serif] text-sm"
+                className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors font-['Plus_Jakarta_Sans',sans-serif] text-sm"
               >
                 Facebook
               </a>
@@ -154,7 +154,7 @@ export function BlogSection() {
                 href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(selectedBlog.title)}&url=${encodeURIComponent(window.location.href)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 bg-sky-500 hover:bg-sky-600 text-white rounded-lg transition-colors font-['Montserrat:SemiBold',sans-serif] text-sm"
+                className="px-4 py-2 bg-sky-500 hover:bg-sky-600 text-white rounded-lg transition-colors font-['Plus_Jakarta_Sans',sans-serif] text-sm"
               >
                 Twitter
               </a>
@@ -167,19 +167,19 @@ export function BlogSection() {
 
   // Blog List View
   return (
-    <section id="blog" className="min-h-screen bg-[#0a282e] py-16 md:py-24">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-8 lg:px-16">
+    <section id="blog" className="bg-[#0a282e] section-block border-t border-white/[0.06]">
+      <div className="section-wrap !max-w-[1320px]">
         {/* Header */}
         <div className="mb-12 md:mb-16 text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
-            <span className="text-[#dac5a7]/60 text-[11px] font-semibold tracking-widest uppercase">Tulisan & Wawasan</span>
+            <span className="eyebrow text-[#dac5a7]/60">Tulisan &amp; Wawasan</span>
             <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
           </div>
-          <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[28px] md:text-[40px] lg:text-[50px] text-white mb-4 leading-tight">
-            Blog & Artikel
-          </h1>
-          <p className="text-white/60 text-[14px] md:text-[16px] max-w-2xl mx-auto px-4 leading-relaxed">
+          <h2 className="t-h1 text-white mb-4">
+            Blog &amp; Artikel
+          </h2>
+          <p className="t-body text-white/55 max-w-2xl mx-auto">
             Temukan tips parenting digital, solusi kecanduan gadget, dan strategi komunikasi keluarga yang efektif
           </p>
         </div>
@@ -194,7 +194,7 @@ export function BlogSection() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Cari artikel..."
-              className="w-full pl-12 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/40 focus:outline-none focus:border-[#dac5a7] transition-colors font-['Montserrat:Medium',sans-serif]"
+              className="w-full pl-12 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/40 focus:outline-none focus:border-[#dac5a7] transition-colors font-['Plus_Jakarta_Sans',sans-serif]"
             />
           </div>
 
@@ -203,7 +203,7 @@ export function BlogSection() {
             <div className="flex flex-wrap gap-2 justify-center">
               <button
                 onClick={() => setSelectedTag(null)}
-                className={`px-4 py-2 rounded-full font-['Montserrat:SemiBold',sans-serif] text-sm transition-all ${
+                className={`px-4 py-2 rounded-full font-['Plus_Jakarta_Sans',sans-serif] text-sm transition-all ${
                   selectedTag === null
                     ? 'bg-[#dac5a7] text-[#0a282e]'
                     : 'bg-white/10 text-white/60 hover:bg-white/20'
@@ -215,7 +215,7 @@ export function BlogSection() {
                 <button
                   key={tag}
                   onClick={() => setSelectedTag(tag)}
-                  className={`px-4 py-2 rounded-full font-['Montserrat:SemiBold',sans-serif] text-sm transition-all flex items-center gap-2 ${
+                  className={`px-4 py-2 rounded-full font-['Plus_Jakarta_Sans',sans-serif] text-sm transition-all flex items-center gap-2 ${
                     selectedTag === tag
                       ? 'bg-[#dac5a7] text-[#0a282e]'
                       : 'bg-white/10 text-white/60 hover:bg-white/20'
@@ -233,12 +233,12 @@ export function BlogSection() {
         {loading ? (
           <div className="text-center py-12">
             <div className="inline-block w-8 h-8 border-4 border-[#dac5a7]/30 border-t-[#dac5a7] rounded-full animate-spin"></div>
-            <p className="text-white/60 mt-4 font-['Montserrat:Medium',sans-serif]">Memuat artikel...</p>
+            <p className="text-white/60 mt-4 font-['Plus_Jakarta_Sans',sans-serif]">Memuat artikel...</p>
           </div>
         ) : filteredBlogs.length === 0 ? (
           <div className="text-center py-12">
             <BookOpen className="w-16 h-16 text-white/20 mx-auto mb-4" />
-            <p className="text-white/60 font-['Montserrat:Medium',sans-serif]">
+            <p className="text-white/60 font-['Plus_Jakarta_Sans',sans-serif]">
               {searchQuery || selectedTag ? 'Tidak ada artikel yang cocok dengan pencarian' : 'Belum ada artikel yang dipublikasikan'}
             </p>
           </div>
@@ -268,18 +268,18 @@ export function BlogSection() {
                 {/* Content */}
                 <div className="p-6">
                   {/* Date */}
-                  <div className="flex items-center gap-2 text-white/40 text-sm mb-3 font-['Montserrat:Medium',sans-serif]">
+                  <div className="flex items-center gap-2 text-white/40 text-sm mb-3 font-['Plus_Jakarta_Sans',sans-serif]">
                     <Calendar className="w-4 h-4" />
                     {formatDate(blog.publishedDate)}
                   </div>
 
                   {/* Title */}
-                  <h3 className="font-['Montserrat:Bold',sans-serif] font-bold text-[18px] md:text-[20px] text-white mb-3 leading-tight line-clamp-2 group-hover:text-[#dac5a7] transition-colors">
+                  <h3 className="font-['Plus_Jakarta_Sans',sans-serif] font-bold text-[18px] md:text-[20px] text-white mb-3 leading-tight line-clamp-2 group-hover:text-[#dac5a7] transition-colors">
                     {blog.title}
                   </h3>
 
                   {/* Excerpt */}
-                  <p className="text-white/70 text-sm mb-4 line-clamp-3 font-['Montserrat:Regular',sans-serif] leading-relaxed">
+                  <p className="text-white/70 text-sm mb-4 line-clamp-3 font-['Plus_Jakarta_Sans',sans-serif] leading-relaxed">
                     {blog.excerpt}
                   </p>
 
@@ -289,7 +289,7 @@ export function BlogSection() {
                       {blog.tags.slice(0, 2).map(tag => (
                         <span
                           key={tag}
-                          className="px-2 py-1 bg-[#dac5a7]/10 text-[#dac5a7] text-xs rounded font-['Montserrat:SemiBold',sans-serif]"
+                          className="px-2 py-1 bg-[#dac5a7]/10 text-[#dac5a7] text-xs rounded font-['Plus_Jakarta_Sans',sans-serif]"
                         >
                           {tag}
                         </span>
@@ -298,7 +298,7 @@ export function BlogSection() {
                   )}
 
                   {/* Read More */}
-                  <div className="flex items-center gap-2 text-[#dac5a7] group-hover:gap-3 transition-all font-['Montserrat:SemiBold',sans-serif] text-sm">
+                  <div className="flex items-center gap-2 text-[#dac5a7] group-hover:gap-3 transition-all font-['Plus_Jakarta_Sans',sans-serif] text-sm">
                     Baca Selengkapnya
                     <ArrowRight className="w-4 h-4" />
                   </div>
