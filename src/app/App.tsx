@@ -1391,55 +1391,49 @@ Terima kasih.`;
             </div>
             
             {/* Left Content - PARALLAX - RESPONSIVE */}
-            <div 
-              className="absolute top-[120px] w-[min(400px,28%)] h-[266px] transition-transform duration-75"
-              style={{ 
+            <div
+              className="absolute top-[95px] w-[min(400px,28%)] transition-transform duration-75"
+              style={{
                 left: 'max(55px, 4%)',
-                transform: `translateY(${scrollY * 0.1}px)` 
+                transform: `translateY(${scrollY * 0.1}px)`
               }}
             >
-              <p className="absolute font-['Montserrat:ExtraBold',sans-serif] font-extrabold leading-[0] left-0 text-[clamp(32px,2.8vw,41.128px)] text-white top-0">
-                <span className="leading-[1.05]">Assalamu'alaikum</span>
-                <span className="leading-[1.05] text-[#dac5a7]">.</span>
+              {/* Subtle credential badge */}
+              <div className="mb-4 inline-flex items-center gap-2 bg-[#dac5a7]/12 border border-[#dac5a7]/20 rounded-full px-3 py-1">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#dac5a7]" />
+                <span className="text-[#dac5a7]/80 text-[10px] font-medium tracking-widest uppercase">10+ Tahun · 50+ Kota</span>
+              </div>
+
+              <p className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold leading-[1.05] text-[clamp(28px,2.8vw,41px)] text-white mb-1">
+                Assalamu'alaikum<span className="text-[#dac5a7]">.</span>
               </p>
-              
-              <p className="absolute font-['Montserrat:Medium',sans-serif] font-medium leading-[normal] left-[51px] text-[#dac5a7] text-[clamp(16px,1.4vw,20px)] top-[53px] whitespace-nowrap">
+
+              <p className="font-medium leading-[normal] ml-[51px] text-[#dac5a7] text-[clamp(13px,1.2vw,17px)] mb-4">
                 Saya Muhamad Nur Awaludin
               </p>
-              
-              <div className="absolute h-0 left-0 top-[73px] w-[32px]">
-                <div className="absolute inset-[-3.14px_0_0_0]">
-                  <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32 3.13786">
-                    <line stroke="#DAC5A7" strokeWidth="3.13786" x2="32" y1="1.56893" y2="1.56893" />
-                  </svg>
-                </div>
+
+              <div className="w-8 h-[3px] rounded-full bg-[#dac5a7] mb-5" />
+
+              <div className="font-medium leading-[1.55] text-[clamp(13px,1.15vw,17px)] text-white/90 mb-1">
+                <p>Narasumber & Trainer · Mentor</p>
+                <p className="text-[#dac5a7]/80">Digital Parenting & Youth Learning</p>
+                <p className="text-[#dac5a7]/80">IT Consultant · Product Designer</p>
               </div>
-              
-              <div className="absolute font-['Montserrat:Medium',sans-serif] font-medium leading-[1.4] left-0 text-[clamp(16px,1.5vw,21.702px)] text-white top-[106px] whitespace-nowrap">
-                <p className="mb-0">Narasumber & Trainer</p>
-                <p>Program Manager · Product Designer</p>
-              </div>
-              
-              <div className="absolute left-0 top-[206px]">
-                <a 
+
+              <div className="mt-7">
+                <a
                   href="https://s.id/profilkakmumu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative flex items-center justify-center bg-[#dac5a7] hover:bg-[#c9b496] h-[60px] w-[230px] rounded-[8px] transition-colors cursor-pointer"
+                  className="inline-flex items-center gap-3 bg-[#dac5a7] hover:bg-[#edd9bc] h-[52px] px-6 rounded-full transition-all duration-300 hover:shadow-[0_8px_24px_rgba(218,197,167,0.35)] group cursor-pointer"
                 >
-                  <div className="absolute left-[45px] size-[24px] top-[18px]">
-                    <div className="absolute inset-[12.5%]">
-                      <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 18 18">
-                        <g>
-                          <path clipRule="evenodd" d={svgDownload.p39fea300} fill="#0E0E0E" fillRule="evenodd" />
-                          <path clipRule="evenodd" d={svgDownload.p3baeb000} fill="#0E0E0E" fillRule="evenodd" />
-                        </g>
-                      </svg>
-                    </div>
-                  </div>
-                  <p className="absolute font-['Montserrat:Medium',sans-serif] font-medium leading-[normal] left-[74px] text-[#0e0e0e] text-[16px] top-[22px]">
-                    Download CV
-                  </p>
+                  <svg className="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 18 18">
+                    <g>
+                      <path clipRule="evenodd" d={svgDownload.p39fea300} fill="#0E0E0E" fillRule="evenodd" />
+                      <path clipRule="evenodd" d={svgDownload.p3baeb000} fill="#0E0E0E" fillRule="evenodd" />
+                    </g>
+                  </svg>
+                  <span className="font-['Montserrat:SemiBold',sans-serif] font-semibold text-[#0e0e0e] text-[14px]">Download CV</span>
                 </a>
               </div>
             </div>
@@ -1451,44 +1445,57 @@ Terima kasih.`;
                 right: 'max(31px, 2%)'
               }}
             >
-              <span className="font-['Montserrat:Bold',sans-serif] font-bold">Narasumber Parenting Digital, Kecanduan Gadget & Game - </span>
-              <span>Praktisi dengan pengalaman </span>
+              <span className="font-['Montserrat:Bold',sans-serif] font-bold">Digital Parenting Mentor & IT Consultant — </span>
+              <span>Praktisi di persimpangan </span>
+              <span className="font-['Montserrat:Bold',sans-serif] font-bold">edukasi, psikologi & teknologi</span>
+              <span>. Pengalaman </span>
               <span className="font-['Montserrat:Bold',sans-serif] font-bold">10+ tahun </span>
-              <span>mendampingi orangtua, guru, dan organisasi mengatasi </span>
-              <span className="font-['Montserrat:Bold',sans-serif] font-bold">kecanduan HP, screen time berlebihan, dan tantangan digital parenting</span>
-              <span>. Menghadirkan solusi praktis berbasis psikologi dan pengalaman lapangan.</span>
+              <span>membangun program, aplikasi, sistem, dan solusi digital untuk </span>
+              <span className="font-['Montserrat:Bold',sans-serif] font-bold">pemerintah, institusi, sekolah, dan keluarga</span>
+              <span> di 50+ kota Indonesia.</span>
             </p>
           </div>
 
           {/* MOBILE HERO - Simple Version */}
           <div className="md:hidden relative w-full min-h-screen flex flex-col items-center justify-start px-6 pt-24 pb-0 text-center bg-[#0a282e]">
             <div className="mb-8 flex-1 flex flex-col justify-center">
-              <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[32px] text-white mb-3">
+              {/* Credential badge */}
+              <div className="mb-5 inline-flex items-center justify-center gap-2 bg-[#dac5a7]/12 border border-[#dac5a7]/20 rounded-full px-4 py-1.5 mx-auto">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#dac5a7]" />
+                <span className="text-[#dac5a7]/80 text-[10px] font-semibold tracking-widest uppercase">10+ Tahun · 50+ Kota</span>
+              </div>
+
+              <p className="text-[#dac5a7]/60 text-[11px] font-semibold tracking-widest uppercase mb-2">Assalamu'alaikum</p>
+              <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[30px] text-white mb-1 leading-tight">
                 Muhamad Nur Awaludin
               </h1>
-              
+              <div className="w-10 h-[3px] rounded-full bg-[#dac5a7] mx-auto my-4" />
+
               {/* Subtitle - Professional Roles */}
-              <div className="mb-6">
-                <p className="text-white font-['Montserrat:Medium',sans-serif] font-medium text-[14px] leading-[22px]">
-                  Narasumber Parenting Digital & Kecanduan Gadget
+              <div className="mb-5">
+                <p className="text-white/90 font-medium text-[13px] leading-[22px]">
+                  Narasumber & Trainer · Mentor
                 </p>
-                <p className="text-white font-['Montserrat:Medium',sans-serif] font-medium text-[14px] leading-[22px]">
-                  Trainer Komunikasi Keluarga & Kesehatan Mental
+                <p className="text-[#dac5a7]/80 font-medium text-[13px] leading-[22px]">
+                  Digital Parenting & Youth Learning
+                </p>
+                <p className="text-[#dac5a7]/80 font-medium text-[13px] leading-[22px]">
+                  IT Consultant · Product Designer
                 </p>
               </div>
-              
-              <p className="text-[#dac5a7] text-[14px] font-['Montserrat:Medium',sans-serif] leading-relaxed max-w-md mx-auto mb-6">
-                Praktisi dengan <span className="font-['Montserrat:Bold',sans-serif] font-bold">10+ tahun pengalaman</span> membantu orangtua dan guru mengatasi <span className="font-['Montserrat:Bold',sans-serif] font-bold">kecanduan game, HP berlebihan, dan tantangan digital parenting</span>. Menghadirkan solusi berbasis psikologi untuk membangun keluarga yang sehat di era digital.
+
+              <p className="text-[#dac5a7]/70 text-[13px] leading-relaxed max-w-sm mx-auto mb-7">
+                Praktisi di persimpangan edukasi, psikologi & teknologi. 10+ tahun membangun program, aplikasi, sistem, dan solusi digital untuk pemerintah, institusi, sekolah, dan keluarga.
               </p>
-              
+
               {/* CTA Buttons */}
               <div className="flex flex-col gap-3 w-full max-w-xs mx-auto">
-                {/* Download CV Button - Outline Style */}
-                <a 
+                {/* Download CV Button */}
+                <a
                   href="https://s.id/profilkakmumu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 border-2 border-[#dac5a7] text-[#dac5a7] px-8 py-3 rounded-full font-['Montserrat:SemiBold',sans-serif] font-semibold text-[14px] hover:bg-[#dac5a7] hover:text-[#0a282e] transition-colors"
+                  className="flex items-center justify-center gap-2 bg-[#dac5a7] text-[#0e0e0e] px-8 py-3 rounded-full font-semibold text-[14px] hover:bg-[#edd9bc] transition-all hover:shadow-[0_8px_24px_rgba(218,197,167,0.3)]"
                 >
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15.75 11.25V14.0625C15.75 14.5106 15.5722 14.9403 15.2557 15.2557C14.9403 15.5722 14.5106 15.75 14.0625 15.75H3.9375C3.48995 15.75 3.06072 15.5722 2.74426 15.2557C2.42779 14.9403 2.25 14.5106 2.25 14.0625V11.25" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -1497,11 +1504,11 @@ Terima kasih.`;
                   </svg>
                   Download CV
                 </a>
-                
-                {/* Let's Talk Button - Filled Style */}
-                <button 
+
+                {/* Let's Talk Button */}
+                <button
                   onClick={() => scrollToSection('ruang-kolaborasi')}
-                  className="bg-[#dac5a7] text-[#0a282e] px-8 py-3 rounded-full font-['Montserrat:SemiBold',sans-serif] font-semibold text-[14px] hover:bg-[#c9b396] transition-colors"
+                  className="border border-[#dac5a7]/40 text-[#dac5a7] px-8 py-3 rounded-full font-semibold text-[14px] hover:border-[#dac5a7] hover:text-white transition-colors"
                 >
                   Let's Talk!
                 </button>
@@ -1619,24 +1626,28 @@ Terima kasih.`;
       </section>
 
       {/* Tentang Saya Section */}
-      <section id="tentang-saya" className="bg-white py-8 md:py-12">
+      <section id="tentang-saya" className="bg-[#fffcf8] py-10 md:py-16">
         <div className="max-w-[1200px] mx-auto px-6 md:px-8 lg:px-16">
           {/* Header */}
           <div className="mb-8">
-            <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[28px] md:text-[36px] lg:text-[48px] text-[#0a282e] mb-6">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-8 h-[3px] rounded-full bg-[#dac5a7]" />
+              <span className="text-[#0a282e]/50 text-[12px] font-semibold tracking-widest uppercase">Profil & Perjalanan</span>
+            </div>
+            <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[28px] md:text-[36px] lg:text-[44px] text-[#0a282e] mb-6">
               Tentang Saya
             </h1>
-            
+
             {/* Timeline Horizontal Pills */}
-            <div className="flex flex-wrap gap-3 mb-8">
+            <div className="flex flex-wrap gap-2.5 mb-8">
               {Object.values(timelineData).map((item) => (
                 <button
                   key={item.id}
                   onClick={() => setActiveTimeline(item.id)}
                   className={`px-5 py-2.5 rounded-full font-['Montserrat:Medium',sans-serif] text-[14px] md:text-[15px] transition-all whitespace-nowrap ${
                     activeTimeline === item.id
-                      ? 'bg-[#c94a4a] text-white shadow-lg scale-105'
-                      : 'bg-gray-100 text-[#0a282e] hover:bg-gray-200 hover:scale-102'
+                      ? 'bg-[#0a282e] text-[#dac5a7] shadow-md scale-[1.03]'
+                      : 'bg-[#f5ede1] text-[#0a282e]/70 hover:bg-[#edd9bc] hover:text-[#0a282e]'
                   }`}
                 >
                   {item.title}
@@ -1666,7 +1677,7 @@ Terima kasih.`;
                 key={`content-${activeTimeline}`}
                 className="animate-fadeIn"
               >
-                <h2 className="font-['Montserrat:Bold',sans-serif] font-bold text-[22px] md:text-[26px] text-[#c94a4a] mb-4">
+                <h2 className="font-['Montserrat:Bold',sans-serif] font-bold text-[22px] md:text-[26px] text-[#0a282e] mb-4">
                   {currentTimeline.title}
                 </h2>
                 
@@ -1961,27 +1972,24 @@ Terima kasih.`;
       </section></div>
 
       {/* Apresiasi dan Liputan Media Section */}
-      <section id="karya" className="min-h-screen bg-[#0a282e] py-16 md:py-24">
+      <section id="karya" className="min-h-screen bg-[#0b2d35] py-16 md:py-24">
         <div className="max-w-[1400px] mx-auto px-6 md:px-8 lg:px-16">
           {/* Header */}
           <div className="mb-12 md:mb-20 text-center">
-            <div className="flex justify-center mb-4 md:mb-6">
-              <div className="relative">
-                <div className="absolute inset-0 bg-[#dac5a7]/20 blur-2xl rounded-full" />
-                <div className="relative bg-gradient-to-br from-[#dac5a7] to-[#c9b396] p-3 md:p-4 rounded-2xl shadow-xl">
-                  <Trophy className="w-8 h-8 md:w-10 md:h-10 text-[#0a282e]" />
-                </div>
-              </div>
+            <div className="flex items-center justify-center gap-3 mb-5">
+              <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
+              <span className="text-[#dac5a7]/60 text-[11px] font-semibold tracking-widest uppercase">Rekam Jejak</span>
+              <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
             </div>
-            
-            <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[32px] md:text-[42px] lg:text-[52px] text-white mb-3 md:mb-4">
-              Apresiasi dan Liputan Media
+
+            <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[28px] md:text-[40px] lg:text-[50px] text-white mb-4 leading-tight">
+              Apresiasi &amp; Liputan Media
             </h1>
-            <p className="text-white/80 text-[14px] md:text-[16px] lg:text-[18px] font-['Montserrat:Medium',sans-serif] max-w-3xl mx-auto mb-4 md:mb-6 px-4 leading-relaxed">
-              Pengalaman menangani program parenting digital, kecanduan gadget, dan literasi digital di berbagai institusi. Dipercaya media nasional untuk membahas solusi kecanduan game, HP, dan tantangan digital parenting di Indonesia.
+            <p className="text-white/65 text-[14px] md:text-[16px] max-w-2xl mx-auto mb-6 px-4 leading-relaxed">
+              Pengalaman mendampingi institusi, pemerintah, dan keluarga di berbagai kota Indonesia. Dipercaya media nasional untuk membahas parenting digital, literasi teknologi, dan pendidikan anak.
             </p>
             <div className="flex justify-center">
-              <div className="w-[64px] h-[4px] bg-[#dac5a7] rounded-full" />
+              <div className="w-12 h-[3px] bg-[#dac5a7] rounded-full" />
             </div>
           </div>
 
@@ -2244,11 +2252,15 @@ Terima kasih.`;
             {/* LEFT: Upcoming Events */}
             <div>
               <div className="mb-12 text-center lg:text-left">
-                <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[36px] md:text-[48px] text-white mb-4">
+                <div className="flex items-center gap-3 mb-3 justify-center lg:justify-start">
+                  <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
+                  <span className="text-[#dac5a7]/60 text-[11px] font-semibold tracking-widest uppercase">Agenda</span>
+                  <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
+                </div>
+                <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[32px] md:text-[44px] text-white mb-4 leading-tight">
                   Upcoming Events
                 </h1>
-                <div className="w-[64px] h-[4px] bg-[#dac5a7] rounded-full mx-auto lg:mx-0 mb-8" />
-                <p className="text-white/80 text-[16px] md:text-[18px] leading-relaxed">
+                <p className="text-white/60 text-[15px] md:text-[16px] leading-relaxed">
                   Bergabunglah dengan kegiatan mendatang untuk belajar dan berkembang bersama.
                 </p>
               </div>
@@ -2337,7 +2349,7 @@ Terima kasih.`;
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={(e) => e.stopPropagation()}
-                            className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-700 hover:to-teal-800 text-white rounded-xl font-['Montserrat:Bold',sans-serif] font-bold text-[13px] md:text-[14px] transition-all hover:scale-[1.02] shadow-lg"
+                            className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-[#0f3a42] hover:bg-[#1a5a66] text-[#dac5a7] rounded-xl font-['Montserrat:Bold',sans-serif] font-bold text-[13px] md:text-[14px] transition-all hover:scale-[1.02] border border-[#dac5a7]/20 hover:border-[#dac5a7]/40"
                           >
                             <ClipboardList className="w-4 h-4 md:w-5 md:h-5" />
                             <span>Isi Pre-Test</span>
@@ -2362,16 +2374,20 @@ Terima kasih.`;
             {/* RIGHT: Mari Berdiskusi (Kontak Form) */}
             <div id="kontak">
               <div className="mb-12 text-center lg:text-left">
-                <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[36px] md:text-[48px] text-white mb-4">
+                <div className="flex items-center gap-3 mb-3 justify-center lg:justify-start">
+                  <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
+                  <span className="text-[#dac5a7]/60 text-[11px] font-semibold tracking-widest uppercase">Kontak</span>
+                  <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
+                </div>
+                <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[32px] md:text-[44px] text-white mb-4 leading-tight">
                   Mari Berdiskusi
                 </h1>
-                <div className="w-[64px] h-[4px] bg-[#dac5a7] rounded-full mx-auto lg:mx-0 mb-8" />
-                <p className="text-white/80 text-[16px] md:text-[18px] leading-relaxed">
-                  Jika Anda tertarik mengundang sebagai narasumber, mendiskusikan program, atau menjajaki kolaborasi, silakan hubungi melalui formulir berikut.
+                <p className="text-white/60 text-[15px] md:text-[16px] leading-relaxed">
+                  Tertarik mengundang sebagai narasumber, mendiskusikan program, atau menjajaki kolaborasi? Hubungi melalui formulir berikut.
                 </p>
               </div>
 
-              <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-[#dac5a7]/10">
+              <div className="bg-white/8 backdrop-blur-sm rounded-3xl p-8 md:p-10 border border-[#dac5a7]/15" style={{ background: 'rgba(255,255,255,0.06)' }}>
                 <form onSubmit={handleSubmit} className="space-y-6">
                     <div>
                       <label 
@@ -2528,7 +2544,7 @@ Terima kasih.`;
                       href={event.preTestUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center gap-3 w-full px-6 py-4 bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-700 hover:to-teal-800 text-white rounded-xl font-['Montserrat:SemiBold',sans-serif] font-semibold text-[15px] transition-all hover:scale-[1.02]"
+                      className="flex items-center justify-center gap-3 w-full px-6 py-4 bg-[#0f3a42] hover:bg-[#1a5a66] text-[#dac5a7] rounded-xl font-['Montserrat:SemiBold',sans-serif] font-semibold text-[15px] transition-all hover:scale-[1.02] border border-[#dac5a7]/20"
                     >
                       <ClipboardList className="w-5 h-5" />
                       Isi Pre-Test

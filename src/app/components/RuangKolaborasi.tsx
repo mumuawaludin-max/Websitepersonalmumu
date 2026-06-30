@@ -68,14 +68,19 @@ export function RuangKolaborasi({
   };
 
   return (
-    <section id="ruang-kolaborasi" className="min-h-screen bg-gradient-to-br from-white via-[#f8f9fa] to-white py-16 md:py-24">
+    <section id="ruang-kolaborasi" className="min-h-screen bg-white py-16 md:py-24" style={{ borderTop: '1px solid #f0e8da' }}>
       <div className="max-w-[1200px] mx-auto px-6 md:px-8 lg:px-16">
         {/* Header */}
         <div className="mb-12 md:mb-20 text-center">
-          <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[32px] md:text-[42px] lg:text-[52px] text-[#0a282e] mb-4">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <div className="w-8 h-[3px] rounded-full bg-[#dac5a7]" />
+            <span className="text-[#0a282e]/40 text-[11px] font-semibold tracking-widest uppercase">Kolaborasi</span>
+            <div className="w-8 h-[3px] rounded-full bg-[#dac5a7]" />
+          </div>
+          <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[28px] md:text-[40px] lg:text-[48px] text-[#0a282e] mb-4">
             Ruang Kolaborasi
           </h1>
-          <p className="text-[#0a282e]/60 text-[15px] md:text-[18px] font-['Montserrat:Medium',sans-serif] font-medium max-w-2xl mx-auto leading-relaxed">
+          <p className="text-[#0a282e]/55 text-[15px] md:text-[17px] max-w-xl mx-auto leading-relaxed">
             Eksplorasi berbagai bentuk kolaborasi yang bisa kita wujudkan bersama
           </p>
         </div>
@@ -89,9 +94,9 @@ export function RuangKolaborasi({
               <div
                 key={index}
                 onClick={() => setSelectedCollab(index)}
-                className="group relative bg-white rounded-3xl p-8 md:p-10 cursor-pointer transition-all duration-500 hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] hover:-translate-y-2 border-2 border-transparent hover:border-[#0a7c7c]/20"
+                className="group relative bg-white rounded-3xl p-8 md:p-10 cursor-pointer transition-all duration-500 hover:shadow-[0_16px_48px_rgba(10,40,46,0.10)] hover:-translate-y-1.5 border border-[#f0e8da] hover:border-[#dac5a7]/60"
                 style={{
-                  boxShadow: '0 4px 20px rgba(0,0,0,0.06)',
+                  boxShadow: '0 2px 16px rgba(10,40,46,0.05)',
                 }}
               >
                 {/* Icon Circle dengan gradient */}

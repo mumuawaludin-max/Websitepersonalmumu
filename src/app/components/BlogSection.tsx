@@ -170,25 +170,18 @@ export function BlogSection() {
     <section id="blog" className="min-h-screen bg-[#0a282e] py-16 md:py-24">
       <div className="max-w-[1400px] mx-auto px-6 md:px-8 lg:px-16">
         {/* Header */}
-        <div className="mb-12 md:mb-20 text-center">
-          <div className="flex justify-center mb-4 md:mb-6">
-            <div className="relative">
-              <div className="absolute inset-0 bg-[#dac5a7]/20 blur-2xl rounded-full" />
-              <div className="relative bg-gradient-to-br from-[#dac5a7] to-[#c9b396] p-3 md:p-4 rounded-2xl shadow-xl">
-                <BookOpen className="w-8 h-8 md:w-10 md:h-10 text-[#0a282e]" />
-              </div>
-            </div>
+        <div className="mb-12 md:mb-16 text-center">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
+            <span className="text-[#dac5a7]/60 text-[11px] font-semibold tracking-widest uppercase">Tulisan & Wawasan</span>
+            <div className="w-8 h-[2px] rounded-full bg-[#dac5a7]/40" />
           </div>
-          
-          <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[32px] md:text-[42px] lg:text-[52px] text-white mb-3 md:mb-4">
+          <h1 className="font-['Montserrat:ExtraBold',sans-serif] font-extrabold text-[28px] md:text-[40px] lg:text-[50px] text-white mb-4 leading-tight">
             Blog & Artikel
           </h1>
-          <p className="text-white/80 text-[14px] md:text-[16px] lg:text-[18px] font-['Montserrat:Medium',sans-serif] max-w-3xl mx-auto mb-4 md:mb-6 px-4 leading-relaxed">
+          <p className="text-white/60 text-[14px] md:text-[16px] max-w-2xl mx-auto px-4 leading-relaxed">
             Temukan tips parenting digital, solusi kecanduan gadget, dan strategi komunikasi keluarga yang efektif
           </p>
-          <div className="flex justify-center">
-            <div className="w-[64px] h-[4px] bg-[#dac5a7] rounded-full" />
-          </div>
         </div>
 
         {/* Search and Filter */}
