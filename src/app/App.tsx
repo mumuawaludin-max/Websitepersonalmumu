@@ -2349,7 +2349,7 @@ Terima kasih.`;
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={(e) => e.stopPropagation()}
-                            className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-700 hover:to-teal-800 text-white rounded-xl font-['Montserrat:Bold',sans-serif] font-bold text-[13px] md:text-[14px] transition-all hover:scale-[1.02] shadow-lg"
+                            className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-[#0f3a42] hover:bg-[#1a5a66] text-[#dac5a7] rounded-xl font-['Montserrat:Bold',sans-serif] font-bold text-[13px] md:text-[14px] transition-all hover:scale-[1.02] border border-[#dac5a7]/20 hover:border-[#dac5a7]/40"
                           >
                             <ClipboardList className="w-4 h-4 md:w-5 md:h-5" />
                             <span>Isi Pre-Test</span>
@@ -2544,7 +2544,7 @@ Terima kasih.`;
                       href={event.preTestUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center gap-3 w-full px-6 py-4 bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-700 hover:to-teal-800 text-white rounded-xl font-['Montserrat:SemiBold',sans-serif] font-semibold text-[15px] transition-all hover:scale-[1.02]"
+                      className="flex items-center justify-center gap-3 w-full px-6 py-4 bg-[#0f3a42] hover:bg-[#1a5a66] text-[#dac5a7] rounded-xl font-['Montserrat:SemiBold',sans-serif] font-semibold text-[15px] transition-all hover:scale-[1.02] border border-[#dac5a7]/20"
                     >
                       <ClipboardList className="w-5 h-5" />
                       Isi Pre-Test
